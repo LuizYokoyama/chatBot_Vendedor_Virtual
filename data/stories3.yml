@@ -1,0 +1,393 @@
+
+version: "2.0"
+
+stories:
+
+- story: saber estoque
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+- story: interactive_story_1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: afirmar
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: negar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: action_fechar
+  - intent: despedir
+  - action: utter_despedir
+
+- story: interactive_story_2
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: negar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: add_carrinho
+  - action: action_add_car
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+
+- story: interactive_story_1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: ret_carrinho
+  - action: action_ret_car
+
+- story: interactive_story_1a
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+
+- story: interactive_story_1b negar add carrinho
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: interactive_story_1c nao achar qtd 
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: interactive_story_1d nao achar qtd 2
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: interactive_story_1
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: negar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: afirmar
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - intent: afirmar
+  - action: action_fechar
+  - intent: despedir
+  - action: utter_despedir
+  - intent: afirmar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_ok
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - intent: afirmar
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+  - intent: despedir
+  - action: utter_despedir
+
+
+- story: interactive_story_2a - Grafo  afirmar
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: Pasta
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - produto: Pasta com aba
+  - slot_was_set:    
+    - corId: []
+  - slot_was_set:    
+    - pid: 53
+  - slot_was_set:    
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.25
+  - slot_was_set:    
+    - precoR: R$ 0,25
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: Duas
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 2
+  - slot_was_set:    
+    - pid: 53
+  - slot_was_set:    
+    - produto: Pasta com aba
+  - slot_was_set:    
+    - corId: []
+  - slot_was_set:    
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.25
+  - slot_was_set:    
+    - precoR: R$ 0,25
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:  
+    - produto_oferecido: true
+  - intent: afirmar
+  - action: action_consultar_produto
+
+- story: interactive_story_2b Grafo  negar
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: Pasta
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - produto: Pasta com aba
+  - slot_was_set:    
+    - corId: []
+  - slot_was_set:    
+    - pid: 53
+  - slot_was_set:    
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.25
+  - slot_was_set:    
+    - precoR: R$ 0,25
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: Duas
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 2
+  - slot_was_set:    
+    - pid: 53
+  - slot_was_set:    
+    - produto: Pasta com aba
+  - slot_was_set:    
+    - corId: []
+  - slot_was_set:    
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.25
+  - slot_was_set:    
+    - precoR: R$ 0,25
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:  
+    - produto_oferecido: true
+  - intent: negar
+  - action: utter_comprar
+
+- story: interactive
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: caneta
+  - slot_was_set:    
+    - produto: caneta
+  - slot_was_set:    
+    - qtd: uma
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - lista_de_produtos: asdfas
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: B
+  - slot_was_set:    
+    - produto: B
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - produto_oferecido: False
+  - slot_was_set:    
+    - produto: Caneta
+  - slot_was_set:    
+    - corId: None
+  - slot_was_set:    
+    - pid: 150
+  - slot_was_set:    
+    - produto_encontrado: Caneta
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.3
+  - slot_was_set:    
+    - precoR: R$ 0,30
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: Duas
+  - slot_was_set:    
+    - qtd: Duas
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 2
+  - slot_was_set:    
+    - pid: 150
+  - slot_was_set:    
+    - produto: Caneta
+  - slot_was_set:    
+    - corId: None
+  - slot_was_set:    
+    - produto_encontrado: Caneta
+  - slot_was_set:    
+    - pqtd: 100
+  - slot_was_set:    
+    - preco: 0.3
+  - slot_was_set:    
+    - precoR: R$ 0,30
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - produto: None
+  - slot_was_set:    
+    - carrinho: b80cebaa701b4eb389a307da4cc0242d
+  - slot_was_set:    
+    - produto_encontrado: None
+  - slot_was_set:    
+    - produto_oferecido: False
+  - slot_was_set:    
+    - lista_de_produtos: None
+  - slot_was_set:    
+    - pqtd: None
+  - slot_was_set:    
+    - corId: None
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - preco: None
+  - slot_was_set:    
+    - precoR: None
+  - slot_was_set:    
+    - cor: None
+  - slot_was_set:    
+    - pid: None
+  - intent: negar
+  - action: action_fechar

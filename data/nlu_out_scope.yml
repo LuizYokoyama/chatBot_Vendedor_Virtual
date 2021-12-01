@@ -1,0 +1,127 @@
+version: "2.0"
+
+nlu:
+
+- intent: out_of_scope
+  examples: |
+    - qual a origem do mundo   
+    - vc gosta de carnaval
+    - batatinha quando nasce
+    - imbecil
+    - idiota
+    - aaaaaaaaaaa
+    - bbbbbbbb
+    - cccccccccc
+    - mmmmmmmmmm
+    - asdfadfasdf
+    - çlkjljlçjkl
+    - ,xmzcvn,mzxn
+    - yuyerioq
+    - pqoewuri
+    - qwerqwer
+    - poipoiuopou
+    - zxczvadsfhak
+    - lfkdsjalfja
+    - vai tnc
+    - tnc
+    - cu
+    - cú
+    - CU
+    - CÚ
+    - seu cu
+    - vai tomar no cu
+    - vai tomar no cú
+    - vai tomar no seu cu
+    - enfia no cu
+    - soca no seu rabo
+    - soca no seu cu
+    - enfia no seu cú
+    - enfia no seu rabo
+    - enfia na sua bunda
+    - enfia esse trem no seu cu
+    - vagabundo
+    - vai te fude
+    - vai se fuder
+    - viadão
+    - viado
+    - merda
+    - otário
+    - tonto
+    - ta loco
+    - ta louco
+    - viado
+    - gay
+    - gayzão
+    - bicha
+    - bichona
+    - nojento
+    - chato
+    - porra
+    - poha
+    - babaca
+    - feio
+    - você é feio
+    - voce é babaca
+    - você é viado
+    - karai
+    - karalho
+    - caralho
+    - carai
+    - merda
+    - porra
+    - praga
+    - Peru
+    - Pinto
+    - xarope
+    - Pênis
+    - Vagina
+    - Vulva
+    - Giroba
+    - pomba
+    - tabaco
+    - xoxota
+    - xerereca
+    - chupa
+    - toma
+    - arrombado
+    - ignorante
+    - tejano
+    - piroca
+    - Tchutchuca
+    - bosta
+    - mijar
+    - mijo
+    - gozar
+    - gozo
+    - urinar
+    - defecar
+    - caganeira
+    - encaiado
+    - Cagão
+    - Viado
+    - burro
+    - jumento
+    - babaca
+    - quero te enrolar
+    - perda de tempo
+    - to nem ai
+    - te liga
+    - voce canta
+    - você sabe cantar
+    - não sabe outra coisa
+    - cansei de você
+    - cansei de vc
+    - sai fora
+    - qual é a tua
+    - qual eh a tua
+    - voce é forgado
+    - voce é um viado
+    - você é um vagabundo
+    - você pe um otário
+    - voce é burro
+    - você é muito burro
+    - karai
+    - kara
+    - Kara
+    - Tu eh folgado
+

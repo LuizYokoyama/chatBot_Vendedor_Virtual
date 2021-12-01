@@ -1,0 +1,273 @@
+version: "2.0"
+
+stories:
+
+
+
+- story: Dialogo_00000
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+
+- story: Dialogo_ent_00a
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_ent_00b
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: afirmar
+  - action: utter_pergunta_qual_produto
+
+- story: Dialogo_2a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - or:
+    - intent: fechar_pedido
+    - intent: afirmar
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_2aa
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - or:
+    - intent: fechar_pedido
+    - intent: afirmar
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_2b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_2bb
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_2c
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui  
+
+- story: Dialogo_2d
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui  
+
+- story: Dialogo_33a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_33b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_333a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_333b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_333bx
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_5
+  steps:
+  - action: utter_submit
+  - or:
+    - intent: negar
+    - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_6a
+  steps:
+  - action: utter_pergunta_fechar
+  - or:
+    - intent: fechar_pedido
+    - intent: afirmar
+  - action: action_fechar
+
+- story: Dialogo_6b
+  steps:
+  - action: utter_pergunta_fechar
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_7
+  steps:
+  - action: action_ret_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_8
+  steps:
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_9
+  steps:
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_9a
+  steps:
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_10
+  steps:
+  - action: utter_nome
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_10a
+  steps:
+  - action: utter_nome
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_11a
+  steps:
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_11b
+  steps:
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_12
+  steps:
+  - action: utter_default
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_13
+  steps:
+  - action: utter_despedir
+  - intent: afirmar
+  - action: utter_ok
+
+- story: Dialogo_14
+  steps:
+  - action: utter_despedir
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_14
+  steps:
+  - action: utter_default
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_15
+  steps:
+  - action: utter_cumprimentar
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_16
+  steps:
+  - action: utter_produto_exluido
+  - intent: negar
+  - action: utter_pergunta_qual_produto
+
+- story: Dialogo_16
+  steps:
+  - action: utter_produto_exluido
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: fechar pedido
+  steps:
+  - intent: fechar_pedido
+  - action: action_fechar
+

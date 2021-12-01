@@ -1,0 +1,219 @@
+
+version: "2.0"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_qual_produto
+    entities:
+    - produto: Pasta
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - slot_was_set:
+    - preco: 0.25
+  - action: action_consultar_produto
+  - slot_was_set:
+    - produto: Pasta com aba
+  - slot_was_set:
+    - corId: None
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:
+    - pqtd: 100
+  - intent: saber_cores
+  - action: action_saber_cores
+  - slot_was_set:
+    - produto: Pasta com aba
+  - intent: dizer_qual_produto
+    entities:
+    - cor: rosa
+  - slot_was_set:
+    - produto: Pasta com aba
+  - action: action_consultar_produto
+  - slot_was_set:
+    - corId: "[11, 53, 'rosa']"
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - preco: 0.25
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - intent: dizer_qual_produto
+    entities:
+    - qtd: uma
+  - action: action_consultar_produto
+  - slot_was_set:
+    - qtd: '1'
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - produto: Pasta com aba
+  - slot_was_set:
+    - corId: "[11, 53, 'rosa']"
+  - slot_was_set:
+    - produto_encontrado: Pasta com aba
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - preco: 0.25
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - intent: afirmar
+  - slot_was_set:
+    - corId: null
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - lista_de_produtos: null
+  - slot_was_set:
+    - produto_oferecido: true
+  - action: action_add_car
+  - slot_was_set:
+    - produto_encontrado: Lápis preto Faber C 022
+  - slot_was_set:
+    - carrinho: 7f1ba8b7dbcf4802b50f1b6f312b6b80
+  - slot_was_set:
+    - qtd: null
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - cor: null
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - slot_was_set:
+    - preco: 0.25
+  - intent: afirmar
+  - slot_was_set:
+    - produto_encontrado: Lápis preto Faber C 022
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - corId: None
+  - slot_was_set:
+    - produto: Lápis preto Faber C 022
+  - action: action_consultar_produto
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - preco: 0.25
+  - intent: dizer_qual_produto
+    entities:
+    - qtd: treis
+  - slot_was_set:
+    - preco: 0.25
+  - slot_was_set:
+    - produto_encontrado: Lápis preto Faber C 022
+  - slot_was_set:
+    - corId: None
+  - slot_was_set:
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:
+    - pid: 53
+  - slot_was_set:
+    - qtd: '3'
+  - action: action_consultar_produto
+  - slot_was_set:
+    - precoR: R$ 0,25
+  - slot_was_set:
+    - pqtd: 100
+  - intent: afirmar
+  - slot_was_set:
+    - pid: 56
+  - slot_was_set:
+    - cor: null
+  - slot_was_set:
+    - precoR: R$ 0,30
+  - slot_was_set:
+    - preco: 0.3
+  - slot_was_set:
+    - qtd: null
+  - slot_was_set:
+    - corId: null
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - lista_de_produtos: null
+  - slot_was_set:
+    - produto_oferecido: true
+  - slot_was_set:
+    - produto_encontrado: Caneta Esferográfica
+  - slot_was_set:
+    - carrinho: 7f1ba8b7dbcf4802b50f1b6f312b6b80
+  - action: action_add_car
+  - intent: afirmar
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - preco: 0.3
+  - slot_was_set:
+    - precoR: R$ 0,30
+  - slot_was_set:
+    - corId: None
+  - slot_was_set:
+    - produto_encontrado: Caneta Esferográfica
+  - slot_was_set:
+    - produto: Caneta Esferográfica
+  - slot_was_set:
+    - pid: 56
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:
+    - qtd: duas
+  - slot_was_set:
+    - qtd: '2'
+  - slot_was_set:
+    - precoR: R$ 0,30
+  - slot_was_set:
+    - preco: 0.3
+  - slot_was_set:
+    - pqtd: 100
+  - slot_was_set:
+    - produto_encontrado: Caneta Esferográfica
+  - slot_was_set:
+    - corId: None
+  - slot_was_set:
+    - produto: Caneta Esferográfica
+  - action: action_consultar_produto
+  - slot_was_set:
+    - pid: 56
+  - intent: afirmar
+  - slot_was_set:
+    - cor: null
+  - slot_was_set:
+    - pqtd: null
+  - slot_was_set:
+    - corId: null
+  - slot_was_set:
+    - qtd: null
+  - slot_was_set:
+    - preco: null
+  - slot_was_set:
+    - precoR: null
+  - slot_was_set:
+    - pid: null
+  - action: action_add_car
+  - slot_was_set:
+    - carrinho: 7f1ba8b7dbcf4802b50f1b6f312b6b80
+  - slot_was_set:
+    - produto_encontrado: null
+  - slot_was_set:
+    - produto_oferecido: false
+  - slot_was_set:
+    - lista_de_produtos: null
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - intent: afirmar
+  - action: action_fechar
+  - slot_was_set:
+    - carrinho: null
+  - intent: chitchat
+  - action: utter_chitchat

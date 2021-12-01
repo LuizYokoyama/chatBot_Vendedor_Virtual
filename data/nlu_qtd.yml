@@ -1,0 +1,803 @@
+
+version: "2.0"
+
+nlu:
+
+
+- intent: dizer_qual_produto
+  examples: |
+    - Já falei que é [uma](qtd)
+    - Já falei que é [duas](qtd)
+    - Já falei que é [dois](qtd)
+    - Já falei que é [tres](qtd)
+    - Já falei que é [um](qtd)
+    - Já falei que é [4](qtd) unidade
+    - Já falei que é só [7](qtd) unidades
+    - Já falei que é só [99](qtd)
+    - Já falei que quero [uma](qtd)
+    - Já falei que quero [duas](qtd)
+    - Já falei que quero [dois](qtd)
+    - Já falei que quero [tres](qtd)
+    - Já falei que quero [100](qtd)
+    - Já falei que quero [3](qtd) unidades
+    - Já falei que quero só [5](qtd) unidades
+    - Já falei que quero só [uma](qtd)
+    - Já disse que é [50](qtd)
+    - Já disse que é [duas](qtd)
+    - Já disse que é [dois](qtd)
+    - Já disse que é [tres](qtd)
+    - Já disse que é [um](qtd)
+    - Já disse que é [3](qtd) unidades
+    - Já disse que é só [uma](qtd) unidade
+    - Já disse que é só [uma](qtd)
+    - Já informei que é [uma](qtd)
+    - Já informei que é [duas](qtd)
+    - Já informei que é [dois](qtd)
+    - Já informei que é [tres](qtd)
+    - Já informei que é [um](qtd)
+    - Já informei que é [3](qtd) unidades
+    - Já informei que é só [uma](qtd) unidade
+    - Já informei que é só [uma](qtd)
+    - Já escrevi que é [22](qtd)
+    - Já escrevi que é [duas](qtd)
+    - Já escrevi que é [dois](qtd)
+    - Já escrevi que é [tres](qtd)
+    - Já escrevi que é [01](qtd)
+    - Já escrevi que é [uma](qtd) unidade
+    - Já escrevi que é só [uma](qtd) unidade
+    - Já escrevi que é só [uma](qtd)
+    - Já disse que é [01](qtd)
+    - Já disse que é [duas](qtd)
+    - Já disse que é [01](qtd)
+    - Já disse que é [tres](qtd)
+    - Já disse que é [um](qtd)
+    - Já disse que é [uma](qtd) unidade
+    - Já disse que é só [uma](qtd) unidade
+    - Já disse que é só [1](qtd)
+    - Já disse que quero [uma](qtd)
+    - Já disse que quero [duas](qtd)
+    - Já disse que quero [2](qtd)
+    - Já disse que quero [tres](qtd)
+    - Já disse que quero [um](qtd)
+    - Já disse que quero [uma](qtd) unidade
+    - Já disse que quero só [uma](qtd) unidade
+    - Já disse que quero só [4](qtd)
+    - Já informei que quero [uma](qtd)
+    - Já informei que quero [33](qtd)
+    - Já informei que quero [dois](qtd)
+    - Já informei que quero [tres](qtd)
+    - Já informei que quero [um](qtd)
+    - Já informei que quero [uma](qtd) unidade
+    - Já informei que quero só [3](qtd) unidade
+    - Já informei que quero só [uma](qtd)
+    - Já escrevi que quero [uma](qtd)
+    - Já escrevi que quero [2](qtd)
+    - Já escrevi que quero [dois](qtd)
+    - Já escrevi que quero [tres](qtd)
+    - Já escrevi que quero [1](qtd)
+    - Já escrevi que quero [uma](qtd) unidade
+    - Já escrevi que quero só [uma](qtd) unidade
+    - Já escrevi que quero só [uma](qtd)
+    - Já disse que quero [1](qtd)
+    - Já disse que quero [duas](qtd)
+    - Já disse que quero [dois](qtd)
+    - Já disse que quero [tres](qtd)
+    - Já disse que quero [um](qtd)
+    - Já disse que quero [uma](qtd) unidade
+    - Já disse que quero só [uma](qtd) unidade
+    - Já disse que quero só [uma](qtd)
+    - Sim [cinco](qtd) unidades
+    - Sim [cinco](qtd) unidades
+    - Sim [Uma resma](qtd)
+    - Sim [uma resma](qtd)
+    - Sim [uma resmas](qtd)
+    - [um resma](qtd)
+    - Sim [duas resmas](qtd) por favor
+    - [três resmas](qtd) por gentileza
+    - [quatro resmas](qtd) por obséquio
+    - [cinco resmas](qtd)
+    - [seis resmas](qtd)
+    - [sete resmas](qtd)
+    - [oito resmas](qtd)
+    - [nove resmas](qtd)
+    - [dez resmas](qtd)
+    - [onze resmas](qtd)
+    - [doze resmas](qtd)
+    - [treze resmas](qtd)
+    - [1 resmas](qtd)
+    - [1 resma](qtd)
+    - [2 resmas](qtd)
+    - [3 resmas](qtd)
+    - [4 resmas](qtd)
+    - [5 resmas](qtd)
+    - [6 resmas](qtd)
+    - [7 resmas](qtd)
+    - [8 resmas](qtd)
+    - [9 resmas](qtd)
+    - [10 resmas](qtd)
+    - [11 resmas](qtd)
+    - [12 resmas](qtd)
+    - [13 resmas](qtd)
+    - [01 resmas](qtd)
+    - [01 resma](qtd)
+    - [02 resmas](qtd)
+    - [1](qtd) unidade
+    - [2](qtd) unidade
+    - [Uma](qtd) unidade
+    - [01](qtd) unidade
+    - [una](qtd) unidade
+    - quero [1](qtd)
+    - quero [2](qtd)
+    - quero [3](qtd)
+    - quero [4](qtd)
+    - quero [5](qtd)
+    - quero [6](qtd)
+    - quero [7](qtd)
+    - quero [8](qtd)
+    - quero [9](qtd)
+    - quero [10](qtd)
+    - quero [11](qtd)
+    - quero [12](qtd)
+    - quero [13](qtd)
+    - quero [14](qtd)
+    - quero [15](qtd)
+    - quero [16](qtd)
+    - quero [17](qtd)
+    - quero [18](qtd)
+    - quero [19](qtd)
+    - quero [19](qtd)
+    - quero [20](qtd)
+    - [0](qtd) unidades
+    - [1](qtd) unidade
+    - [2](qtd) unidades
+    - [3](qtd)
+    - [4](qtd)
+    - [5](qtd)
+    - [6](qtd)
+    - [7](qtd)
+    - [8](qtd)
+    - [9](qtd)
+    - [10](qtd) unidades
+    - [11](qtd) unidades
+    - [12](qtd) unidades
+    - [13](qtd) unidades
+    - [14](qtd)
+    - [15](qtd)
+    - [16](qtd)
+    - [17](qtd)
+    - [18](qtd)
+    - [19](qtd)
+    - [19](qtd)
+    - [20](qtd)
+    - [21](qtd)
+    - [22](qtd)
+    - [23](qtd)
+    - [24](qtd)
+    - [25](qtd)
+    - [26](qtd)
+    - [27](qtd)
+    - [28](qtd)
+    - [29](qtd)
+    - [210](qtd)
+    - [211](qtd)
+    - [212](qtd)
+    - [313](qtd)
+    - [314](qtd)
+    - [315](qtd)
+    - [316](qtd)
+    - [417](qtd)
+    - [418](qtd)
+    - [419](qtd)
+    - [419](qtd)
+    - [420](qtd)
+    - [21](qtd)
+    - [122](qtd)
+    - [213](qtd)
+    - [124](qtd)
+    - [125](qtd)
+    - [26](qtd)
+    - [27](qtd)
+    - [28](qtd)
+    - [29](qtd)
+    - [30](qtd)
+    - [31](qtd)
+    - [32](qtd)
+    - [33](qtd)
+    - [34](qtd)
+    - [35](qtd)
+    - [36](qtd)
+    - [37](qtd)
+    - me dá [38](qtd)
+    - Me dá [39](qtd)
+    - Me da [39](qtd)
+    - Me de [40](qtd)
+    - Me dê [41](qtd)
+    - Dá [42](qtd) pra mim
+    - Da [43](qtd) pra mim
+    - da [44](qtd) agora
+    - Me da [45](qtd) agora
+    - Me da [46](qtd) desse
+    - [47](qtd)  desse
+    - [48](qtd) desse
+    - [49](qtd) desse
+    - [50](qtd) desse
+    - [51](qtd) dessa
+    - [52](qtd) dessa
+    - [53](qtd) dessa
+    - [54](qtd) dessa
+    - [55](qtd) dessa
+    - [56](qtd) desta
+    - [57](qtd) desta
+    - [58](qtd) desta
+    - [59](qtd) desta
+    - [59](qtd) desta
+    - [60](qtd) desta
+    - [100](qtd) desta
+    - [200](qtd) deste
+    - [300](qtd) deste
+    - [400](qtd) deste
+    - [500](qtd) deste
+    - [600](qtd) deste
+    - [700](qtd) deste
+    - [800](qtd) deste
+    - [900](qtd)
+    - [1000](qtd)
+    - [1100](qtd)
+    - [1111](qtd)
+    - [1333](qtd)
+    - [1444](qtd)
+    - [1509](qtd)
+    - [1600](qtd)
+    - [1736](qtd)
+    - [1888](qtd)
+    - [1999](qtd)
+    - [19999](qtd)
+    - [20200](qtd)
+    - [1001](qtd)
+    - [2001](qtd)
+    - [3001](qtd)
+    - [4002](qtd)
+    - [5003](qtd)
+    - [6004](qtd)
+    - [7005](qtd)
+    - [8006](qtd)
+    - [9007](qtd)
+    - [10008](qtd)
+    - [5221458553011005](qtd)
+    - [333354711112](qtd)
+    - [4444444413334](qtd)
+    - [11114445](qtd)
+    - [555515096](qtd)
+    - [666616007](qtd)
+    - [88817368](qtd)
+    - [777718889](qtd)
+    - [999919993](qtd)
+    - [1111119995](qtd)
+    - [120205](qtd)
+    - [um](qtd)
+    - [uma](qtd)
+    - [dois](qtd)
+    - [duas](qtd)
+    - [tres](qtd)
+    - [três](qtd)
+    - [treis](qtd)
+    - [quatro](qtd)
+    - [cinco](qtd)
+    - [seis](qtd)
+    - [sete](qtd)
+    - [oitu](qtd)
+    - [meia duzia](qtd)
+    - [meia dúzia](qtd)
+    - [meia dusia](qtd)
+    - [meia dz](qtd)
+    - [sete](qtd)
+    - [oito](qtd)
+    - [nove](qtd)
+    - [deiz](qtd)
+    - [dez](qtd)
+    - [dés](qtd)
+    - [déz](qtd)
+    - [onze](qtd)
+    - [doze](qtd)
+    - [uma duzia](qtd)
+    - [duas duzias](qtd)
+    - [duas dúzias](qtd)
+    - [tres duzias](qtd)
+    - [três dúzias](qtd)
+    - [quatro duzias](qtd)
+    - [quatro dúzias](qtd)
+    - [cinco duzias](qtd)
+    - [cinco dúzias](qtd)
+    - [seis duzias](qtd)
+    - [seis dúzias](qtd)
+    - [dez duzias](qtd)
+    - [dez dúzias](qtd)
+    - [uma dúzia](qtd)
+    - [uma dusia](qtd)
+    - quero [seis](qtd)
+    - quero [meia duzia](qtd)
+    - quero [meia dúzia](qtd)
+    - quero [meia dusia](qtd)
+    - quero [meia dz](qtd)
+    - quero [sete](qtd)
+    - quero [vinte e duas](qtd)
+    - quero [vinte e uma](qtd)
+    - quero [oito](qtd)
+    - quero [nove](qtd)
+    - quero [dez](qtd)
+    - quero [onze](qtd)
+    - quero [doze](qtd)
+    - quero [uma duzia](qtd)
+    - quero [duas duzias](qtd)
+    - quero [duas dúzias](qtd)
+    - quero [tres duzias](qtd)
+    - quero [três dúzias](qtd)
+    - quero [quatro duzias](qtd)
+    - quero [quatro dúzias](qtd)
+    - quero [cinco duzias](qtd)
+    - quero [cinco dúzias](qtd)
+    - quero [seis duzias](qtd)
+    - quero [seis dúzias](qtd)
+    - quero [dez duzias](qtd)
+    - quero [dez dúzias](qtd)
+    - quero [uma dúzia](qtd)
+    - quero [uma dusia](qtd)
+    - [treze](qtd)
+    - [quatorze](qtd)
+    - [quatorse](qtd)
+    - [quinze](qtd)
+    - [quinse](qtd)
+    - [desesseis](qtd)
+    - [dezesseis](qtd)
+    - [deseseis](qtd)
+    - [dezeseis](qtd)
+    - [deseceis](qtd)
+    - [dezesete](qtd)
+    - [dezessete](qtd)
+    - [dezoito](qtd)
+    - [desoito](qtd)
+    - [dezoitu](qtd)
+    - [dezenove](qtd)
+    - [dezenovi](qtd)
+    - [desenove](qtd)
+    - [vinte](qtd)
+    - [vinte e um](qtd)
+    - [vinte e uma(qtd)
+    - [vinte e dois](qtd)
+    - [vinte e duas](qtd)
+    - [vinte e três](qtd)
+    - [vinte e tres](qtd)
+    - [vinte e treis](qtd)
+    - [vinte e quatro](qtd)
+    - [vinte e cinco](qtd)
+    - [vinte e seis](qtd)
+    - [vinte e sete](qtd)
+    - [vinte e oito](qtd)
+    - [vinte e nove](qtd)
+    - [trinta](qtd)
+    - [trinta e um](qtd)
+    - [trinta e uma](qtd)
+    - [trinta e dois](qtd)
+    - [trinta e duas](qtd)
+    - [trinta dois](qtd)
+    - [trinta e três](qtd)
+    - [trinta e tres](qtd)
+    - [trinta e treis](qtd)
+    - [trinta e quatro](qtd)
+    - [trinta e cinco](qtd)
+    - [trinta e seis](qtd)
+    - [trinta e sete](qtd)
+    - [trinta e oito](qtd)
+    - [trinta e nove](qtd)
+    - [quarenta](qtd)
+    - [quarenta e um](qtd)
+    - [quarenta e uma](qtd)
+    - [quarenta um](qtd)
+    - [quarenta e dois](qtd)
+    - [quarenta e duas](qtd)
+    - [quarenta dois](qtd)
+    - [quarenta duas](qtd)
+    - [quarenta e três](qtd)
+    - [quarenta e tres](qtd)
+    - [quarenta e treis](qtd)
+    - [quarenta e quatro](qtd)
+    - [quarenta e cinco](qtd)
+    - [quarenta e seis](qtd)
+    - [quarenta e sete](qtd)
+    - [quarenta e oito](qtd)
+    - [quarenta e nove](qtd)
+    - [quarenta](qtd)
+    - [quarenta uma](qtd)
+    - [quarenta duass](qtd)
+    - [quarenta três](qtd)
+    - [quarenta tres](qtd)
+    - [quarenta treis](qtd)
+    - [quarenta quatro](qtd)
+    - [quarenta cinco](qtd)
+    - [quarenta seis](qtd)
+    - [quarenta sete](qtd)
+    - [quarenta oito](qtd)
+    - [quarenta e nove](qtd)
+    - [cinquenta](qtd)
+    - [cinquenta e um](qtd)
+    - [cinquenta e uma](qtd)
+    - [cinquenta e dois](qtd)
+    - [cinquenta e duas](qtd)
+    - [cinquenta e três](qtd)
+    - [cinquenta e tres](qtd)
+    - [cinquenta e treis](qtd)
+    - [cinquenta e quatro](qtd)
+    - [cinquenta e cinco](qtd)
+    - [cinquenta e seis](qtd)
+    - [cinquenta e sete](qtd)
+    - [cinquenta e oito](qtd)
+    - [cinquenta e nove](qtd)
+    - [sessenta](qtd)
+    - [sessenta e um](qtd)
+    - [sessenta e uma](qtd)
+    - [sessenta e dois](qtd)
+    - [sessenta e duas](qtd)
+    - [sessenta e três](qtd)
+    - [sessenta e tres](qtd)
+    - [sessenta e treis](qtd)
+    - [sessenta e quatro](qtd)
+    - [sessenta e cinco](qtd)
+    - [sessenta e seis](qtd)
+    - [sessenta e sete](qtd)
+    - [sessenta e oito](qtd)
+    - [sessenta e nove](qtd)
+    - [sesenta](qtd)
+    - [sesenta e um](qtd)
+    - [sesenta e uma](qtd)
+    - [sesenta e dois](qtd)
+    - [sesenta e duas](qtd)
+    - [sesenta e três](qtd)
+    - [sesenta e tres](qtd)
+    - [sesenta e treis](qtd)
+    - [sesenta e quatro](qtd)
+    - [sesenta e cinco](qtd)
+    - [sesenta e seis](qtd)
+    - [sesenta e sete](qtd)
+    - [sesenta e oito](qtd)
+    - [sesenta e nove](qtd)
+    - [setenta](qtd)
+    - [setenta um](qtd)
+    - [setenta dois](qtd)
+    - [setenta três](qtd)
+    - [setenta tres](qtd)
+    - [setenta treis](qtd)
+    - [setenta quatro](qtd)
+    - [setenta cinco](qtd)
+    - [setenta seis](qtd)
+    - [setenta sete](qtd)
+    - [setenta oito](qtd)
+    - [setenta nove](qtd)
+    - [oitenta](qtd)
+    - [oitenta e um](qtd)
+    - [oitenta e um]a(qtd)
+    - [oitenta e dois](qtd)
+    - [oitenta e duas](qtd)
+    - [oitenta e três](qtd)
+    - [oitenta e tres](qtd)
+    - [oitenta e treis](qtd)
+    - [oitenta e quatro](qtd)
+    - [oitenta e cinco](qtd)
+    - [oitenta e seis](qtd)
+    - [oitenta e sete](qtd)
+    - [oitenta e oito](qtd)
+    - [oitenta e nove](qtd)
+    - [noventa](qtd)
+    - [noventa e um](qtd)
+    - [noventa e uma](qtd)
+    - [noventa e dois](qtd)
+    - [noventa e duas](qtd)
+    - [noventa e três](qtd)
+    - [noventa e tres](qtd)
+    - [noventa e treis](qtd)
+    - [noventa e quatro](qtd)
+    - [noventa e cinco](qtd)
+    - [noventa e seis](qtd)
+    - [noventa e sete](qtd)
+    - [noventa e oito](qtd)
+    - [noventa e nove](qtd)
+    - [cem](qtd)
+    - [ceim](qtd)
+    - [cento e um](qtd)
+    - [cento e uma](qtd)
+    - [cento e dois](qtd)
+    - [cento e duas](qtd)
+    - [cento e três](qtd)
+    - [cento e tres](qtd)
+    - [cento e treis](qtd)
+    - [cento e quatro](qtd)
+    - [cento e cinco](qtd)
+    - [cento e seis](qtd)
+    - [cento e sete](qtd)
+    - [cento e oito](qtd)
+    - [cento e nove](qtd)
+    - [cento e dez](qtd)
+    - [cento e des](qtd)
+    - [cento e deis](qtd)
+    - [cento e déz](qtd)
+    - [cento e onze](qtd)
+    - [cento e doze](qtd)
+    - [cento e treze](qtd)
+    - [cento e quatorze](qtd) 
+    - [cento e quatorse](qtd) 
+    - [cento e quinze](qtd) 
+    - [cento e quinse](qtd) 
+    - [cento e desesseis](qtd) 
+    - [cento e dezesseis](qtd) 
+    - [cento e deseseis](qtd) unidades
+    - [cento e dezeseis](qtd) unidades
+    - [cento e deseceis](qtd) unidades
+    - [cento e dezesete](qtd) unidades
+    - [cento e dezessete](qtd) unidades
+    - [cento e dezoito](qtd) unidades
+    - [cento e desoito](qtd) unidades
+    - [cento e dezoitu](qtd) unidades
+    - [cento e dezenove](qtd) unidades
+    - [cento e dezenovi](qtd) unidades
+    - [cento e desenove](qtd) unidades
+    - [cento e vinte](qtd) unidades
+    - [cento e vinte e um](qtd) unidades
+    - [cento e vinte e uma](qtd) unidades
+    - [cento e vinte e dois](qtd) unidades
+    - [cento e vinte e duas](qtd) unidades
+    - [cento e vinte e três](qtd) unidades
+    - [cento e vinte e tres](qtd) unidades
+    - [cento e vinte e treis](qtd) unidades
+    - [cento e vinte e quatro](qtd) unidades
+    - [cento e vinte e cinco](qtd) unidades
+    - [cento e vinte e seis](qtd) unidades
+    - [cento e vinte e sete](qtd) unidades
+    - [cento e vinte e oito](qtd) unidades
+    - [cento e vinte e nove](qtd) unidades
+    - [cento e trinta](qtd) unidades
+    - [cento e trinta e um](qtd) unidades
+    - [cento e trinta e uma](qtd) unidades
+    - [cento e trinta e dois](qtd) unidades
+    - [cento e trinta e duas](qtd) unidades
+    - [cento e trinta e três](qtd) unidades
+    - [cento e trinta e tres](qtd) unidades
+    - [cento e trinta e treis](qtd) unidades
+    - [cento e trinta e quatro](qtd) unidades
+    - [cento e trinta e cinco](qtd) unidades
+    - [cento e trinta e seis](qtd) unidades
+    - [cento e trinta e sete](qtd) unidades
+    - [cento e trinta e oito](qtd) unidades
+    - [cento e trinta e nove](qtd) unidades
+    - [cento e quarenta](qtd) unidades
+    - [cento e quarenta e um](qtd) unidades
+    - [cento e quarenta e uma](qtd) unidades
+    - [cento e quarenta e dois](qtd) unidades
+    - [cento e quarenta e duas](qtd) unidades
+    - [cento e quarenta e três](qtd) unidades
+    - [cento e quarenta e tres](qtd) unidades
+    - [cento e quarenta e treis](qtd) unidades
+    - [cento e quarenta e quatro](qtd) unidades
+    - [cento e quarenta e cinco](qtd) unidades
+    - [cento e quarenta e seis](qtd) unidades
+    - [cento e quarenta e sete](qtd) unidades
+    - [cento e quarenta e oito](qtd) unidades
+    - [cento e quarenta e nove](qtd) unidades
+    - [cento e quarenta](qtd) unidades
+    - [cento e quarenta e um](qtd) unidades
+    - [cento e quarenta e dois](qtd) unidades
+    - [cento e quarenta e três](qtd) unidades
+    - [cento e quarenta e tres](qtd) unidades
+    - [cento e quarenta e treis](qtd) unidades
+    - [cento e quarenta e quatro](qtd) unidades
+    - [cento e quarenta e cinco](qtd) unidades
+    - [cento e quarenta e seis](qtd) unidades
+    - [cento e quarenta e sete](qtd) unidades
+    - [cento e quarenta e oito](qtd) unidades
+    - [cento e quarenta e nove](qtd) unidades
+    - [cento e cinquenta](qtd) unidades
+    - [cento e cinquenta e um](qtd) unidades
+    - [cento e cinquenta e dois](qtd) unidades
+    - [cento e cinquenta e três](qtd) unidades
+    - [cento e cinquenta e tres](qtd) unidades
+    - [cento e cinquenta e treis](qtd) unidades
+    - [cento e cinquenta e quatro](qtd) unidades
+    - [cento e cinquenta e cinco](qtd) unidades
+    - [cento e cinquenta e seis](qtd) unidades
+    - [cento e cinquenta e sete](qtd) unidades
+    - [cento e cinquenta e oito](qtd) unidades
+    - [cento e cinquenta e nove](qtd) unidades
+    - [cento e sessenta](qtd) unidades
+    - [cento e sessenta e um](qtd) unidades
+    - [cento e sessenta e dois](qtd) unidades
+    - [cento e sessenta e três](qtd) unidades
+    - [cento e sessenta e tres](qtd) unidades
+    - [cento e sessenta e treis](qtd) unidades
+    - [cento e sessenta e quatro](qtd) unidades
+    - [cento e sessenta e cinco](qtd) unidades
+    - [cento e sessenta e seis](qtd) unidades
+    - [cento e sessenta e sete](qtd) unidades
+    - [cento e sessenta e oito](qtd) unidades
+    - [cento e sessenta e nove](qtd) unidades
+    - [cento e sesenta](qtd) unidades
+    - [cento e sesenta e um](qtd) unidades
+    - [cento e sesenta e dois](qtd) unidades
+    - [cento e sesenta e três](qtd) unidades
+    - [cento e sesenta e tres](qtd) unidades
+    - [cento e sesenta e treis](qtd) unidades
+    - [cento e sesenta e quatro](qtd) unidades
+    - [cento e sesenta e cinco](qtd) unidades
+    - [cento e sesenta e seis](qtd) unidades
+    - [cento e sesenta e sete](qtd) unidades
+    - [cento e sesenta e oito](qtd) unidades
+    - [cento e sesenta e nove](qtd) unidades
+    - [cento e setenta](qtd) unidades
+    - [cento e setenta e um](qtd) unidades
+    - [cento e setenta e dois](qtd) unidades
+    - [cento e setenta e três](qtd) unidades
+    - [cento e setenta e tres](qtd) unidades
+    - [cento e setenta e treis](qtd) unidades
+    - [cento e setenta e quatro](qtd) unidades
+    - [cento e setenta e cinco](qtd) unidades
+    - [cento e setenta e seis](qtd) unidades
+    - [cento e setenta e sete](qtd) unidades
+    - [cento e setenta e oito](qtd) unidades
+    - [cento e setenta e nove](qtd) 
+    - [cento e oitenta](qtd) unidades
+    - [cento e oitenta e um](qtd) unidades
+    - [cento e oitenta e dois](qtd) unidades
+    - [cento e oitenta e três](qtd) unidades
+    - [cento e oitenta e tres](qtd) unidades
+    - [cento e oitenta e treis](qtd) unidades
+    - [cento e oitenta e quatro](qtd) unidades
+    - [cento e oitenta e cinco](qtd) unidades
+    - [cento e oitenta e seis](qtd) unidades
+    - [cento e oitenta e sete](qtd) unidades
+    - [cento e oitenta e oito](qtd) unidades
+    - [cento e oitenta e nove](qtd) unidades
+    - [cento e noventa](qtd) unidades
+    - [cento e noventa e um](qtd) unidades
+    - [cento e noventa e dois](qtd) unidades
+    - [cento e noventa e três](qtd) unidades
+    - [cento e noventa e tres](qtd) unidades
+    - [cento e noventa e treis](qtd) unidades
+    - [cento e noventa e quatro](qtd) unidades
+    - [cento e noventa e cinco](qtd) unidades
+    - [cento e noventa e seis](qtd) unidades
+    - [cento e noventa e sete](qtd) unidades
+    - [cento e noventa e oito](qtd) unidades
+    - [cento e noventa e nove](qtd) unidades
+    - [duzentos](qtd) unidades
+    - [duzento](qtd) unidades
+    - [duzentus](qtd) unidades
+    - [duzentus](qtd) unidades
+    - [dusentos](qtd) unidades
+    - [dusentus](qtd) unidades
+    - [duzentos e um](qtd) unidades
+    - [duzentos e dois](qtd) unidades
+    - [duzentos e três](qtd) unidades
+    - [duzentos e tres](qtd) unidades
+    - [duzentos e treis](qtd) unidades
+    - [duzentos e quatro](qtd) unidades
+    - [duzentos e cinco](qtd) unidades
+    - [duzentos e seis](qtd) unidades
+    - [duzentos e sete](qtd) unidades
+    - [duzentos e oito](qtd) unidades
+    - [duzentos e nove](qtd) unidades
+    - [duzentos e dez](qtd) unidades
+    - [duzentos e des](qtd) unidades
+    - [duzentos e deis](qtd) unidades
+    - [duzentos e déz](qtd) unidades
+    - [trezentos](qtd) unidades
+    - [trezento](qtd) unidades
+    - [trezentus](qtd) unidades
+    - [trezentus](qtd) unidades
+    - [tresentos](qtd) unidades
+    - [tresentus](qtd) unidades
+    - [trezentos e um](qtd) unidades
+    - [trezentos e dois](qtd) unidades
+    - [trezentos e três](qtd) unidades
+    - [trezentos e tres](qtd) unidades
+    - [trezentos e treis](qtd) unidades
+    - [trezentos e quatro](qtd) unidades
+    - [trezentos e cinco](qtd) unidades
+    - [trezentos e seis](qtd) unidades
+    - [trezentos e sete](qtd) unidades
+    - [trezentos e oito](qtd) unidades
+    - [trezentos e nove](qtd) unidades
+    - [trezentos e dez](qtd) unidades
+    - [trezentos e des](qtd) unidades
+    - [trezentos e deis](qtd) unidades
+    - [trezentos e déz](qtd) unidades
+    - [quatrocentos](qtd) unidades
+    - [quatrocento](qtd) unidades
+    - [quatrocentus](qtd) unidades
+    - [quatrocentu](qtd) unidades
+    - [quatrosentos](qtd) unidades
+    - [quatrosentus](qtd) unidades
+    - [quatrocentos e um](qtd) unidades
+    - [quatrocentos e uma](qtd) unidades
+    - [quatrocentos e dois](qtd) unidades
+    - [quatrocentos e duas](qtd) unidades
+    - [quatrocentos e três](qtd) unidades
+    - [quatrocentos e tres](qtd) unidades
+    - [quatrocentos e treis](qtd) unidades
+    - [quatrocentos e quatro](qtd) unidades
+    - [quatrocentos e cinco](qtd) unidades
+    - [quatrocentos e seis](qtd) unidades
+    - [quatrocentos e sete](qtd) unidades
+    - [quatrocentos e oito](qtd) unidades
+    - [quatrocentos e nove](qtd) unidades
+    - [quatrocentos e dez](qtd) unidades
+    - [quatrocentos e des](qtd) unidades
+    - [quatrocentos e deis](qtd) unidades
+    - [quatrocentos e déz](qtd) unidades
+    - [quinhentos](qtd) unidades
+    - [quinhento](qtd) unidades
+    - [quinhentus](qtd) unidades
+    - [quinhenttos](qtd) unidades
+    - [quinhents](qtd) unidades
+    - [quinhentas](qtd) unidades
+    - [quinhentos e um](qtd) unidades
+    - [quinhentos e uma](qtd) unidades
+    - [quinhentos e dois](qtd) unidades
+    - [quinhentos e três](qtd) unidades
+    - [quinhentos e tres](qtd) unidades
+    - [quinhentos e treis](qtd) unidades
+    - [quinhentos e quatro](qtd) unidades
+    - [quinhentos e cinco](qtd) unidades
+    - [quinhentos e seis](qtd) unidades
+    - [quinhentos e sete](qtd) unidades
+    - [quinhentos e oito](qtd) unidades
+    - [quinhentos e nove](qtd) unidades
+    - [quinhentos e dez](qtd) unidades
+    - [quinhentos e des](qtd) unidades
+    - [quinhentos e deis](qtd) unidades
+    - [quinhentos e déz](qtd) unidades
+    - [seicentos](qtd) unidades
+    - [seicentas](qtd) unidades
+    - [seicento](qtd) unidades
+    - [seicentus](qtd) unidades
+    - [seissentas](qtd) unidades
+    - [seissentos](qtd) unidades
+    - [seisentas](qtd) unidades
+    - [seisentos](qtd) unidades
+    - [seicentos](qtd) unidades
+    - [setecentas](qtd) unidades
+    - [setecentos](qtd) unidades
+    - [setesentas](qtd) unidades
+    - [setesentos](qtd) unidades
+    - [setessentas](qtd) unidades
+    - [setessentos](qtd) unidades
+    - [setecentus](qtd) unidades
+    - [oitocentos](qtd) unidades
+    - [novecentas](qtd) unidades
+    - [mil](qtd) unidades
+    - [um mil](qtd) unidades
+    - [hum mil](qtd) unidades
+    - [duas mil](qtd) unidades
+    - [dois mil](qtd) unidades
+    - [tres mil](qtd) unidades
+    - [três mil](qtd) unidades
+    - [quatro mil](qtd) unidades
+    - [cinco mil](qtd) unidades
+    - [seis mil](qtd) unidades
+    - [sete mil](qtd) unidades
+    - [oito mil](qtd) unidades
+    - [nove mil](qtd) unidades
+    - [dez mil](qtd) 
+    - [Trezentos e noventa e cinco](qtd) 
+    - [quatrocentos e trinta e sete](qtd) 
+    - [mil quinhetos e oitenta e três](qtd) 
+    - [dois mil duzentos e cinquenta e quatro](qtd) 
+    - [cinco mil quinhetos e vinte e dois](qtd) 
+    - [nove mil novecentos e noventa e nove](qtd) 
+    - [um milhão nove mil novecentos e noventa e nove](qtd) 
+    - [dois mihões nove mil novecentos e noventa e nove](qtd) 
+    - [um milhão novecentos e noventa e nove](qtd) 
+    - [um milhão](qtd) 
+    - [dois milhões](qtd) 
+
+
+
+
+
+

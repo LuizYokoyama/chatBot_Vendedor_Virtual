@@ -1,0 +1,2356 @@
+version: "2.0"
+nlu:
+
+
+- intent: teste
+  examples: |
+    - executar teste
+    - Teste
+    - EXECUTAR TESTE
+    - execute teste
+
+- intent: mostrar_slots
+  examples: |
+    - execute mostra slots
+    - execute Mostrar slots
+    - execute MOSTRAR SLOTS
+    - execute mostra slots
+
+- intent: limpar_slots
+  examples: |
+    - execute Limpar slots
+    - execute Apagar slots
+    - execute limpa SLOTS
+    - execute apaga SLOTS
+
+- intent: faq/acesso
+  examples: |
+    - o site está fora do ar
+    - O site está fora do ar
+    - o site está indisponível
+    - O site está indisponível
+    - a pagina está fora do ar
+    - A pagina está fora do ar
+    - a pagina está indisponível
+    - A página está indisponível
+    - a pag está fora do ar
+    - A pág está fora do ar
+    - a pg está indisponível
+    - A pg está indisponível
+    - o site não está funcionando
+    - o site não está no ar
+    - o site não está prestando
+    - o seu site não está prestando
+    - O seu site não está prestando
+    - O seu site não está funcionando
+    - o seu site está fora do ar
+    - o seu site não funciona
+    - O seu site está fora do ar
+    - O seu site não funciona
+    - A sua página não funciona
+    - o site nao esta funcionando
+    - o site nao esta no ar
+    - o site nao esta prestando
+    - o seu site nao esta prestando
+    - O seu site nao esta prestando
+    - O seu site nao esta funcionando
+    - o seu site esta fora do ar
+    - o seu site nao funciona
+    - O seu site esta fora do ar
+    - O seu site nao funciona
+    - A sua pagina nao funciona
+    - Não consigo acessar o seu site
+    - eu não consigo acessar
+    - site não esta funcionando
+    - o site não está disponível
+    - Eu nao consigo acessar seu site
+    - Eu nao consigo acessar o site multitrem
+    - eu nao consigo acessar a página da multitrem
+    - nao esta funcionando o site da multitrem
+    - o site não está disponível
+    - Eu não consigo acessar
+    - Eu não consigo acessar
+    - Site não esta funcionando
+    - O site não está disponível
+    - SITE FORA DO AR
+    - site fora no ar
+    - Site fora do ar
+    - Site indisponível
+    - SITE ESTA FORA DO AR
+    - site esta fora no ar
+    - Site esta fora do ar
+    - Site esta indisponível
+    - O SITE ESTA INDISPONÍVEL
+    - SITE ESTÁ INDISPONÍVEL
+    - site inacessivel
+    - SITE INACESSÍVEL
+    - SITE ESTÁ INACESSÍVEL
+    - SEU SITE ESTA FORA DO AR
+    - Seu site esta fora no ar
+    - Seu Site esta fora do ar
+    - Seu Site esta indisponível
+    - Seu SITE esta INDISPONÍVEL
+    - Seu site esta inacessivel
+    - Seu SITE esta INACESSÍVEL
+    - servicço indisponível
+    - serviço indisponível
+    - Eu não consigo acessar
+    - Site não esta funcionando
+    - O site não está disponível
+    - como faço para acessar o site
+    - como faço para acessar o site da loja
+    - como faço para acessar o site da multitrem
+    - como faço para acessar a página do site
+    - Como faço para acessar o site, pois está indisponível
+    - Como faço para acessar o site
+    - Como faço para acessar o site da loja
+    - Como faço para acessar o site da multitrem
+    - Como faço para acessar a página do site
+    - Não consigo acessar o site
+    - o site não funciona
+    - o site multitrem.com não funciona
+    - o seu site não funciona
+    - está inacessível
+    - está inacesivel
+    - está fora do ar
+    - quando o site vai funcionar
+    - quando vai começar a funcionar
+    - Está inacessível
+    - Está inacesivel
+    - Está fora do ar
+    - Está inacessível o site multitrem.com
+    - Está inacesivel o site multitrem.com
+    - Está fora do ar o site multitrem.com
+    - Quando o site vai funcionar o site multitrem.com
+    - Quando vai começar a funcionar o site multitrem.com
+    - Quando o site vai funcionar o site da loja
+    - Quando vai começar a funcionar o site da loja
+    - Quando o site vai funcionar o seu site
+    - Quando vai começar a funcionar o seu site
+    - Quando o site vai funcionar
+    - Quando começarão a funcionar
+    - Quando o site começará o site multitrem.com
+    - Quando começará à funcionar o site multitrem.com
+    - Quando começa à funcionar o site da loja
+    - Quando vai começar a funcionar o site da loja
+    - Quando o site estará funcionando
+    - Quando funcionará o seu site
+
+- intent: reclamacao
+  examples: |
+    - reclamação
+    - reclamacao
+    - quero reclamar
+    - quero fazer uma reclamação
+    - registre minha reclamação
+    - registrar minha reclamação
+    - registre reclamação
+    - quero fazer uma reclamação
+    - Eu quero fazer uma reclamação
+    - Quero fazer uma reclamação
+    - fazer reclamacao
+    - Reclamação
+    - Reclamacao
+    - Reclamar
+    - Reclamasão
+    - reclamasao
+    - reclamação
+    - reclamacao
+    - reclamação
+    - reclamacao
+    - quero reclamar
+    - quero fazer uma reclamação
+    - Registre minha reclamação
+    - Registrar minha reclamação
+    - registre reclamação
+    - Quero fazer uma reclamação
+    - Fazer reclamacao
+    - reclamação
+    - reclamacao
+    - reclamar
+    - reclamasão
+    - reclamasao
+    - reclamação
+    - reclamacao
+    - reclamação
+    - reclamacao
+    - quero reclamar
+    - quero fazer uma reclamação
+    - registre minha reclamação
+    - registrar minha reclamação
+    - registre reclamação
+    - quero fazer uma reclamação
+    - fazer reclamacao
+    - reclamação
+    - reclamacao
+    - reclamar
+    - reclamasão
+    - reclamasao
+    - reclamação
+    - reclamacao
+    - reclamação
+    - reclamacao
+    - quero reclamar
+    - quero fazer uma reclamação
+    - registre minha reclamação
+    - registrar minha reclamação
+    - Registre reclamação, por favor
+    - Registre reclamação agora!
+    - Quero fazer uma reclamação agora!
+    - Fazer reclamacao
+    - reclamação
+    - reclamacao
+    - reclamar
+    - reclamasão
+    - reclamasao
+    - reclamação
+    - reclamacao
+
+- intent: ret_carrinho
+  examples: |
+    - Retira do carrinho
+    - Retira do meu carrinho
+    - Retire do carrinho
+    - Retira
+    - Remove do meu carrinho
+    - Remova do meu carrinho
+    - Remova do
+    - Remove do
+    - Remover do
+    - Retire do
+    - retira do
+    - remove
+    - remova [1](qtd) [urso de pelúcia](produto)
+    - remover
+    - retire
+    - retira
+    - Retire [cinco](qtd)
+    - Retire [1](qtd)
+    - retira [1](qtd)
+    - retira [2](qtd)
+    - retira [dois](qtd)
+    - retira [um](qtd)
+    - Retira [uma](qtd)
+    - retire [4](qtd) [pastas](produto)
+    - retire [1](qtd) [caneta](produto)
+    - retira [1](qtd) [caneta](produto)
+    - retira [uma dúzia](qtd) de [canetas](produto)
+    - retirar
+    - retirar do carrinho de compras
+    - retire do meu carrinho de compras
+    - remova do carrinho de compras
+    - Remova do meu carrinho de compras
+    - remover do carrinho
+    - vc pode retirar do carrinho
+    - voce pode retirar este produto do carrinho
+    - voce pode retirar este
+    - voce pode retirar
+    - retirar
+    - excluir do carrinho
+    - Exclua do carrinho
+    - exclua do carrinho
+    - excluir do carrinho este [gato de pelúcia](produto)
+    - excluir do carrinho esta [TINTA PARA CARIMBO](produto)
+    - excluir do carrinho de compras
+    - Excluir do meu carrinho de compras
+    - Exclua este produto do meu carrinho
+    - exclua este produto do carrinho
+    - Remova este produto do carrinho
+    - remova este produto do carrinho
+    - exclua este produto do meu carrinho
+    - Retire [dois](qtd) [lapis de cor](produto) do meu carrinho de compras
+    - retire [um](qtd) [PINCEL PARA PINTURA]](produto) do meu carrinho de compras
+
+- intent: chitchat/diga_mais
+  examples: |
+    - como funciona
+    - me diga mais
+    - como assim
+    - e como funciona
+    - qual a sua função
+    - o que voce faz
+    - sabe fazer
+    - oq vc sabe fazer
+    - o que você sabe fazer
+    - quais as suas funções
+    - suas funcionalidades
+    - pra q vc foi programado
+    - para o que vc foi programado
+    - me fale sobre você
+    - me fale sobre vc
+    - me diga sobre voce
+    - o que voce sabe falar
+    - o q vc fala
+    - sobre o que voce sabe falar
+    - sobre o que vc sabe
+    - o que voce sabe
+    - o q vc sabe
+    - sabe fazer oq?
+    - vc serve pra q
+    - pra q vc serve
+    - pra que você serve
+    - como é o seu trabalho
+    - como voce trabalha
+    - como voce sabe
+    - qual sua função
+    - qual sua programação
+    - qual é o seu trabalho
+- intent: chitchat/tudo_bem
+  examples: |
+    - oi, tudo bem
+    - oi, como vai voce
+    - ola tudo bem
+    - oi tudo bem
+    - Oi Tudo bem
+    - Oi Tudo bem
+    - Oi Tudo bem
+    - Boa noite
+    - Oi Tudo bem
+    - ola tudo bem
+    - Oi tudo joia
+    - olá tudo joia
+    - Oláa tudo joia
+    - Olá tudo bem
+    - Bao
+    - bao
+    - BAO
+    - De boa?
+    - Tá bao?
+    - Como vai vc?
+    - Como vai você?
+    - como vai?
+    - como está
+    - com estás?
+    - como vai indo
+    - como vai as coisas?
+    - como vao as coisas
+    - opa tudo bem
+    - to bem
+    - tranquilo
+    - estou bem
+    - estou otimo
+    - tudo bem e você
+    - tudo bem
+    - tudo bom
+    - tá bem
+    - Bao
+    - ta bem
+    - como vocês esta
+    - como voce esta
+    - como voce ta
+    - como vai você
+    - como vai voce
+    - como vai vc
+    - como vai
+    - como ta
+    - joia
+    - bao
+    - BAO?
+    - E ae bao?
+    - E ae baum?
+    - E ae bão?
+    - E ae c tá bao?
+    - E ae vc tá bao?
+    - E ae c ta bao?
+    - vc ta bao?
+    - c tá bao?
+    - c tá bão?
+    - como tá tu?
+    - como ta tu?
+    - como ta vc?
+    - Como ta vc bao?
+    - Tu ta bao?
+    - Tu ta bão?
+    - opa bao
+    - Bao ou não
+    - Bão ou nao?
+    - Bao ou nao
+    - Bão ou não?
+    - joinha
+    - beleza
+    - como está passando
+    - como vai hoje
+    - como vai hj
+    - cumeq ta
+    - cumeq vai
+    - cumeq ta
+- intent: despedir
+  examples: |
+    - tchau
+    - t+
+    - Tchau, tenha um bom dia
+    - Tchau, tenha uma boa tarde
+    - Tchau, tenha uma boa noite
+    - tchau, tenha um bom dia
+    - tchau, tenha uma boa tarde
+    - tchau, tenha uma boa noite
+    - Tchau tenha um bom dia
+    - Tchau tenha uma boa tarde
+    - Tchau tenha uma boa noite
+    - tchau tenha um bom dia
+    - tchau tenha uma boa tarde
+    - tchau tenha uma boa noite
+    - tchau
+    - tchau
+    - tchau obrigada
+    - tchau obrigado
+    - tchau
+    - Tchau
+    - TCHAU
+    - xau
+    - t+
+    - teh mais
+    - té mais
+    - inte
+    - inté
+    - inteh
+    - até logo
+    - ate logo
+    - até mais
+    - ate mais
+    - até breve
+    - ate breve
+    - até a próxima
+    - ate a proxima
+    - falou, valeu
+    - flw
+    - falows
+    - fui
+    - to indo
+    - já vou indo
+    - ja to indo
+    - flw vlw
+    - Tchau obrigada
+    - Tchau obrigado
+    - Tchau
+    - Tchau
+    - TCHAU
+    - Xau
+    - T+
+    - Teh mais
+    - Té mais
+    - Inte
+    - Xau
+    - Inté
+    - Inteh
+    - Até logo
+    - Ate logo
+    - flws
+    - Flws
+    - FLWS
+    - FLW
+    - Até mais
+    - Ate mais
+    - Até breve
+    - Ate breve
+    - Até a próxima
+    - Ate a proxima
+    - Falou, valeu
+    - Flw
+    - Falows
+    - tiau
+    - Fui
+    - To indo
+    - Já vou indo
+    - Ja to indo
+    - Flw vlw
+    - TCHAU
+    - tchau
+    - xau
+    - tchau
+    - xiau
+    - Xiau
+    - tchau
+    - tchau
+    - tchau
+    - Tchau
+    - tchau
+    - tchau
+    - tchau
+    - tchau
+    - tchau
+    - Tchau
+    - tchau
+    - Tchau
+    - Tchau obrigada
+    - Tchau obrigado
+- intent: faq/o_que_sei_falar
+  examples: |
+    - sobre o que você sabe falar
+    - o que mais você sabe falar
+    - quais assuntos você fala
+    - o que você sabe
+    - lista de assuntos possiveis
+    - quais as perguntas vc responde
+    - quais as pesquisas que você responde
+    - o que você sabe falar
+    - voce fala sobre o que
+    - voce fala sobre oq
+    - vc fala sobre oq
+- intent: faq/recomendar
+  examples: |
+    - Qual você me recomenda?
+    - me recomendaria qual desses produtos?
+    - me recomendaria qual?
+    - qual desses você me recomendaria?
+    - tem alguma recomendação?
+    - qual é o melhor?
+    - qual é o mais recomendado?
+    - qual é o mais indicado?
+    - qual vc me indicaria?
+    - você me indica qual?
+    - qual é o melhor pra mim?
+    - qual é o mais indicado pra mim?
+    - qual é o mais recomendado pra mim?
+    - qual é o mais indicado para o meu caso?
+    - qual é o mais recomendado para o meu caso?
+    - qual desses é o mais indicado?
+    - qual desses é o mais recomendado?
+    - qual desses é o melhor avaliado?
+    - me recomenda qual?
+- intent: chitchat/elogios
+  examples: |
+    - Parabens!
+    - voce está de parabens!
+    - muito bem!
+    - bom trabalho
+    - gostei bastante do seu atendimento
+    - você é muito prestativo
+    - você é muito atencioso
+    - Excelente trabalho
+    - muito bom serviço, voce está de parabens
+    - ótimo atendimento, parabens
+    - parabens pelo excelente atendimento
+    - você é um ótimo vendedor!
+    - você é um excelente vendedor
+    - voce é um grande vendedor
+    - parabens pelo atendimento
+    - parabens pelo trabalho bem feito
+    - parabens pelo seu esforço
+- intent: chitchat/definicao
+  examples: |
+    - beleza o que você pode me ajudar
+    - quem é você
+    - Quem é você
+    - O que vc é?
+    - O que é vc?
+    - Você é um robo?
+    - Você é um Programa?
+    - vc é um programa?
+    - vc é um robo?
+    - você é um bot
+    - vc eh um bot
+    - vc e um chatbot
+    - oq eh vc
+    - op é vc?
+    - você é real?
+    - você é de verdade?
+    - voce é real?
+    - vc eh real?
+    - o que voce sabe fazer
+    - o que voce pode fazer
+    - voce é virtual
+    - você é virtual?
+    - Você existe mesmo?
+    - voce existe de verdade?
+    - robô
+    - bot
+    - como você se define
+    - voce sabe o que é voce?
+    - o que você faz aqui?
+    - você serve pra que?
+    - você trabalha aqui?
+    - voce é uma pessoa
+    - voce é uma pessoa de verdade
+    - você é humano?
+- intent: chitchat/objetivo
+  examples: |
+    - qual seu objetivo
+    - qual é o seu objetivo
+    - pra que voce existe?
+    - pra q vc existe
+    - você tem algum objetivo
+    - voce faz o que aqui
+    - o que você faz aqui
+    - objetivo
+    - por que você existe?
+    - pq vc existe?
+    - Você tem objetivos
+- intent: cumprimentar
+  examples: |
+    - oi com licenca
+    - oi posso falar com voce
+    - ola bom dia
+    - ola boa tarde
+    - olá
+    - ola
+    - ei
+    - Eiii
+    - Ei
+    - EI
+    - olah
+    - oi
+    - Ola
+    - OLA
+    - Ola ola
+    - Oi olá
+    - oi ola
+    - Oi
+    - OI
+    - Ola
+    - Olá
+    - Oooi
+    - oI
+    - oLà
+    - oLÁ
+    - oPA
+    - Ow
+    - Com licença
+    - E ae
+    - OLÁ
+    - OIII
+    - Oiiii
+    - Oii
+    - olaa
+    - Olaa
+    - Oláa
+    - Oooi
+    - Ooooiiii
+    - Ooiii
+    - Oioioii
+    - Olaaaaaa
+    - Olaaa
+    - Olaa
+    - Oi! Bom dia!
+    - Oi boa tarde
+    - oi Boa noite
+    - Olá! Bom dia!
+    - Olá boa tarde
+    - Olá Boa noite
+    - Ooi
+    - Ooii
+    - Ooi
+    - Ooii
+    - Ooooiiiii
+    - Oiii
+    - Ooii
+    - Ooooiiiii
+    - Oioioioioi
+    - oioioioi
+    - Oioioi
+    - oioi
+    - Oioi
+    - ooii
+    - opa
+    - Opa
+    - ooooiiiii
+    - oiii
+    - OI
+    - Oi
+    - Olá
+    - Ola
+    - OLAH
+    - OLA
+    - OIE
+    - oie
+    - oiee
+    - Oie
+    - Oiee
+    - ola boa tarde
+    - Oi e ae
+    - Olá
+    - Oi
+    - Oi
+    - oi
+    - Oi
+    - oi
+    - ôi
+    - Ôi
+    - oi
+    - Ôoi
+    - Oi
+    - Oi
+    - oi
+    - oi
+    - Oi
+    - Ola
+    - oi
+    - Olá
+    - ola
+    - ola
+    - Opa
+    - Olaa
+    - Olah
+    - oi
+    - oi
+    - Oi
+    - Olá
+    - oi
+    - oi
+    - Olá
+    - oi
+    - oi
+    - oi
+    - oi
+    - ola
+    - oi
+    - ola
+    - oi
+    - ola
+    - Oi
+    - oi
+    - oi
+    - oi
+    - Ola
+    - oi
+    - oi
+    - oi
+    - ola
+    - Opa uai
+    - Opa
+    - opa
+    - ola
+    - Opa
+    - Opa
+    - olá 1
+    - OW opa
+    - olá
+    - Olá
+    - opa
+    - Oi
+    - oi
+    - oi
+    - ola
+    - oi
+    - oi
+    - ola
+    - oi
+    - olá
+    - olá
+    - oi
+    - oioioioioioio
+    - eaeow
+    - Alô
+    - ow
+    - OLaaa
+    - oi
+    - opa
+    - OI
+    - oi
+    - olá
+    - ola
+    - E aí
+    - E ae
+    - e ae
+    - Tá aí
+
+- intent: start
+  examples: |
+    - start start
+    - start start
+    - start
+    - start
+
+- intent: negar
+  examples: |
+    - não
+    - não quero esse produto
+    - não quero desse produto
+    - não quero deste produto
+    - não quero esse lapis
+    - não quero essa caneta
+    - não vou querer esse produto
+    - não quero mais esse produto
+    - não queria esse produto
+    - não pedi esse produto
+    - não quero comprar
+    - não quero comprar mais
+    - desisti de comprar
+    - Eu não
+    - Eu não quero esse produto
+    - Eu não quero desse produto
+    - Eu não quero deste produto
+    - Eu não quero esse lapis
+    - Eu não quero essa caneta
+    - Eu não vou querer esse produto
+    - Eu não quero mais esse produto
+    - Eu não queria esse produto
+    - Eu não pedi esse produto
+    - Eu não quero comprar
+    - Eu não quero comprar mais
+    - Eu desisti de comprar
+    - Eu  não quero mais
+    - não
+    - não quero esse produto
+    - não quero desse produto
+    - não quero deste produto
+    - não quero esse lapis
+    - não quero essa caneta
+    - não vou querer esse produto
+    - não quero mais esse produto
+    - não queria esse produto
+    - não pedi esse produto
+    - não quero comprar
+    - não quero comprar mais
+    - desisti de comprar
+    - Eu não
+    - Eu não pedi esse produto
+    - Eu não pedi desse produto
+    - Eu não pedi deste produto
+    - Eu não pedi esse lapis
+    - Eu não pedi essa caneta
+    - Eu não ia querer esse produto
+    - Eu não pedi mais esse produto
+    - Eu não pedi esse produto
+    - Eu não pedi esse produto
+    - Eu não pedi comprar
+    - Eu não pedi comprar mais
+    - Eu desisti de comprar, não quero
+    - Eu não quero mais ta bom
+    - não quero essa cor
+    - não quero dessa cor
+    - não quero desta cor
+    - não quero essa cor
+    - não quero essa cor
+    - não vou querer essa cor
+    - não quero mais essa cor
+    - não queria essa cor
+    - não pedi essa cor
+    - não quero comprar a cor
+    - não quero comprar mais a cor
+    - desisti de comprar a cor
+    - Eu não pedi dessa cor
+    - Eu não quero essa cor
+    - Eu não quero dessa cor
+    - Eu não quero desta cor
+    - Eu não quero esse lapis
+    - Eu não quero essa caneta
+    - Eu não vou querer essa cor
+    - Eu não quero mais essa calculadora
+    - Eu não queria caneta
+    - Eu não pedi caneta
+    - Eu não quero papel
+    - Eu não quero comprar mais nada
+    - Eu desisti de comprar o caderno
+    - Eu não quero mais essa pasta
+    - mudei de idéia ok
+    - deixa pra lá
+    - mudei de idéia
+    - Deixa pra lá
+    - Pode deixar
+    - pode deixar
+    - desisti de comprar
+    - no
+    - nao
+    - nÃo
+    - nAO
+    - Não senhor
+    - Não obrigado
+    - quero não
+    - Quero não
+    - nao conheco
+    - não quero
+    - quero não
+    - escolhi errado
+    - falei errado
+    - escrevi errado
+    - ainda não sei
+    - nenhum
+    - nao
+    - nunca
+    - nao
+    - jamais
+    - não
+    - nao
+    - não obrigado
+    - nao obrigado
+    - quero não
+    - no
+    - não
+    - não
+    - Não
+    - NÃO
+    - NAO
+    - nao
+    - não
+    - Nao
+    - No
+    - no
+    - NO
+    - Nenhum
+    - Nenhuma
+    - NENHUM
+    - NENHUMA
+    - Nopes
+    - nopes
+    - NOPES
+    - nÃO
+    - náo
+    - nâo
+    - n
+    - N
+    - não
+    - nao
+    - Não quero
+    - não quero
+    - nope
+    - não
+    - n
+    - N
+    - escrevi errado
+    - escolhi errado
+    - nenhum
+    - nopes
+    - não
+    - desisti
+    - não
+    - escrevi errado!
+    - escolhi errado!
+    - falei errado!
+    - não quero!
+    - não quero mais!
+    - nenhum!
+    - nao!
+    - nunca!
+    - nao!
+    - jamais!
+    - não!
+    - nao!
+    - nao!
+    - Não!
+    - nunca
+    - nao
+    - jamais
+    - não
+    - nao
+    - não obrigado
+    - nao obrigado
+    - quero não!
+    - nao
+    - nao
+    - Não
+    - Nunca
+    - Nao
+    - Jamais
+    - Nao
+    - Nao
+    - desisti!
+    - Desisti!
+    - não!
+    - escrevi errado
+    - escolhi errado
+    - falei errado
+    - não quero
+    - Não quero
+    - nenhum
+    - nao
+    - nunca
+    - desisti
+    - não
+    - escrevi errado
+    - escolhi errado
+    - falei errado
+    - não quero
+    - nenhum
+    - nao
+    - nunca
+    - não quero
+    - não desejo
+    - Não desejo
+    - nunca
+    - nao
+    - jamais
+    - nao quero
+    - nao desejo
+    - Não quero
+    - nunca
+    - nao!
+    - jamais!
+    - nao!
+    - nao!
+    - nao quero!
+    - nao desejo!
+    - Não quero!
+    - nunca
+    - nao
+    - jamais!
+    - nao
+    - nao
+    - nao quero
+    - nao desejo
+    - Não
+    - nunca
+    - nao
+    - jamais
+- intent: nlu_fallback
+  examples: |
+    - çlaskjdfçlasjdfljasfj
+    - aaaaaaaaaaaaaaaaaaaaaaaaa
+- intent: afirmar
+  examples: |
+    - 👍
+    - 👍
+    - Claro
+    - claro
+    - sim
+    - sim
+    - sim
+    - s
+    - si
+    - Si
+    - SI
+    - S
+    - sim
+    - sim
+    - sim
+    - sim
+    - sim eu desejo
+    - sim eu quero
+    - sim
+    - sim
+    - sim
+    - ok
+    - 👍
+    - s
+    - S
+    - si
+    - Si
+    - SI
+    - sim
+    - sim por favor
+    - sim
+    - Sim eu quero sim, por favor
+    - sim eu desejo sim, por favor
+    - sim eu quero
+    - sim por favor
+    - sim eu desejo
+    - sim
+    - sim
+    - Sim
+    - si
+    - Si
+    - SI
+    - Sim por favor.
+    - Sim
+    - Sim
+    - Ok
+    - sim
+    - ok
+    - ok
+    - ok
+    - ok
+    - ok
+    - ok
+    - sim
+    - sim
+    - sim
+    - sim
+    - ok
+    - Sim
+    - sim
+    - ok
+    - s
+    - S
+    - ok
+    - ok
+    - ok
+    - ok
+    - sim
+    - sim
+    - sim
+    - sim
+    - ok
+    - sim
+    - Sim
+    - ok
+    - Sim
+    - Sim
+    - sim
+    - sim
+    - sim
+    - ok
+    - sim quero
+    - sim
+    - sim
+    - Quero sim
+    - ok
+    - sim
+    - sim
+    - ok
+    - Sim
+    - ok
+    - sim
+    - s
+    - S
+    - Sim
+    - Ok
+    - Positivo
+    - Certo
+    - Claro
+    - Claro que quero
+    - Claro que sim
+    - Mas é óbvio
+    - Mas e obvio
+    - Óbvio
+    - Obviamente
+    - Certamente
+    - Com certeza
+    - COM CERTEZA
+    - SIM CLARO
+    - CLARO
+    - SIM
+    - S
+    - gostaria
+    - gostaria sim
+    - Ok
+    - OK quero sim
+    - Sim
+    - SIM
+    - Certo
+    - Positivo
+    - quero
+    - quero sim
+    - 👍
+    - sim
+    - ok
+    - positivo
+    - certo, quero sim
+    - exato, quero sim
+    - Ok quero
+    - OK
+    - sim eu quero
+    - SIM eu desejo sim
+    - Sim eu desejo
+    - Quero sim
+    - kero sim
+    - desejo sim
+    - Deseju sim
+    - Kero
+    - queria
+    - Eu adoraria
+    - Adoraria
+    - gostaria
+    - quero
+    - quero sim
+    - vou
+    - vou sim
+    - Eu vou
+    - Eu vo
+    - Vo sim
+    - Sim sim
+    - 👍
+    - ta bom eu quero
+    - isso
+    - an hann
+    - un hum
+    - Han hann
+    - Hun hum
+    - sim é
+    - sim eu quero [uma](qtd) [borracha](produto)
+    - desejo sim, quero [uma](qtd) [pasta de papelão](produto)
+    - sim quero [um]](qtd) [grampeador]](produto)
+    - desejo claro
+    - desejo sim
+    - pode claro
+    - pode sim
+    - 👍
+    - Ta bom
+    - isso
+    - ta bom
+    - isso
+    - an hann
+    - un hum
+    - sim é
+    - 👍
+    - sim
+    - exato
+    - exatamente
+    - claro
+    - vou sim
+    - eu vou
+    - eu vo
+    - vo sim
+    - sim sim
+    - 👍
+    - ta bom
+    - Isso
+    - an hann
+    - un hum
+    - ok
+    - positivo
+    - certo
+    - Ok isso
+    - OK sim
+    - sim
+    - SIM
+    - Ok eu quero sim
+    - OK eu quero
+    - sim sim
+    - Ok
+    - Isso, OK
+    - sim
+    - Ok
+    - OK
+    - sim
+    - Sim
+    - vou sim
+    - eu vou
+    - eu vo
+    - vo sim
+    - sim sim eu quero
+    - 👍
+    - ta bom
+    - isso
+    - an hann
+    - un hum
+    - vou sim
+    - eu vou
+    - eu vo
+    - vo sim
+    - Sim sim
+    - 👍
+    - Ta bom
+    - Tsso isso
+    - ok ok
+    - an hann
+    - un hum
+    - Sim
+    - SIM 
+    - sim senhor
+    - sIM
+    - Quero sim
+    - claro que sim
+    - claro que quero
+    - Óbvio que sim
+    - óbvio que quero
+    - óbvio que quero sim
+    - com certeza
+    - com certeza sim
+    - com certeza que quero
+    - com certeza que sim
+
+- intent: faq/tem_wpp
+  examples: |
+    - vamos conversar pelo whatsapp
+    - vamos conversar pelo wpp
+    - vamos falar pelo wpp
+    - podemos conversar pelo whatsapp
+    - podemos conversar pelo zap
+    - podemos conversar pelo wpp
+    - me passa seu whatsapp
+    - me manda teu wpp
+    - me passa seu wpp
+    - me passa seu zap
+    - vc tem whatsapp
+    - você ta no whatapp
+    - voce ta no whatsapp
+    - vc tá no whatsapp
+    - você tem whatsapp
+    - você tem zap
+    - vc tem zap
+    - vc tem wpp
+    - você tem wpp
+    - vc ta no wpp
+    - whatsapp
+    - wpp
+    - zap
+- intent: chitchat/agradecimento
+  examples: |
+    - estou muito agradecido
+    - obrigado tirou minhas duvidas
+    - obrigada por me ajudar
+    - obrigado por me ajudar
+    - obrigado por me atender
+    - obrigada por me atender
+    - obrigada
+    - obrigado
+    - muito obrigada
+    - muito obrigado
+    - agradecido
+    - agradecida
+    - grato
+    - grata
+    - estou grato
+    - estou grata
+    - valeu
+    - valew
+    - valews
+    - vlw
+    - vlws
+    - obrigada
+    - obrigado
+    - brigado
+    - brigada
+    - bligada
+    - obrigado pelo atendimento
+    - obrigado, você é muito gentil
+    - obrigada pelo atendimento
+    - obrigada, você é muito gentil
+    - obrigado, vc é demais
+    - ok muito obrigado
+    - ok obrigado
+    - ok muito obrigada
+    - ok obrigada
+    - obrigada
+    - obrigado
+    - Ok muito obrigado
+- intent: faq/contato
+  examples: |
+    - eu ligo para quem para falar sobre o cadastro no site
+    - algum telefone que eu possa entrar em contato
+    - pode me mandar um telefone para eu falar com alguma pessoa
+    - vc pode me mandar um telefone de alguém
+    - quero falar no telefone com alguém
+    - quero falar com uma pessoa
+    - quero falar com um atendente humano
+    - quero falar com um atendente real
+    - quero falar com uma pessoa humana
+    - quero falar com seu gerente
+    - quero falar com seu superior
+    - quero falar com seu chefe
+    - quero falar com seu responsável
+    - exijo falar com uma pessoa
+    - exijo falar com uma pessoa real
+    - eu preciso de um telefone de contato
+    - gostaria de conversar com um atendente humano
+    - telefone de contato
+    - quero entrar em contato
+    - me mande o telefone
+    - telefone de alguém
+    - telefone de alguma pessoa
+    - atendente humano
+    - e-mail dúvidas
+    - e-mail para dúvidas
+    - email de duvidas
+    - e-mail de contato
+    - email de contato
+    - email pra contato
+    - email para contato
+    - e-mail para contato
+    - contato perguntas
+    - telefone duvidas
+    - contato
+    - telefone
+    - telefone pra contato
+    - telefone para contato
+    - telefone da loja
+    - telefone da empresa
+    - fone de contato
+    - email
+    - e-mail
+- intent: faq/endereco
+  examples: |
+    - quero saber o endereço da loja
+    - quero saber o endereço para retirada
+    - como faço pra chegar na sua loja
+    - como faco pra chegar na sua loja
+    - qual o endereço de vocês
+    - qual o endereco para retirada
+    - me diz o endereço da loja
+    - me fala o endereço da sua loja
+    - endereço de vocês
+    - endereco de vcs
+    - qual o endereço da loja
+    - qual o endereco da empresa
+    - endereço do deposito
+    - Qual o endereço para retirada
+    - endereco para retirada
+    - qual endereço
+    - qual é o endereço da loja
+    - qual endereco da loja
+    - qual endereco da sua loja
+    - Localização da loja
+    - Endereço de retidada dos produtos
+    - endereço da loja
+    - ONDE É O ENDEREÇO DA LOJA
+    - Onde é o endereço da loja
+    - endereco de retirada
+    - endereco da sede administrativa
+    - qual o endereço da sede administrativa
+    - onde fica sua sede
+    - Onde é a loja?
+    - ONDE FICA A LOJA
+    - Onde fica a loja?
+    - Onde é que fica a loja?
+    - Onde está localizada a sua a loja?
+    - Onde está localizada a loja de vocês?
+    - Onde é a sua loja?
+    - Onde é a loja de vocês?
+    - Onde é a loja de você?
+    - onde estão localizados?
+    - onde é a localização da sede administrativa
+    - endereço da sede da empresa
+    - endereço da sede da multitrem
+- intent: comprar
+  examples: |
+    - quero comprar
+    - Quero comprar com você
+    - Quero compra de vocês
+    - quero comprar com voce
+    - quero compra de voces
+    - Quero comprar com vc
+    - Quero compra de vcs
+    - quero comprar [um](qtd) produtos
+    - quero comprar algo
+    - Quero compra de vocês
+    - Quero compra na loja
+    - Quero compra na sua loja
+    - Quero compra no sue site
+    - Quero compra de você
+    - Eu Quero compra de voce
+    - Quero compra com você
+    - Quero compra com voce
+    - Quero compra com vc
+    - Eu queria compra de vocês
+    - Queria comprar de vocês
+    - Queria compra de você
+    - Quero comprar de vocês
+    - Quero compra de voces
+    - Quero comprar de voces
+    - Quero compra de vcs
+    - Quero compra de você
+    - Quero compra de voce
+    - Quero compra de vc
+    - quero comprar
+    - Você pode me atender?
+    - Você pode me atender agora
+    - Vende pra mim
+    - vende aqui pra mim comprar
+    - preciso comprar
+    - preciso comprar com você
+    - desejo comprar
+    - desejo comprar com você
+    - comprar
+    - compras
+    - você vende?
+    - vc é um vendedor?
+    - É você que é o vendedor?
+    - Você pode me atender?
+    - Você poderia me atender?
+    - Você está disponível?
+    - Você pode me vender um produto?
+    - Queria comprar uma coisa
+    - Queria comprar umas coisas
+    - Queria comprar um produto
+    - vendas
+    - mercadorias
+    - mercadoria
+    - com quem eu falo pra comprar
+    - aqui é a seção de vendas?
+    - kd o vendedor?
+    - chama o vendedor
+    - tem vendedor
+    - pra comprar é aqui?
+    - como faço pra comprar
+    - posso comprar com você
+    - quero fazer um pedido de compra
+    - quero fazer um pedido
+    - quero fazer uma compra
+    - quero fazer um pedido de produto
+    - é aqui que faz pedido
+    - é com você que eu compro
+    - é com você que faz pedido
+    - estou querendo comprar
+    - estou querendo comprar de você
+    - estou querendo comprar de vocês
+- intent: fechar_pedido
+  examples: |
+    - Concluir
+    - Apenas isso
+    - Encerrar
+    - Finalizar
+    - Encerrar pedido
+    - Finalizar pedido
+    - Encerre
+    - Finalize
+    - Concluir pedido
+    - Encerra o pedido
+    - Finaliza o pedido
+    - Pode encerrar
+    - Pode concluir
+    - Quero encerrar
+    - Quero finalizar
+    - Pode encerra o pedido
+    - Pode concluir o pedido
+    - Quero encerrar o pedido
+    - Quero finalizar o pedido
+    - Pode encerra a conta
+    - Pode concluir a conta
+    - Quero encerrar a conta
+    - Quero finalizar a conta
+    - Quero fechar o pedido
+    - pode fechar
+    - Fecha a conta por favor
+    - Fecha a conta
+    - Só já chega
+    - Já acabei 
+    - Já comprei tudo o que queria
+    - Ja comprei tudo
+    - Pode fechar, obrigada
+    - Fechar
+    - Fecha
+    - Feche o pedido
+    - Feche o meu pedido
+    - Conclua o meu pedido
+    - Encerre o meu pedio por favor
+    - Pode fechar
+    - Pode fechar já
+    - Pode fechar agora
+    - Pode fechar o pedido
+    - Pode fechar a conta
+    - Só isso então
+    - Só isso intaum
+    - Já chega
+    - Já chega então
+    - Já chega intaum
+    - Já chega entao
+    - Pode fechar minha compra agora
+    - Então pode fechar o meu carrinho
+    - Entao pode fechar meu carrinho
+    - Intaum pode fechar meu carrinho
+    - Então fecha o meu carrinho
+    - Então fecha minha compra
+    - Então finaliza meu carrinho
+    - Então encerre meu carrinho
+    - Então finaliza minha compra
+    - Então finalize minha compra
+    - Então encerre minha compra
+    - Pode fechar meu carrinho
+    - Já quero pagar então
+    - Já quero pagar minha compra
+    - pode finalizar a minha compra
+    - finalizar a compra
+    - finalizar essa compra
+    - finalizar essa minha compra
+    - fecha a conta
+    - fecha o pedido
+    - fechar a conta
+    - fechar o pedido
+    - fecha pra mim
+    - finaliza pra mim
+    - encerra pra mim
+    - encerra a compra
+    - encerrar compra
+    - fechar compra
+    - fecha a compra
+    - finaliza a compra
+    - finalizar compra
+    - pode finalizar
+    - finalizar
+    - finalizar o pedido
+    - fecha
+    - fechar
+    - fecha pra mim
+    - pode finalizar o pedido
+    - só isso
+    - so isso
+    - Só
+    - so isso mesmo
+    - so isso memo
+    - só isso mesmo
+    - Só
+    - é só isso
+    - É só
+    - eh soh isso
+    - so isso, obrigado
+    - pode concluir a compra
+    - pode encerrar a compra
+    - encerrar a compra
+    - só
+    - Só
+    - SÓ
+    - Sóo
+    - Soo
+    - Somente
+    - Somente estes produtos
+    - Somente isso
+    - Somente este produto
+    - Somente o lapis mesmo
+    - Somente a caneta mesmo
+    - Somente o caderno
+    - Somente o produto
+    - Já é o bastante
+    - Já comprei bastante
+    - so
+    - SO
+    - So
+    - Soh
+    - Sooh
+    - Sóó
+    - só
+    - So entao
+    - Só então
+    - Só isso então
+    - Só isso no momento
+    - Só isso por agora
+    - Só isso por enquanto
+    - Por equanto só
+    - Por equanto só isso
+    - Por equanto é só
+    - Por equanto é só isso
+    - Por equanto é só isso mesmo
+    - Por equanto quero só isso
+    - Por equanto quero só disto
+    - Por equanto quero é só isso mesmo
+    - Por equanto preciso só isso
+    - Por equanto preciso só disto
+    - Por equanto preciso é só isso mesmo
+    - Quero só isso
+    - Quero só disto
+    - Quero é só isso mesmo
+    - Queria só isso
+    - Queria só disto
+    - Queria era só isso mesmo
+    - Queria era só isso agora
+    - Queria era só isso no momento
+    - Preciso só isso
+    - Preciso só disto
+    - Preciso só isso no momento
+    - Preciso só disto agora
+    - Eu preciso só isso no momento
+    - Eu preciso só disto agora
+    - preciso é só isso mesmo
+    - Só
+    - Então é só
+    - Então é só isso
+    - Então é só isso mesmo
+    - Então é só isso memo
+    - Então será só isso
+    - Então será só isso
+    - Então será só isso mesmo
+    - Então será só isso memo
+    - Então é só isto mesmo
+    - Então é só isto memo
+    - somente isso mesmo
+    - somente
+    - SO
+    - So
+    - por hoje é só
+    - por hj eh soh
+    - soh isso
+    - soh
+    - quero pagar agora
+    - quero fechar a conta
+    - quero ir para o pagamento
+    - quero fazer o pagamento
+    - Só a [caneta](produto)
+    - Só o [lápis](produto)
+    - Só o [lápis](produto) mesmo
+    - Só o [caderno](produto) mesmo
+    - Só o [caderno](produto)
+    - so o [caderno](produto) mesmo
+    - Só a [borracha](produto)
+    - Só o [papel](produto)
+    - Só o [papel](produto) mesmo
+    - So a [caneta](produto)
+    - So o [lápis](produto)
+    - So o [lápis](produto) mesmo
+    - So o [caderno](produto) mesmo
+    - so o [caderno](produto)
+    - so o [caderno](produto) mesmo
+    - so a [borracha](produto)
+    - so o [papel](produto)
+    - so o [papel](produto) mesmo
+    - so o [papel](produto) mesmo por hoje
+    - so o [papel](produto) por hoje
+- intent: so_tem
+  examples: |
+    - so tem esse?
+    - so tem desse?
+    - so tem desse?
+    - so tem daquela
+    - so tem daquele
+    - só tem esse?
+    - só tem desse?
+    - só tem dessa?
+    - só tem daquela
+    - só tem daquele
+    - so tem
+    - só tem
+    - só têm
+    - so tem assim
+    - só tem assim
+    - só têm assim
+    - so teria esse?
+    - so teria desse?
+    - so teria desse?
+    - so teria daquela
+    - so teria daquele
+    - só teria esse?
+    - só teria desse?
+    - só teria dessa?
+    - só teria daquela
+    - só teria daquele
+    - so teria
+    - só teria
+    - só teria
+    - so teria assim
+    - só teria assim
+    - só teria assim
+    - voce só têm desse?
+    - voce so tem desse?
+    - você só tem assim
+- intent: add_carrinho
+  examples: |
+    - adiciona ao carrinho
+    - adiciona pra mim no meu carrrinho de compras
+    - add cart
+    - coloca no carrinho de compras
+    - coloca no carrinho
+    - pode botar no carrinho
+    - bota no carrinho
+    - bota no meu carrinho
+    - bota na sacola de compras
+    - bota no carrinho de compras
+    - pode botar no meu carrinho
+    - pode adicionar ao meu carrinho
+    - pode colocar no meu carrinho
+    - pode adicionar ao meu carrinho de compras
+    - vou levar
+    - vou levar esse
+    - quero esse
+    - é esse mesmo
+    - quero esse produto
+    - é esse mesmo que eu quero
+    - é esse
+    - esse ae
+    - esse memo
+    - esse mesmo
+    - essa mesmo
+    - quero comprar esse
+    - quero esse mesmo
+    - ok, vou levar
+    - certo, vou levar
+    - vou levar
+    - vou levar assim mesmo
+    - levo
+    - levo esse
+    - levo este
+    - levo essa
+    - levarei esse
+    - vou comprar esse
+    - compro esse
+    - coloca no carrinho pra mim
+    - coloca no meu carrinho
+    - colocar no carrinho
+    - coloque no meu carrinho
+    - coloque no meu carrinho de compras
+    - coloque no carrinho pra mim
+    - adicione ao meu carrinho de compras
+    - adicione esse no meu carrinho
+    - coloque esse
+    - inclua esse
+    - inclua este
+    - pode incluir no meu carrinho
+    - pode incluir no meu carrinho de compras
+    - pode incluir no meu pedido
+    - pode incluir na minha compra
+    - adiciona na minha compra
+    - adicione a minha compra
+    - coloque junto com minhas compras
+    - adiciona na minha cesta
+    - adiciona pra mim
+    - adiciona pra mim na minha cesta de compras
+    - adicione no meu carrinho
+    - colocar no carrinho de compras
+    - vou ficar com esse
+    - vou ficar com esse sim
+    - vou querer sim
+    - vou querer esse sim
+    - vou querer esse mesmo
+- intent: chitchat/saber_nome
+  examples: |
+    - Qual é o seu nome?
+    - Como voce se chama?
+    - qual seu nome?
+    - Você tem um nome?
+    - como vc se chama?
+    - qual eh o seu nome?
+    - vc tem nome?
+    - Qual é o seu nome?
+    - Como voce se chama?
+    - qual seu nome?
+    - Você tem um nome?
+    - como voce se chama?
+    - qual e o seu nome?
+    - voce tem nome?
+    - ola tudo bem qual e o seu nome
+    - qual e o seu nome
+
+- intent: saber_previsao
+  examples: |
+    - quero saber a previsão do tempo
+    - tem previsão de quando vai chegar
+    - tem previsão?
+    - tem previsaum?
+    - quero saber a previsão de quando vai ter esse produto
+    - preciso da previsão
+    - quero a previzão
+    - tem previzão?
+    - previsão
+    - previsão de quando?
+    - alguma previsão
+    - previsao
+    - previzao
+    - voce sabe a previsão
+    - sabe a previsão?
+    - vai ter este produto
+    - será que vai ter    
+- intent: saber_promocao
+  examples: |
+    - quero saber das promoções de hoje
+    - quero saber das promocoes de hoje
+    - quero saber das promoções
+    - quero saber das promocoes de hj
+    - hj tem promoção?
+    - Promoção de hoje
+    - Promoção de hj
+    - Promoção pra hoje
+    - Promoção hoje
+    - Promoção agora
+    - Promoção de agora
+    - Promoção atual
+    - Promoção ae
+    - Promoção boa
+    - Promoção da hora
+    - Promoção pra mim
+    - Promoção hj
+    - Promoção especial
+    - Promoção espetacular
+    - Promoção de final de semana
+    - Promoção de saidera
+    - Promoção de liquidação
+    - Promoção de liquidação de estoque
+    - liquidação de estoque
+    - Queima de estoque
+    - Promoção Queima de estoque
+    - Queima de estoque hj
+    - Promoção limpa estoque
+    - Promoção ponta de estoque
+    - Promoção Queima de mostruário
+    - Promoção de mostruário
+    - Promoção pra hj
+    - Promoção torra tudo
+    - Promoção geral
+    - Promoção louca
+    - Promoção liq total
+    - Promoção de produtos
+    - Promoção de papelaria
+    - Promoção de [canetas](produto)
+    - Promoção de [lápis](produto)
+    - Promoção de [caderno](produto)
+    - Promoção de [pasta](produto)
+    - Promoção de [papel](produto)
+    - Promoção de [grafite](produto)
+    - Promocão de hj
+    - Promocao de hj
+    - PROMOCAO DE HJ
+    - PROMOCÇÃO DE HJ
+    - hoje tem promoção?
+    - tem promoção?
+    - hj tem oq de oferta?
+    - o que tem de oferta hj
+    - promoção
+    - promocao
+    - promoções
+    - promocoes
+    - PROMOÇÃO
+    - promocao
+    - promoção
+    - PROMOCAO
+    - PROMOÇÕES
+    - OFERTA
+    - Promoção da loja
+    - Produto em promoção
+    - Tem produto em promoção
+    - Qual produto está em promoção
+    - Qual produto está de promoção
+    - Qual produto está em promocao
+    - Quais produtos estão em promoção
+    - Quais produtos estão em promoção no site
+    - Quais produtos estão em promoção na loja
+    - Tem produto de promoção
+    - Quais as promoções da loja
+    - O que tem de promoção disponível
+    - O que que tá de promoção
+    - Me fala as promoções
+    - ofertas
+    - oferta de hoje
+    - quais as promoções de hoje
+    - quais as promocoes de hj
+    - quais as ofertas
+    - quais as promoções
+    - quais as promocoes
+    - o que tem de promoção hoje
+    - Promoção do dia
+    - Qual a promoção
+    - Qual a promoção do dia
+    - Qual a promoção de hoje
+    - O que q tá de promocao
+    - Oferta de hoje
+    - promoções do dia
+    - promoções da semana
+    - ofertas do dia
+    - ofertas da semana
+    - Promoção pra hj
+    - promoção pra hoje?
+    - Me fala as promocoes
+    - Me fala as promoções
+    - Promoções de agora
+    - Qual é a promoção mesmo?
+    - Tem algo de promoção hoje?
+    - Tem algum produto de promoção hoje?
+    - Tem algo de promoção?
+    - Tem promoção hoje?
+    - Teria promoção hoje?
+    - Tem promoção no momento?
+    - Tem algo de oferta?
+    - Saber promoções
+    - Saber promoção
+    - Me passa promoção que tem aí
+    - Promoção agora?
+    - Promoção hj?
+    - Vai ter promoção
+    - Promoção
+    - Queria uma promoção
+    - Estou procurando uma promoção
+    - Estou querendo uma promoção
+    - Estou querendo participar de uma promoção
+    - Estou querendo saber de uma promoção
+    - Estou querendo participar de uma promoção
+    
+- intent: pedir_desconto
+  examples: |
+    - tem desconto?
+    - teria desconto?
+    - tem um desconto?
+    - desconto?
+    - quero desconto
+    - queria desconto por favor
+    - preciso de um desconto
+    - Eu preciso de um desconto
+    - preciso de desconto
+    - Eu preciso de desconto por favor
+    - quero desconto por favor
+    - me da um desconto por favor
+    - me da um descontinho por favor
+    - Vc me da um descontinho
+    - Você me da um descontinho
+    - qual o desconto pra mim?
+    - Você dá qual desconto pra mim?
+    - Você dá quanto de desconto pra mim?
+    - Você me dá quanto de desconto?
+    - Você me dá desconto?
+    - desconto
+    - desconto
+    - desconto
+    - tEM desconto ae
+    - desconto ae
+    - desconto pra mim
+    - desconto pra nois
+    - desconto por favor
+    - Da desconto
+    - queria um desconto
+    - descontinho
+    - descontin
+    - por favor me da um descontin amigo
+    - por favor me arruma um descontin ae
+    - arruma um descontin ae
+    - tem um descontinho?
+    - tem um descontin?
+    - da um desconto pra mim
+    - me da um desconto
+    - arruma um desconto pra mim
+    - preciso de um descontinho
+    - quero um desconto
+    - quero um descontinho
+- intent: dizer_qual_produto            #TEM MAIS EM UM ARQUIVO DE NLU DE PRODUTOS 
+  examples: |
+    - quero um [lapis de cor](produto)
+    - quero um [caderno capa dura](produto)
+    - quero [um](qtd) [lapis](produto)
+    - eu quero [uma](qtd) [borracha](produto)
+- intent: dizer_qual_produto
+  examples: |
+    - [9](qtd)
+    - [2](qtd)
+    - [1](qtd)
+    - quero [1](qtd)
+    - quero [2](qtd)
+    - quero [três](qtd)
+    - quero [um](qtd)
+    - quero [uma](qtd)
+    - quero [duas](qtd)
+    - me da [uma](qtd)
+    - pode ser [uma](qtd)
+    - só [uma](qtd)
+    - so [uma](qtd)
+    - só [um](qtd) mesmo
+    - so [um](qtd)
+    - somente [uma](qtd)
+    - somente [um](qtd)
+    - somente [uma](qtd) mesmo
+    - somente [um](qtd) mesmo
+    - me da [duas](qtd)
+    - me da [dois](qtd)
+    - me da [10](qtd)
+    - me da [20](qtd)
+    - me da [meia dúzia](qtd)
+    - me da [uma duzia](qtd)
+    - me dê [seis duzias](qtd)
+    - me dê [3](qtd)
+    - me dê [1](qtd)
+    - quero [uma dúzia](qtd)
+    - quero [duas dúzias](qtd)
+    - queria era [3](qtd)
+    - queria era [dois](qtd)
+    - eu precisava era de [quatro](qtd)
+    - aliás, queria [4](qtd)
+    - alias quero [12](qtd)
+- intent: chitchat/idade
+  examples: |
+    - quantos anos você tem?
+    - qts anos vc tem?
+    - quantos anos você tem mesmo?
+    - qual sua idade?
+    - qual é a sua idade?
+    - você tem quantos anos?
+    - vc tem qts anos?
+    - voce tem qts anos?
+    - quantos anos você tem?
+    - qts anos vc tem?
+    - quantos anos você tem mesmo?
+    - qual sua idade?
+    - qual é a sua idade?
+    - você tem quantos anos?
+    - vc tem qts anos?
+    - voce tem qts anos?
+- intent: chitchat/anivesario
+  examples: |
+    - que dia é o seu aniversário?
+    - que dia voce nasceu?
+    - voce faz aniversário?
+    - q dia e o seu aniversário?
+    - q dia vc nasceu?
+    - vc faz aniversário?
+    - me fala o seu aniversário
+    - que dia é o seu aniversário?
+    - que dia voce nasceu?
+    - voce faz aniversário?
+    - q dia e o seu aniversário?
+    - q dia vc nasceu?
+    - vc faz aniversário?
+    - me fala o seu aniversário
+- intent: chitchat/quem_criou
+  examples: |
+    - quem criou você?
+    - quem criou voce?
+    - quem te criou?
+    - quem criou vc?
+    - quem te fez?
+    - quem te desenvolveu?
+    - quem te projetou?
+    - quem é seu criador?
+    - quem é seu desenvolvedor?
+    - como você foi construido
+    - como voce foi construído
+    - quem te criou
+    - quem te desenvolveu
+    - quem te programou
+    - você tem pai
+    - qual seu pai
+    - onde voce nasceu
+    - quando vc nasceu
+    - quem te fez
+    - quem te produziu
+    - quem é seu pai
+    - desenvolveu
+    - criou
+    - produziu
+    - programou
+- intent: chitchat/perg_tempo
+  examples: |
+    - como está a previsão do tempo?
+    - você sabe a previsão do tempo?
+    - pode me informar a previsao do tempo
+    - será que vai chover?
+    - será que vai fazer sol ou chuva
+    - vai chover
+    - vai fazer sol
+    - qual é a previsão do tempo?
+    - sabe a previsão do tempo?
+    - previsão do tempo
+    - me fala a previsão do tempo
+    - como está a previsão do tempo?
+    - você sabe a previsão do tempo?
+    - pode me informar a previsao do tempo
+    - será que vai chover?
+    - será que vai fazer sol ou chuva
+    - vai chover
+    - vai fazer sol
+    - qual é a previsão do tempo?
+    - sabe a previsão do tempo?
+    - previsão do tempo
+    - me fala a previsão do tempo
+- intent: chitchat/contar_piada
+  examples: |
+    - me conta uma piada
+    - piada
+    - piada
+    - piada
+    - Piada
+    - PIADA
+    - piadinha
+    - piadas
+    - piada
+    - conte piada
+    - conte uma piada
+    - conte a piada
+    - conte aquela piada
+    - conta uma piada
+    - piada
+    - piupiupiu
+    - conte piada do pintinho
+    - me conte uma piada
+    - conta outra piada
+    - fala uma piada
+    - manda uma piada
+    - sabe contar piada
+    - você sabe contar piada?
+    - contar piada
+    - conta piada
+    - piadinha
+    - conta uma piadinha
+    - fala uma piadinha
+    - fala piada
+    - piada
+    - conhece alguma piada?
+    - voce sabe alguma piada?
+    - vc sabe contar piadas?
+    - qual é a piada de hoje?
+    - Sabe contar piada?
+    - Conta uma piada
+    - Conta piada
+    - Conta outra piada
+    - Conta mais uma piada
+    - Piada
+    - PIADA
+    - Outra piada
+    - Uma piada engraçada
+- intent: chitchat/de_onde_sou
+  examples: |
+    - onde você mora?
+    - NA onde você mora?
+    - onde vc mora?
+    - onde vc vive?
+    - Na onde vc mora?
+    - Na onde vc vive?
+    - onde você vive?
+    - onde é a sua casa?
+    - onde é sua casa?
+    - Na onde é sua casa?
+- intent: chitchat/linguas_faladas
+  examples: |
+    - que linguas você fala?
+    - que linguas sabe falar?
+    - que lingua você fala?
+    - quais línguas você sabe falar?
+    - você sabe quais línguas?
+    - você só fala português?
+    - voce só sabe falar português?
+    - voce fala alguma outra lígua além de português?
+    - você é poliglota?
+    - fala várias línguas?
+    - vc sabe quais idiomas?
+    - vc entende quais idiomas?
+    - você entente quais idiomas?
+    - você sabe quais idiomas?
+    - voce entende quais linguas?
+    - vc só entende português?
+    - do you speak english?
+    - você só entende português?
+    - qual outro idioma você sabe?
+    - qual outra língua voce entende?
+- intent: faq/site
+  examples: |
+    - qual é o site da loja?
+    - qual é o site da multitrem?
+    - site multitrem
+    - endereço eletrônico
+    - site eletronico
+    - site da internet
+    - endereço do site
+    - qual é o site
+    - site
+    - site multitrem
+    - qual é o site da loja?
+    - qual é o site da multitrem?
+    - site multitrem
+    - endereço eletrônico
+    - site eletronico
+    - site da internet
+    - endereço do site
+    - qual é o site
+    - site
+    - site multitrem
+- intent: chitchat/cor_preferida
+  examples: |
+    - qual sua cor preferida?
+    - qual é a sua cor preferida?
+    - qual a cor você mais gosta?
+    - cor preferida
+    - você prefere qual cor?
+    - voce tem uma cor preferida?
+    - qual cor você prefere?
+    - qual sua cor preferida?
+    - qual é a sua cor preferida?
+    - qual a cor você mais gosta?
+    - cor preferida
+    - você prefere qual cor?
+    - voce tem uma cor preferida?
+    - qual cor você prefere?
+- intent: faq/ajuda
+  examples: |
+    - ajuda
+    - quero ajuda
+    - preciso de ajuda
+    - ajuda
+    - AJUDA
+    - Ajuda
+    - me ajuda
+    - me ajude
+    - tem um menu de ajuda?
+    - necessito de ajuda
+    - ajuda
+    - menu ajuda
+    - menu da ajuda
+    - ajuda
+    - ajuda
+    - quero ajuda
+    - preciso de ajuda
+    - ajuda
+    - AJUDA
+    - Ajuda
+    - me ajuda
+    - me ajude
+    - tem um menu de ajuda?
+    - necessito de ajuda
+    - ajuda
+    - menu ajuda
+    - menu da ajuda
+    - ajuda
+- intent: faq/o_que_e_carrinho
+  examples: |
+    - o que é carrinho de compras?
+    - o que é carrinho?
+    - o q é carrinho de compras?
+    - o q é carrinho?
+    - oq é carrinho de compras?
+    - oq é carrinho?
+    - nem sei o que é carrinho
+    - nem sei o que é carrinho de compras
+    - o que seria esse tal de carrinho de compras?
+    - pra que serve esse carrinho de compras?
+    - para que que serve o carrinho de compras?
+    - pra que serve esse carrinho?
+    - como funciona esse carrinho?
+    - nem sei o que é carrinho
+    - o que seria esse tal de carrinho?
+    - pra que serve esse carrinho?
+    - para que que serve o carrinho?
+    - o que seria carrinho de compras?
+    - o que seria carrinho?
+    - não sei pra que esse carrinho
+    - me diga o que é esse carrinho de compras
+    - me explique o que é esse carrinho
+    - me fale o que é esse carrinho de compras
+- intent: chitchat/o_que_e_ia
+  examples: |
+    - o que é uma inteligência artificial?
+    - o que é inteligência artificial?
+    - você sabe o que é uma inteligência artificial?
+    - o que é uma inteligencia artificial?
+    - e o que seria uma inteligência artificial?
+    - oq é inteligência artificial?
+    - você sabe me dizer o que é uma inteligência artificial?
+    - você pode me responder o que é uma inteligência artificial?
+- intent: chitchat/bom_dia
+  examples: |
+    - Bom dia
+    - bom dia
+    - BOM DIA
+    - Bom dia pra você
+    - Tenha um bom dia
+    - Bom dia!
+    - bom dia!
+    - BOM DIA!
+    - Um ótimo dia pra você!
+    - Bom dia
+    - Bom dia
+    - bom dia
+    - BOM DIA
+    - Bom dia
+    - bom dia
+    - BOM DIA
+    - Bom dia pra você
+    - Tenha um bom dia
+    - Bom dia!
+    - bom dia!
+    - BOM DIA!
+    - Um ótimo dia pra você!
+    - Bom dia
+    - Bom dia
+    - bom dia
+    - BOM DIA
+- intent: chitchat/boa_tarde
+  examples: |
+    - Boa tarde
+    - boa tarde
+    - BOA TARDE
+    - Boa tarde!
+    - boa tarde!
+    - BOA TARDE!
+    - Boa tarde
+    - boa tarde
+    - BOA TARDE
+    - Boa tarde!
+    - boa tarde!
+    - BOA TARDE!
+    - Boa tarde pra você
+    - Tenha uma boa tarde!
+    - Boa tarde pra você!
+    - Boa tarde!
+    - boa tarde!
+    - BOA TARDE!
+    - Uma ótima tarde pra você!
+    - Boa tarde!
+    - boa tarde!
+    - BOA TARDE!
+    - Uma ótima tarde pra você!
+- intent: chitchat/boa_noite
+  examples: |
+    - Boa noite
+    - boa noite
+    - BOA NOITE
+    - Boa noite!
+    - boa noite!
+    - BOA NOITE!
+    - Boa noite
+    - boa noite
+    - BOA NOITE
+    - Boa noite!
+    - boa noite!
+    - BOA NOITE!
+    - Boa noite pra você
+    - Tenha uma boa noite!
+    - Boa noite!
+    - boa noite!
+    - BOA NOITE!
+    - Uma ótima noite pra você!
+    - Tenha uma boa noite!
+    - Boa noite!
+    - boa noite!
+    - BOA NOITE!
+    - Uma ótima noite pra você!
+    
+ 

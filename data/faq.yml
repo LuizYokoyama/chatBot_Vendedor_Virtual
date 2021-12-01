@@ -1,0 +1,161 @@
+version: "2.0"
+
+responses:
+
+  utter_faq/contato:
+  - text: 'Para entrar em contato, basta acessar este link www.multitrem.com.br/contato  ou pelo telefone (62) 3142-9005 ou email contato@multitrem.com.br' 
+  - text: 'Você pode entrar em contato pelo telefone (62) 3142-9005 ou email contato@multitrem.com.br ou este link www.multitrem.com'
+  - text: 'Nosso contato pode ser pelo fone (62) 3142-9005 ou email contato@multitrem.com.br ou site www.multitrem.com.br/contato'
+  utter_faq/endereco:
+  - text: 'Aqui está o endereço sede administrativa da MultiTrem Comércio Digital Ltda é Rua Poeta JoaquimBonifácio Nº 305 - Goiânia, GO CEP: 74770-325 Goiânia'
+  - text: 'O endereço da sede administrativa da MultiTrem Comércio Digital Ltda é Rua Poeta JoaquimBonifácio Nº 305 - Goiânia, GO CEP: 74770-325 Goiânia'
+  utter_faq/o_que_sei_falar:
+  - text: Sei dos produtos e posso te ajudar a comprar.
+  - text: Eu sou um vendedor virtual. Qual produto precisa?
+  - text: Eu consigo te entender melhor quando você me diz o produto.
+  - text: Sou um vendedor virtual. Estou aqui pronto pra te atender bem!
+  - text: Sou um vendedor virtual! Estou aqui pra te ajudar... o que você deseja comprar?
+  utter_faq/tem_wpp:
+  - text: Eu tenho WhatsApp 62 00000000 Eu também posso me comunicar com você pelo Telegram e pelo site. A internet é minha casa.
+  - text: Meu zap é 62 00000000 Eu também tenho Telegram. E estou sempre aqui na internet. Eu moro aqui...
+  utter_faq/site:
+  - text: O site da loja é www.multitrem.com
+  - text: O nosso site da internet é www.multitrem.com
+  - text: O nosso site está disponível no endereço www.multitrem.com
+  utter_faq/ajuda:
+  - text: Sou um vendedor virtual com inteligência artificial. Estou programado para vender.
+          Para que eu consiga te entender, por favor escreva uma solicitação de cada vez.
+          Por enquanto, só entendo sobre produtos do site. Como, por exemplo, coisas de papelaria e brinquedos.
+  utter_faq/o_que_e_carrinho:
+  - text: Para fazer suas compras pela internet, primeiro deve-se adicionar produto por produto ao seu carrinho de compras virtual.
+           Depois é só pedir pra fechar ou finalizar o pedido para concluir suas compras.
+  - text: Ao realizar suas compras pela internet, primeiro deve-se adicionar produto por produto ao seu carrinho de compras virtual.
+           Para terminar de comprar é só pedir pra fechar ou finalizar o pedido.
+  utter_faq/recomendar:
+  - text: Todos os nossos produtos são excelentes. Qualquer um seria uma ótima escolha. Muito bons mesmo.
+  - text: Os nossos produtos são excelentes. A escolha depende do gosto de cada um.
+  - text: Todos os nossos produtos possuem excelente qualidade. Fica difícil escolher qual o melhor.
+  - text: Nós trabalhos sempre com os melhores produtos. Todos são muito bem recomendados.
+  utter_faq/saber_se_pode_pagar_na_retirada:
+  - text: Sim! Pode pagar em dinheiro ao retirar sua compra na nossa loja.
+  - text: Com certeza! Pode pagar com dinheiro na hora de retirar sua compra na loja.
+  - text: Claro que pode! Pague com dinheiro na hora de retirar sua compra na loja.
+  utter_faq/saber_se_embrulha_para_presente:
+  - text: Me desculpe! Mas ainda não temos esta opção dispponível.
+  - text: Me perdoe! Mas ainda não tenho disponível esta opção.
+  - text: Desculpe-me! No momento estou sem esta opção.
+
+  utter_faq/saber_meios_de_pagamento:
+  - text: No momento aceitamos apenas o PayPal como meio de pagamento. Você pode escolher a forma de pagamento ao finalizar sua compra no site.
+  - text: Por agora, temos apenas o PayPal como meio de pagamento. Você pode selecionar a forma de pagamento ao finalizar sua compra no site.
+  - text: Temos apenas o PayPal como forma de pagamento disponível no momento. Você pode selecionar a forma de pagamento ao finalizar sua compra no site.
+
+  utter_faq/saber_se_pode_retirar_na_loja:
+  - text: "Sim pode! Quando estiver finalizando a sua compra, marque \"Retirar no local\". O nosso endreço fica na Rua Poeta Joaquim Bonifácio Nº 305 - Goiânia, GO CEP 74770-325"
+  - text: "Claro! No momento de finalizar a compra coloque \"Retirar no local\". O nosso endreço fica na Rua Poeta Joaquim Bonifácio Nº 305 - Goiânia, GO CEP 74770-325"
+  - text: "Ok! Basta marcar \"Retirar no local\" no momento de finalizar a compra. O nosso endreço fica na Rua Poeta Joaquim Bonifácio Nº 305 - Goiânia, GO CEP 74770-325"
+
+  utter_faq/saber_tipos_de_entrega:
+  - text: Por enquanto temos apenas para retirar no endereço da nossa loja.
+  - text: Por enquanto temos disponível apenas para retirar os produtos na sede da loja.
+  - text: Assim, no momento temos disponível apenas para retirar os produtos na nossa loja.
+  utter_faq/saber_informacao:
+  - text: Tudo bem então! Qual informação você quer saber?  Se eu souber essa informação, será um prazer poder compartilha-la com você!
+  - text: Ok então! O que deseja saber?  Se eu tiver essa informação disponível, será um prazer responder!
+  - text: É pra já! Por favor, escreva qual informação procura. Se for alguma coisa que eu sei, será um prazer informar!
+  - text: Certo então! É só escrevar qual informação você quer saber. Se eu souber responder, será um prazer ajudar!
+  utter_faq/saber_horario_de_atendimento:
+  - text: Ok, vamos lá! Eu sou virtual. Então trabalho 24 horas todos os dias. Mas a nossa loja fica aberta em horário comercial de segunda à sexta das 8:00 as 18:00 horas. E aos sábados das 8:00 às 12:00 horas.
+  - text: Essa informação eu tenho! Eu trabalho 24 horas todos os dias, pois sou virtual. Já a nossa loja fica aberta apenas em horário comercial de segunda à sexta das 8:00 as 18:00 horas. E aos sábados das 8:00 às 12:00 horas.
+  - text: Ok eu sei essa! Eu mesmo trabalho 24 horas todos os dias, pois sou virtual. Mas já a nossa loja fica aberta apenas em horário comercial de segunda à sexta das 8:00 as 18:00 horas. E aos sábados das 8:00 às 12:00 horas.
+  utter_faq/saber_quando_vendera_outros_produtos:
+  - text: Então... Eu ainda não sei quando. Sinto muito.
+  - text: Hummmm... Me desculpe. Mas eu ainda não sei quando.
+  - text: Xiiii... Me perdoe, porque eu ainda não sei quando.
+  utter_faq/saber_tem_mostruario:
+  - text: Sim! Você pode acessar nosso mostruário completo no site multitrem.com
+  - text: Claro que sim! O nosso mostruário completo está diponível no site multitrem.com
+  - text: Mas é claro! Você pode acessar o mostruário completo em nosso site multitrem.com
+  utter_faq/posso_ver_fotos:
+  - text: Sim! Você pode acessar mais fotos dos nossos produtos no site multitrem.com
+  - text: Claro que sim! As fotos dos nossos produtos estão diponíveis no site multitrem.com
+  - text: Mas é claro! Você pode acessar nosso site multitrem.com para ver mais fotos dos produtos.
+  utter_faq/saber_tamanho:
+  - text: Então... Eu ainda não sei o tamanho, pois não consta no sistema. Sinto muito.
+  - text: Hummmm... Me desculpe. Mas eu ainda não sei informar o tamanho, pois não consta no sistema.
+  - text: Xiiii... Me perdoe, porque eu ainda não sei o tamanho. Essa informação ainda não foi cadastrada no sistema.
+  utter_faq/saber_prazo_para_troca:
+  - text: A MultiTrem.com garante o cumprimento do artigo 49 do Código de Defesa do Consumidor,
+             que prevê que "o consumidor pode desistir do contrato, no prazo de 7 dias a contar de sua 
+            assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação de
+             fornecimento de produtos e serviços ocorrer fora do estabelecimento comercial, especialmente
+             por telefone ou a domicílio".
+            Se você receber o produto e quiser desistir da compra, você terá o direito de devolver 
+            e receber a restituição do valor de seu pedido. O prazo para desistência da compra é de 07
+             (sete) dias corridos a contar do recebimento do produto. O pedido só será cancelado 
+            caso o produto esteja em sua embalagem original, sem indícios de uso, sem violação do 
+            lacre original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios.
+  utter_faq/saber_prazo_para_desistencia:
+  - text: O prazo para desistência da compra é de 07 (sete) dias corridos
+             a contar do recebimento do produto. O pedido só será cancelado caso o produto
+             esteja em sua embalagem original, sem indícios de uso, sem violação do lacre
+             original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios
+  utter_faq/o_que_fazer_se_recebi_produto_faltando:
+  - text: Certifique-se que os acessórios não estão à parte na embalagem. Por exemplo,
+             alguns produtos mantém os acessórios encaixados na parte de dentro do produto.
+            Caso não localize, entre em contato através das opções disponíveis em nosso Fale Conosco
+            Essa falta deverá ser comunicada em até 07 (sete) dias corridos após o recebimento do item.
+  utter_faq/o_que_fazer_se_recebi_produto_com_defeito:
+  - text: Se a falta de qualquer acessório for identificada no ato da entrega, você deve recusar o recebimento. 
+            Se a falta foi percebida após a entrega, pedimos para que entre em contato através das opções disponíveis em nosso Fale Conosco.
+            Lembramos que só efetuamos a troca de produtos de acordo com as condições descritas na nossa “Política de Troca e Devolução”.
+  utter_faq/saber_se_pode_trocar_o_produto_apos_finalizar_pedido:
+  - text: Após a finalização do pedido não é possível realizar qualquer tipo de alteração. 
+            Caso queira realizar alguma alteração, será necessário cancelar o pedido e realizar uma nova compra.
+  utter_faq/saber_como_sera_realizado_o_reembolso_do_meu_pagamento:
+  - text: Após análise e aprovação do produto retornado, a devolução dos valores pagos, 
+             ocorrerá na mesma forma de pagamento escolhido no momento da compra; 
+            No caso de boleto bancário, a restituição será feita na conta corrente do titular da compra em até 10 (dez) 
+             dias úteis, a partir da data de aprovação da análise do produto retornado.
+  utter_faq/saber_condicoes_para_troca_ou_cancelamento_de_pedido:
+  - text: Para que seja aceito a troca ou devolução, o produto precisa atender aos seguintes critérios...
+         Estar em sua embalagem original;
+         Não conter indícios de uso;
+         O lacre original do fabricante deverá estar intacto;
+         O conteúdo da caixa deverá estar completo (manual e todos os seus acessórios);
+         Estar acompanhado da nota fiscal.
+  utter_faq/saber_o_que_fazer_se_recebeu_um_produto_diferente_do_pedido:
+  - text: Caso tenha recebido um produto em desacordo com o pedido, você deverá recusar a entrega em entrar em contato conosco.
+            Caso já tenha recebido o produto, o contato deverá ser realizado em até 07 (sete) dias após o recebimento.
+            O produto retornado ao nosso Centro de Distribuição, deverá estar de acordo com as Condições do Produto para Troca ou Cancelamento do Pedido.
+            O produto divergente será trocado de acordo com o realizado no pedido.
+            O contato, poderá ser feito através das opções disponíveis em nossa central Fale Conosco.
+  utter_faq/saber_o_que_fazer_se_o_produto_chegou_com_defeito:
+  - text: Caso o produto apresente defeito de fabricação em até 07 (sete) dias a contar da data do recebimento, você poderá solicitar a troca ou o cancelamento da compra. 
+            A solicitação poderá ser feita através das opções disponíveis em nosso Fale Conosco.
+  utter_faq/saber_quem_podera_receber_a_entrega:
+  - text: É necessário a presença de um responsável (maior de 18 anos) portando documento de identificação para receber a mercadoria e assinar o comprovante de entrega.
+            Caso resida em prédio ou condomínio, o produto poderá ser entregue para o porteiro no local.
+  utter_faq/saber_se_pode_alterar_endereco_de_entrega:
+  - text: Se você já finalizou sua compra, não. Para garantir a segurança de nossos clientes,
+         não é possível realizar a alteração do endereço. Será necessário cancelar o pedido e realizar 
+        um novo. Você deverá entrar em contato através das opções disponíveis em nosso Fale Conosco.
+  utter_faq/saber_o_que_fazer_se_o_endereço_foi_errado:
+  - text: Caso o endereço de entrega informado esteja incorreto, será necessário cancelar o 
+        pedido e realizar um novo. Se o produto estiver a caminho do destino, é necessário aguardar 
+        o retorno do produto ao nosso Centro de Distribuição para conclusão do cancelamento do pedido. 
+        Você deverá entrar em contato através das opções disponíveis em nosso Fale Conosco.
+  utter_faq/acesso:
+  - text: O site multitrem ainda está em desenvolvimento. Ainda estamos testando e desenvolvendo as funcionalidades. 
+  - text: O site da empresa multitrem ainda está sendo desenvolvimento. Por enquanto estamos testando e desenvolvendo as funcionalidades. 
+  - text: Este é só um teste. O nosso site ainda está sendo desenvolvimento. Por enquanto estamos desenvolvendo as funcionalidades. 
+  utter_faq/saber_se_emite_nota_fiscal:
+  - text: Sim! Emitimos a nota fiscal sim.
+  - text: Sim! Temos a nota fiscal sim.
+  - text: Sim! Emitimos a nota fiscal com certeza.
+  utter_faq/saber_tem_quais_marcas:
+  - text: Desculpe-me! Mas o gerente do site ainda não cadastrou as opções de marcas para eu consultar. Por enquanto só tenho opções de cores cadastradas.
+  - text: Me desculpe! Mas a empresa ainda não cadastrou as opções de marcas para eu consultar. Por enquanto só tenho disponível para consultar opções de cores.
+  - text: Desculpe-me! Mas o site ainda não possui opções de marcas cadastradas para eu consultar. Por enquanto tenho disponível para consultar sobre opções de cores.
+
+

@@ -1,0 +1,394 @@
+version: "2.0"
+
+nlu:
+
+- intent: faq/saber_prazo_para_troca
+  examples: |
+    - Qual o prazo para troca?
+    - Qual o prazo que tenho para troca?
+    - Qual o prazo que eu tenho para trocar?
+    - Qual é o prazo que eu tenho para trocar?
+    - Qual tempo para fazer a troca?
+    - Qual é o tempo para fazer a troca?
+    - Qual tempo para eu fazer a troca?
+    - Qual tempo para fazer a troca do produto?
+    - Qual tempo para eu poder fazer a troca do produto?
+    - Qual tempo que eu tenho para fazer a troca?
+    - Quanto tempo para eu fazer a troca?
+    - Quanto tempo para fazer a troca do produto?
+    - Quanto tempo para eu poder fazer a troca do produto?
+    - Quanto tempo que eu tenho para fazer a troca?
+    - Eu tenho quanto tempo para eu fazer a troca?
+    - Eu tenho quanto tempo para fazer a troca do produto?
+    - Eu tenho quanto tempo para eu poder fazer a troca do produto?
+    - Eu tenho quanto tempo para poder fazer a troca?
+    - Até que dia eu posso fazer a troca?
+    - Até que dia eu poderia fazer a troca?
+    - Até que dia eu posso fazer a troca?
+    - Eu tenho até que dia para fazer a troca?
+    - Eu tenho até que dia para fazer a troca do produto?
+    - Eu tenho até que dia para trocar o produto?
+    - Qual é o tempo para fazer a troca?
+    - Qual é o tempo que eu tenho para fazer a troca do produto?
+    - Qual é o prazo que eu tenho para fazer a troca do produto?
+    - Qual prazo para troca?
+    - Qual prazo para trocar?
+    - Qual é o prazo para troca?
+    - Qual é o prazo de troca?
+    - Eu tenho um prazo para trocar?
+    - Eu tenho um prazo para trocar o produto?
+    - Eu tenho um prazo para trocar minha compra?
+    - Se eu quiser trocar depois tem geito?
+    - Se eu quiser trocar o produto depois tem jeito?
+    - Depois se eu quiser trocar tem geito?
+    - Depois se eu quiser trocar o produto tem geito?
+    - Depois se eu quiser trocar o produto tem quanto tempo?
+    - Depois se eu quiser trocar o produto tem qual prazo?
+
+- intent: faq/saber_prazo_para_desistencia
+  examples: |
+    - Qual prazo para desistência?
+    - Qual é o prazo para desistência?
+    - Qual é o prazo para desistência da compra?
+    - Qual é o prazo para desistir da compra?
+    - Qual prazo para desistir da compra?
+    - Qual é o prazo para desistir da minha compra?
+    - Com quantos dias eu posso desistir da compra?
+    - Em quantos dias eu posso desistir da compra?
+    - Com quantos dias eu posso desistir e cancelar a compra?
+    - Com quantos dias eu posso desistir e cancelar a minha compra?
+    - Em quantos dias eu posso desistir e cancelar a minha compra?
+    - Qual tempo para desistência?
+    - Qual é o tempo para desistência?
+    - Qual tempo para desistência da compra?
+    - Qual tempo para desistência e cancelamento?
+    - Qual tempo para desistência da minha compra?
+    - Quanto tempo eu tenho para desistência?
+    - quanto tempo para desistência?
+    - Quais são os prazos da desistência?
+    - Quais são os prazos para desistência?
+    - Quais seriam os prazos da desistência?
+    - Quais seriam os prazos da desistência da compra?
+    - Quais seriam os prazos para desistência?
+    - Arrependi quero a desistência!
+    - Arrependi quero o cancelamento!
+    - Arrependi quero a desistência e o cancelamento!
+    - Arrependi quero a desistência e o cancelamento da compra!
+    - Estou arrependido quero devolver o produto.
+    - Estou arrependido quero devolver a compra.
+    - Estou arrependido quero devolver a minha compra.
+    - Estou arrependido e quero devolver.
+    - Eu arrependi quero a desistência!
+    - Eu arrependi quero o cancelamento!
+    - Eu arrependi quero a desistência e o cancelamento!
+    - Eu arrependi quero a desistência e o cancelamento da compra!
+    - Eu estou arrependido quero devolver o produto.
+    - Eu estou arrependido quero devolver a compra.
+    - Eu estou arrependido quero devolver a minha compra.
+    - Eu estou arrependido e quero devolver.
+
+- intent: faq/o_que_fazer_se_recebi_produto_faltando
+  examples: |
+    - Recebi meu pedido faltando acessórios. O que devo fazer?
+    - Recebi meu pedido faltando acessórios! E agora?
+    - O que devo fazer se receber meu pedido faltando acessórios.
+    - Recebi o produto, mas não vieram alguns acessórios. O que devo fazer?
+    - O que devo fazer  se Receber o produto, mas não viera alguns acessórios. 
+    - Recebi meu pedido faltando peças. O que fazer?
+    - O que fazer se receber meu pedido faltando peças.
+    - Meu pedido veio com um produto/acessórios faltando. Como devo proceder?
+    - Como devo proceder se meu pedido veio com um produto/acessórios faltando.
+    - Recebi meu pedido faltando peças.
+    - Recebi meu pedido faltando peças. E agora?
+    - Eu recebi meu pedido faltando peças. E agora?
+    - Meu pedido veio com um produto/acessórios faltando. E agora?
+    - Recebi o produto, mas não vieram alguns acessórios. E agora?
+    - Recebi meu pedido faltando acessórios. O que devo fazer?
+    - Eu recebi meu pedido faltando peças.
+    - Meu pedido veio com um produto/acessórios faltando.
+    - Recebi o produto, mas não vieram alguns acessórios.
+    - Recebi meu pedido faltando acessórios.
+    - Recebi meu pedido faltando coisas.
+    - Recebi meu pedido faltando partes.
+    - Recebi meu pedido incompleto.
+    - Recebi meu produto incompleto.
+    - Eu recebi meu pedido incompleto.
+    - Eu recebi meu produto incompleto.
+    - Recebi meu pedido incompleto.
+    - Recebi meu produto incompleto. E agora?
+    - Eu recebi meu pedido incompleto. E agora?
+    - Eu recebi meu produto incompleto. E agora?
+    - Recebi meu pedido faltando pedaços. E agora?
+    - Recebi meu pedido faltando pedaçoa. O que devo fazer?
+    - Recebi meu pedido faltando coisa! E agora?
+    - O que devo fazer se receber meu pedido faltando parte.
+    - Recebi o produto, mas não vieram algumas partes. O que devo fazer?
+    - Recebi meu pedido faltando coisas. O que devo fazer?
+    - Recebi meu pedido faltando partes. O que devo fazer?
+    - Recebi meu pedido incompleto. O que devo fazer?
+    - Recebi meu produto incompleto. O que devo fazer?
+- intent: faq/o_que_fazer_se_recebi_produto_com_defeito
+  examples: |
+    - Boa noite! As que não vierem funcionando como faz? Consigo fazer a troca?
+    - Recebi um produto com avaria, o que devo fazer?
+    - produto com chegou com defeito
+    - Meu produto chegou com defeito
+    - Meu pedido chegou mais veio danificado
+    - Recebi um produto com defeito, o que devo fazer?
+    - produto com chegou com avaria
+    - Meu produto chegou com avaria
+    - Meu pedido chegou mais veio estragado
+    - Recebi um produto com problema, o que devo fazer?
+    - produto com chegou com danos
+    - Meu produto chegou com problema
+    - Meu pedido chegou mais veio danificado
+    - Recebi um produto danificado, o que devo fazer?
+    - produto com chegou com problemas
+    - Meu produto chegou estragado
+    - Meu pedido chegou mais veio com problemas
+    - Recebi um produto defeituoso, o que devo fazer?
+    - produto com chegou danificado
+    - Meu produto chegou estragado
+    - Meu pedido chegou mais veio com muitos defeitos
+    - Recebi um produto com muitos problemas, o que devo fazer?
+    - produto com chegou com muitos danos
+    - Meu produto chegou com alguns problema
+    - Meu pedido chegou mais veio um pouco danificado
+    - Recebi um produto com alguns problemas, o que devo fazer?
+    - produto com chegou com alguns danos
+    - Meu produto chegou com alguns problemas
+    - Meu pedido chegou mais veio um pouco estragado
+    - Recebi um produto amassado, o que devo fazer?
+    - produto com chegou com amassados
+    - Meu produto chegou com amassado
+    - Meu pedido chegou mais veio quebrado
+    - Recebi um produto quebrado, o que devo fazer?
+    - produto com chegou com quebrados
+    - Meu produto chegou com rasgados
+    - Meu pedido chegou mais veio rasgado
+    - Meu produto chegou com defeito, o que devo fazer?
+    - Chegou com defeito meu produto e agora?
+    - Meu produto chegou estragado como faço?
+    - Meu produto chegou com danificado, o que devo fazer?
+    - Chegou com estragos meu produto e agora?
+    - Meu produto chegou com avarias como faço?
+    
+- intent: faq/saber_se_pode_trocar_o_produto_apos_finalizar_pedido
+  examples: |
+    - Posso trocar o produto após finalizar o pedido?
+    - Tem como eu trocar o produto eu já finalizei o pedido?
+    - Finalizei o pedido eu posso trocar o produto?
+    - Eu posso trocar o produto depois de finalizar o pedido?
+    - Teria como eu trocar o produto se eu já finalizei o pedido?
+    - Teria como eu trocar o produto depois de finalizar o pedido?
+    - tem como eu trocar o produto com o pedido finalizado?
+    - Finalizei o pedido mas eu posso trocar o produto?
+    - Eu já finalizei o pedido mas eu queria trocar o produto
+    - Posso trocar o produto após finalizar o pedido?
+    - Tem como eu trocar o produto eu já finalizei o pedido?
+    - Finalizei o pedido eu posso trocar o produto?
+    - Eu quero trocar o produto depois de finalizar o pedido
+    - Teria como eu trocar o produto depois de finalizado o pedido?
+    - Teria como eu trocar o pedido depois de finalizar a compra?
+    - tem como eu trocar o pedido com a compra finalizada?
+    - Finalizei a compra mas eu quero trocar o produto
+    - Finalizei o pedido mas eu preciso trocar o produto
+    - Finalizei a compra mas eu quero fazer a troca do produto
+    - Finalizei o pedido mas eu preciso fazer a troca de um produto
+    - Já finalizei o pedido mas preciso trocar um produto
+    - Eu já finalizei o pedido mas preciso trocar um produto
+    - Já finalizei o meu pedido mas eu preciso trocar um produto
+    - Eu já finalizei o pedido mas queria trocar um produto
+    - Já finalizei o meu pedido mas eu queria trocar um produto
+- intent: faq/saber_como_sera_realizado_o_reembolso_do_meu_pagamento
+  examples: |
+    - Como será realizado o reembolso do meu dinheiro?
+    - Como vai ser o reembolso do meu dinheiro?
+    - O reembolso do dinheiro de qual forma vocês vão devolver?
+    - Como será realizado o reembolso do meu crédito?
+    - Como vai ser o reembolso do meu crédito?
+    - O reembolso do crédito de qual forma vocês vão devolver?
+    - Quero saber Como será realizado o reembolso do meu dinheiro?
+    - O estorno do dinheiro de qual forma vocês vão devolver?
+    - Como será realizado o estorno do meu crédito?
+    - Como vai ser o estorno do meu crédito?
+    - O estorno do crédito de qual forma vocês vão devolver?
+    - Quero saber Como será realizado o estorno do meu dinheiro?
+    - Quero saber Como vai ser o estorno do meu dinheiro?
+    - Quero saber sobre O reembolso do dinheiro de qual forma vocês vão devolver?
+    - Queria saber Como será realizado o reembolso do meu pagamento?
+    - Queria saber Como vai ser o reembolso do meu pagamento?
+    - Queria saber sobre O reembolso do pagamento de qual forma vocês vão devolver?
+    - Como será realizado o reembolso do meu pagamento?
+    - Como vai ser o reembolso do meu pagamento?
+    - O reembolso do pagamento de qual forma vocês vão devolver?
+    - Quero saber Como será realizado o reembolso do meu pagamento?
+    - Quero saber Como vai ser o reembolso do meu pagamento?
+    - Quero saber sobre O reembolso do pagamento de qual forma vocês vão devolver?
+    - Queria saber Como será realizado o reembolso do valor pago?
+    - Queria saber Como vai ser o reembolso do meu valor pago?
+    - Queria saber sobre O reembolso do pagamento de qual forma vocês vão o valor pago?
+    - Queria saber Como será realizado o reembolso do meu valor pago?
+    - Queria saber Como vai ser o estorno do meu valor pago?
+    - Queria saber sobre O estorno do valor pago de qual forma vocês vão devolver?
+    - Como será realizado o estorno do meu valor pago?
+    - Como vai ser o estorno do meu valor pago?
+    - O reembolso do pagamento de qual forma vocês vão o valor pago?
+    - Quero saber Como será realizado o estorno do meu valor pago?
+    - Quero saber Como vai ser o estorno do meu valor pago?
+    - Como vão estornar o valor pago pela compra cancelada?
+- intent: faq/saber_condicoes_para_troca_ou_cancelamento_de_pedido
+  examples: |
+    - Quais as condições do produto para troca ou cancelamento do pedido?
+    - Quero fazer a troca do meu pedido
+    - Quero fazer o cancelamento do meu pedido
+    - Como que o produto tem que está para fazer a troca ou cancelamento?
+    - Quais as condições do produto tem que estar para fazer a troca ou cancelamento do pedido?
+    - Preciso fazer a troca do meu pedido
+    - Preciso fazer o cancelamento do meu pedido
+    - Como que o produto tem que estar para poder fazer a troca ou cancelamento dele?
+    - Como fazer a troca ou cancelamento do pedido?
+    - queria fazer a troca do meu pedido
+    - queria fazer o cancelamento do meu pedido
+    - Como que é pra fazer a troca ou cancelamento dele?
+    - Como proceder a troca ou cancelamento do pedido?
+    - Como realizar a troca ou cancelamento do pedido?
+    - Como proceder para realizar a troca ou cancelamento do pedido?
+    - queria realizar a troca do meu pedido
+    - queria realizar o cancelamento do meu pedido
+    - Como devo proceder para fazer a troca ou cancelamento dele?
+- intent: faq/saber_o_que_fazer_se_recebeu_um_produto_diferente_do_pedido
+  examples: |
+    - Recebi um produto diferente do meu pedido, o que devo fazer?
+    - Meu produto veio diferente com faço agora?
+    - Meu Chegou diferente meu pedido o que devo fazer?
+    - Meu produto apresentou defeito fora do prazo de 07 sete dias para troca, como proceder?
+    - Esta  com defeito agora meu produto mais já passou os 7 dias para trocar
+    - Deu defeito no meu produto mais e já passou os 7 dias da troca como faço agora?
+    - Eu recebi um produto diferente do meu pedido, o que devo fazer?
+    - O Meu produto veio diferente como faço agora?
+    - O Meu Chegou diferente meu pedido o que devo fazer?
+    - O Meu produto apresentou defeito fora do prazo de 07 sete dias para troca, como proceder?
+    - O meu produto esta com defeito agora meu produto mais já passou os 7 dias para trocar
+    - O produto deu defeito no meu produto mais e já passou os 7 dias da troca como faço agora?
+    - Recebi um produto diferente do meu pedido
+    - Meu produto veio diferente
+    - Meu Chegou diferente meu pedido
+    - Meu produto apresentou defeito fora do prazo de 07 sete dias para troca
+    - Esta  com defeito agora meu produto mais já passou os 7 dias para trocar
+    - Deu defeito no meu produto mais e já passou os 7 dias da troca
+    - Eu recebi um produto diferente do meu pedido
+    - O Meu produto veio diferente
+    - O Meu Chegou diferente meu pedido
+    - O Meu produto apresentou defeito fora do prazo de 07 sete dias para troca
+    - O meu produto esta com defeito agora meu produto mais já passou os 7 dias para trocar
+    - O produto deu defeito no meu produto mais e já passou os 7 dias da troca
+- intent: faq/saber_quem_podera_receber_a_entrega
+  examples: |
+    - Quem poderá receber o meu pedido? 
+    - Quando meu produto chegar quem pode receber?
+    - Eu não vou estar na minha casa outra pessoa pode receber o produto?
+    - Quem poderia receber o meu pedido na hora da entrega? 
+    - Quando meu produto chegar quem poderá recebe-lo?
+    - Eu não vou estar na minha casa. Será que outra pessoa poderia receber o meu produto?
+    - Quem pode receber o meu pedido? 
+    - Quando meu produto chegar quem está ápto a receber?
+    - Eu não vou estar na minha casa outra pessoa pode receber o produto no meu lugar?
+    - Quem está autorizado a receber o meu pedido na hora da entrega? 
+    - Quando meu produto chegar em casa, quem está autorizado a recebe-lo?
+    - Eu não vou estar na minha casa. Outra pessoa terá que receber o meu produto por mim?
+    - Pra receber o produto pode ser qualquer pessoa
+    - pode ser qualquer pessoa pra receber o pedido
+    - Pra receber o produto pode ser qualquer pessoa em casa
+    - pode ser qualquer pessoa pra receber o pedido na hora
+    - Pra receber o produto poderia ser qualquer pessoa
+    - pode ser qualquer pessoa para receber as minhas compras
+- intent: faq/saber_se_pode_alterar_endereco_de_entrega
+  examples: |
+    - Posso alterar meu endereço de entrega?
+    - Tem como eu alterar o endereço de entrega?
+    - Como posso alterar o meu endereço de entrega?
+    - Posso alterar meu endereço de entrega depois de finalizada a compra
+    - Tem como eu alterar o endereço de entrega depois de finalizada a compra
+    - Como posso alterar o meu endereço de entrega depois de finalizada a compra
+    - Posso alterar meu endereço de entrega depois de finalizada o pedido
+    - Tem como eu alterar o endereço de entrega depois de finalizada o pedido
+    - Como posso alterar o meu endereço de entrega depois de finalizada o pedido
+    - Eu queria alterar meu endereço de entrega
+    - Teria como eu alterar o endereço de entrega?
+    - Como eu poderia alterar o meu endereço de entrega?
+    - Posso alterar meu endereço de entrega depois de finalizar o pedido
+    - Tem como eu alterar o endereço de entrega depois de finalizar a compra
+    - Como fazer alteração no meu endereço de entrega depois de finalizar a compra
+    - Posso fazer alteração no meu endereço de entrega depois de finalizar o pedido
+    - Tem como fazer alteração no endereço de entrega depois de finalizar o pedido
+    - Como posso fazer alteração no meu endereço de entrega depois de finalizar o pedido
+- intent: faq/saber_o_que_fazer_se_o_endereço_foi_errado
+  examples: |
+    - Cadastrei o endereço errado o que faço agora?
+    - Fiz o cadastro do endereço errado
+    - Eu Cadastrei o endereço errado o que faço agora?
+    - Eu Fiz o cadastro do endereço errado
+    - Cadastrei o endereço ficou errado o que faço agora?
+    - Fiz o cadastro do endereço e saiu errado
+    - Eu Cadastrei com o endereço errado o que faço agora?
+    - Eu Fiz o cadastro do meu endereço errado o que poço fazer agora?
+    - Cadastrei o endereço errado, como posso arrumar
+    - Fiz o cadastro do endereço errado, como posso arrumar
+    - Eu Cadastrei o endereço errado, como posso arrumar
+    - Eu Fiz o cadastro do endereço errado, como posso arrumar
+    - Cadastrei o endereço ficou errado, como posso arrumar
+    - Fiz o cadastro do endereço e saiu errado, como posso consertar
+    - Eu Cadastrei com o endereço errado, como posso consertar
+    - Eu Fiz o cadastro do meu endereço errado, como posso consertar
+    - Fiz o cadastro do endereço e saiu errado, como poderia consertar
+    - Eu Cadastrei com o endereço errado, como poderei consertar
+    - Eu Fiz o cadastro do meu endereço errado, teria como consertar
+    - Eu Fiz o cadastro do meu endereço errado, terei como consertar esse endereço
+- intent: faq/saber_se_emite_nota_fiscal
+  examples: |
+    - Olá emite nota fiscal?
+    - Olá vc emite nota fiscal?
+    - tem nota fiscal?
+    - vem com nota fiscal?
+    - olá emite nota fiscal?
+    - olá vc emite nota fiscal?
+    - tem nota fiscal?
+    - vem com nota fiscal?
+    - Emite nota fiscal?
+    - Emite nota fiscal pra mim
+    - Emitem nota fiscal?
+    - Teria nota fiscal?
+    - nota fiscal?
+    - Nota fiscal?
+    - Nota fiscal
+    - NOTA FISCAL
+    - Quero NOTA FISCAL
+    - Vou precisar da nota fiscal
+    - a nota fiscal
+    - nota fiscal
+- intent: faq/saber_tem_quais_marcas
+  examples: |
+    - Tem quais marcas
+    - Tem quais marcas ae
+    - Tem quais marcas dessa
+    - Você tem quais marcas
+    - Você tem de quais marcas
+    - Tem qual marca
+    - Tem de qual marca
+    - Teria de qual marca
+    - Você tem qual marca
+    - Você tem de qual marca
+    - Voce tem qual marca
+    - Voce tem de qual marca
+    - Vc tem qual marca
+    - vc tem de qual marca
+    - marca
+    - marcas
+    - MARCA
+    - MARCAS
+    - Marca
+    - Marcas
+    - Tem quais marcas disponíveis
+    - Tem quais marcas ae disponivel
+    - Tem quais marcas dessa disponivel

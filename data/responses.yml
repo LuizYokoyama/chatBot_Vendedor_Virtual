@@ -1,0 +1,159 @@
+version: "2.0"
+
+
+responses:
+
+  utter_faq:
+  - text: perguntas frequentes
+  utter_chitchat:
+  - text: bate papo
+  utter_sem_promocao:
+  - text: Desculpe! No momento não temos promoções disponíveis...
+  - text: Por favor me perdoe! Mas estamos sem promoção!
+  - text: Xiii... Meu patrão não me passou nenhuma promoção ainda!
+  - text: Mil perdões! Mas meu ainda patrão não me passou nenhuma promoção!
+  - text: ihhh... Lamento informar, mas meu patrão não me passou promoções ainda!
+  utter_colocado_car:
+  - text: Prontinho! Já coloquei no carrinho de compras.
+  - text: Ok, já adicionei no seu carrinho de compras.
+  - text: Certo! Já está no carrinho de compras.
+  - text: Pronto! Já adicionei ao seu carrinho de compras.
+  utter_oque_mais:
+  - text: E o que mais?
+  - text: Mais alguma coisa?
+  - text: Algo mais?
+  - text: Precisa de algo mais?
+  - text: Gostaria de algo mais?
+  - text: Precisa de mais alguma coisa?
+  utter_pergunta_qual_produto:
+  - text: Por favor, me informe o nome do produto que deseja.
+  - text: Me informe, por favor, o nome do produto que deseja.
+  - text: Por gentileza, me informe o nome do produto que deseja.
+  - text: Me informe, por gentileza, o nome do produto que deseja.
+  utter_comprar:
+  - text: Tudo bem então! Por favor, me informe o que você quer comprar.
+  - text: Ok então! Por favor, escreva qual produto precisa.
+  - text: Certo! O que deseja comprar então?
+  - text: Ok! Então, deseja comprar qual produto?
+  utter_pergunta_comprar:
+  - text: Tem interesse em algum produto?
+  - text: Gostaria de adquirir algum de nossos produtos?
+  - text: Tem algum produto que você queira comprar?
+  - text: Posso te vender algum de nossos produtos?
+  utter_cumprimentar:
+  - text: Olá! Em que posso te ajudar?
+  - text: Olá! Tem interesse em algum produto?
+  - text: Oi! O que deseja comprar?
+  - text: Oi! Deseja comprar algo?
+  - text: Olá! Deseja comprar algum produto?
+  utter_start:
+  - text: Olá, eu sou o Lindovaldo! Mas pode me chamar de Lindo, o seu vendedor virtual do site multitrem.com! Em que posso te ajudar?
+  - text: Olá! Eu sou o Lindovaldo! Mas pode me chamar de Lindo, seu assistente virtual de compras do site multitrem.com! Tem interesse em algum produto?
+  - text: Oi! Eu sou o Lindovaldo! Mas pode me chamar de Lindo, um vendedor com inteligência artificial do site multitrem.com! O que deseja comprar?
+  - text: Oi, meu nome é Lindovaldo! Mas todo mundo me chama de Lindo. Eu sou uma inteligência artificial de vendas do site multitrem.com! Deseja comprar algo?
+  - text: Olá, eu sou o seu vendedor virtual do site multitrem.com! Me chamo Lindovaldo. Mas pode me chamar de Lindo. Deseja comprar algum produto?
+  utter_out_of_scope:
+  - text: Me desculpe, mas eu não sei sobre isso.
+  - text: Me perdoe, mas eu não sei isso.
+  - text: Me perdoe, mas infelizmente eu não sei disso.
+  - text: Hummmm, infelizmente eu ainda não sei disso.
+  utter_default:
+  - text: Desculpe, não consegui entender direito. Por favor, tente escrever de outra forma e uma coisa de cada vez.
+  - text: Hummmm... Não sei se entendi. Por favor, tente escrever de outra forma e uma coisa de cada vez.
+  - text: Acho que não te entendi. Por favor, tente escrever de outro jeito e uma coisa de cada vez.
+  - text: Acho que não te entendi bem. Por favor, escreva de outro jeito e uma coisa de cada vez.
+  - text: Vamos tentar mais uma vez. Eu não consegui te entender direito. Por favor, tente escrever de outro jeito e uma coisa de cada vez.
+  - text: Não entendi. Por favor, tente escrever com outras palavras e uma coisa de cada vez.
+  - text: Não consegui entender. Por favor, escreva de outro jeito e uma coisa de cada vez.
+  - text: Hãn? Não entendi. Por favor, escreva de outro jeito e uma coisa de cada vez.
+  - text: Desculpe-me, não entendi. Escreva de outra forma e uma coisa de cada vez, por favor.
+  - text: Desculpe-me, mas não entendi. Escreva com outras palavras e uma coisa de cada vez, por favor.
+  - text: Não consegui compreender. Tente escrever com outras palavras e uma coisa de cada vez, por favor.
+  - text: Me desculpe, mas não fui capaz de entender. Por favor, escreva de outra forma e uma coisa de cada vez.
+  utter_despedir:
+  - text: Foi um prazer te ajudar! Sempre que precisar de alguma coisa, volte aqui! Até logo!
+  - text: Foi um prazer lhe atender! Sempre que precisar, volte aqui! Até a próxima!
+  - text: É sempre um prazer te atender! Precisando é só chamar! Até mais!
+  - text: Foi muito bom poder te atender! Precisando é só chamar! Volte sempre!
+  utter_ok:
+  - text: Ok então
+  - text: Tudo Ok então
+  - text: Ok
+  utter_dimensoes_caixa_mdf:
+  - text: Poderia me informar também a altura?
+  utter_dimensoes_caixa_mdf_altura:
+  - text: Obrigado. Um instante por favor. Estou calculando o preço.
+  utter_preco_caixa_mdf:
+  - text: No momento está em falta.
+  utter_fecha:
+  - text: Após a conclusão da compra no site, é só ir buscar na loja. Por enquanto ainda não temos como enviar. Muito obrigado por comprar comigo! Lembre de anotar o número do pedido lá, caso queira cancelar depois.
+  - text: Depois de concluir a compra no site, é só ir buscar na loja. Por enquanto ainda não realizamos envios. Agradeço muito por comprar comigo! Não se esqueça de anotar o número do pedido lá, caso queira cancelar depois.
+  - text: Com o pedido concluído no site Multitrem, será só ir buscar na loja. Por enquanto ainda não fazemos envios. Muito obrigado por comprar comigo! Lembre de anotar o número do pedido lá, caso queira cancelar depois.
+  - text: Após você finalizar a compra no site, é só ir buscar na loja. Por enquanto ainda não temos envios. Muito obrigado por sua compra comigo! Não se esqueça  de anotar o número do pedido lá, caso queira cancelar depois.
+  utter_produto_recusado:
+  - text: Ok! Qual produto então?
+  - text: Tudo bem! Qual produto gostaria então?
+  - text: Certo! Gostaria de comprar qual produto então?
+  - text: Ok! Deseja comprar qual produto então?
+  utter_estamos_aqui:
+  - text: Tudo bem então! Estou a sua disposição!
+  - text: Ok então! Se precisar estamos aqui!
+  - text: Certo então! Se precisar estou aqui pra te ajudar!
+  - text: Certo! Qualquer coisa estou aqui pra te ajudar!
+  - text: Ok! Eu estou sempre a sua disposição!
+  utter_nao_reconheceu_produto:
+  - text: Desculpe-me, mas não fui capaz de reconhecer esse produto. Tente reescrever, por favor.
+  - text: Não temos esse produto cadastrado. Por favor, tente reescreve-lo.
+  - text: Desculpe, mas não temos esse produto cadastrado. Por favor, tente reescreve-lo.
+  utter_pergunta_fechar:
+  - text: Gostaria de fechar o pedido?
+  - text: Deseja fechar o pedido?
+  - text: Posso fechar o pedido?
+  - text: Posso fechar o seu pedido?
+  utter_temos:
+  - text: Temos esta quantidade disponível. Deseja adicionar ao seu carrinho de compras?
+  - text: Temos disponível no estoque. Quer adicionar ao seu carrinho de compras?
+  - text: Temos em estoque. Gostaria de colocar no seu carrinho de compras?
+  utter_nao_temos:
+  - text: Infelizmente não encontrei deste produto no sistema.
+  - text: Desculpe-me. Mas não encontrei deste produto no sistema.
+  - text: Infelizmente não temos deste produto para vender.
+  - text: Desculpe-me. Mas não temos deste produto disponível.
+  - text: Lamento! Infelizmente estamos sem deste produto.
+  - text: Xiii! Não temos deste produto disponível.
+  - text: Deste produto não temos disponível. Sinto muito!
+  utter_esgotado:
+  - text: Hummm... Me desculpe! Mas infelizmente o estoque deste produto esgotou. Por favor, escolha outro produto.
+  - text: Xiiii... Me perdoe! Mas acabou o estoque deste produto. Por gentileza, escolha outro produto.
+  - text: Desculpe-me! Mas o estoque deste produto acabou. Por gentileza, escolha outro produto.
+  utter_sem_previsao:
+  - text: Infelizmente, estamos sem previsão de nada.
+  - text: Desculpe-me. Mas não temos previsão.
+  - text: Mil desculpas. Mas estamos sem previsões.
+  utter_sem_desconto:
+  - text: Me desculpe. Os preços já estão no mínimo possível.
+  - text: Desculpe-me. Mas os preços já estão no mínimo possível.
+  - text: Não posso dar mais descontos. Desculpe-me. Está tudo no menor preço.
+  - text: Mil desculpas. Mas estamos com os menores preços possíveis já.
+  utter_produto_exluido:
+  - text: Prontinho, já removi do carrinho.
+  - text: Prontinho, já retirei do seu carrinho.
+  - text: Prontinho. Retirado do carrinho de compras.
+  utter_produto_ja_excluido:
+  - text: Me desculpe, mas não havia o produto no seu carrinho.
+  - text: Desculpe-me, mas o produto não estava no seu carrinho.
+  - text: Me desculpe, mas não encontrei o produto no seu carrinho.
+  utter_saber_qtd:
+  - text: Deseja quantas unidades?
+  - text: Precisa de quantas unidades?
+  - text: Vai querer quantas unidades?
+  utter_por_favor_aguarde_consulta:
+  - text: Ok! Por favor, aguarde um instante até que eu consulte rapidinho aqui no sistema.
+  - text: Só um momentinho, por favor, que eu estou consultando nosso sistema.
+  - text: É pra já! Estou procurando aqui no sistema.
+  - text: Só um segundo, que eu já estou consultando no nosso sistema.
+  - text: Ok! Já estou verificando aqui no nosso sistema.
+  utter_pergunta_remover:
+  - text: Deseja remover do seu carrinho de compras?
+  - text: Gostaria de retirar do seu carrinho de compras?
+  - text: Vai querer retirar do seu carrinho de compras?

@@ -1,0 +1,973 @@
+version: "2.0"
+nlu:
+- intent: faq/saber_tamanho
+  examples: |
+    - qual tamanho desta [calculadora](produto)
+    - qual tamanho
+    - Tamanho
+    - TAMANHO
+    - QUAL TAMANHO
+    - qual o tamanho desta
+    - Qual o tamanho
+    - Qual é o tamanho
+    - Qual seria o tamanho desse
+    - saber o tamanho
+    - Qual tamanho
+    - Qual tamanho deste
+    - Quais os tamanhos
+    - que tamanho que tem
+    - Qual tamanho você tem
+    - Qual tamanho vocês tem
+    - Qual tamanho que é
+    - qual tamanho que tem
+- intent: faq/posso_ver_fotos
+  examples: |
+    - Posso ver fotos do que vc vende?
+    - Eu posso ver fotos do que vc vende?
+    - Fotos
+    - Ver fotos
+    - Olhar fotos
+    - VER FOTOS
+    - FOTOS
+    - foto
+    - imagem
+    - fotos dos produtos
+    - foto do produto
+    - tem foto do produto
+    - tem foto da
+    - tem foto das
+    - tem imagem da
+    - tem imagens das
+    - Mostra Fotos
+    - Me mostra as fotos
+    - Mostra foto pra mim
+    - Mostra alguma foto pra mim
+    - Mostra algumas foto pra mim
+    - Mostra alguma foto do produto
+    - Mostra algumas fotos dos produtos
+    - Eu quero ver fotos dos produtos
+    - Eu posso ver fotos dos produtos
+    - Posso ver?
+    - Quero ver
+    - Quero ver fotos
+    - Quero ver imagens
+    - Quero ver foto
+    - Quero ver imagem
+    - Quero ver umas fotos
+    - Quero ver uma imagens
+    - Posso ver fotos?
+    - Quero ver foto
+    - preciso ver uma imagem
+    - preciso ver foto
+    - preciso ver imagem
+    - Quero ver umas fotos
+    - Quero ver uma imagens
+    - Posso ver mais fotos?
+    - Posso ver algumas fotos?
+    - Posso ver alguma foto
+    - Posso ver alguma foto do produto
+    - Posso ver alguma foto deste produto
+    - Posso ver alguma foto desse produto
+    - Tem fotos?
+    - Tem foto
+    - tem foto
+    - Teria foto
+    - tem alguma foto dele
+    - tem alguma foto dela
+    - tem alguma imagem dela
+    - tem alguma imagem dele
+    - tem alguma foto deste
+    - tem alguma foto deste
+    - tem alguma imagem deste
+    - tem alguma imagem deste
+    - Teria fotos?
+    - Teria fotos deste
+    - Teria fotos desta
+    - Tem fotos deste
+    - Tem fotos desta
+    - Teria imagem deste
+    - Teria imagem desta
+    - Tem imagem deste
+    - Tem imagem desta
+    - Poderia ver fotos?
+    - Eu posso ver imagem?
+    - Poderia ver imagem?
+    - Eu posso ver imagem?
+- intent: faq/saber_tem_mostruario
+  examples: |
+    - Vc tem mostruario?
+    - Vc tem mostruário?
+    - Vc teria mostruário?
+    - Você tem mostruário?
+    - Você tem mostruário pra mim ver?
+    - Você tem mostruário pra mim esperimentar
+    - Mostruário
+    - Motruario
+    - MOSTRUÁRIO
+    - Tem mostruário
+    - Tem mostruario
+    - Posso ver seu mostruário?
+    - vc pode me mostrar seu mostruário?
+- intent: faq/saber_quando_vendera_outros_produtos
+  examples: |
+    - Quando você venderá outros produtos?
+    - Quando você terá outros produtos?
+    - Quando você terá outros produtos pra vender
+    - Quando você terá outras opções de produtos produtos
+    - Quando você venderá outros tipos produtos?
+    - Quando você venderá outros modelos de produtos?
+    - Quando você terá mais variedades de produtos?
+    - Quando é que terá mais variedades de produtos?
+    - Quando é que venderá mais variedades de produtos?
+    - Quando é que terá mais outros produtos?
+    - Quando é que venderá mais tipos de produtos?
+    - Quando é que venderá outra coisa?
+    - Quando é que venderá mais produtos?
+    - Quando é que venderá mais?
+    - Quando é que venderá mais alguns produtos?
+    - Quando você venderá outras coisas?
+    - Quando você venderá mais produtos?
+    - Quando você venderá mais tipos de produtos?
+    - Quando você venderá mais categorias?
+    - Quando você venderá mais coisas?
+- intent: faq/saber_horario_de_atendimento
+  examples: |
+    - Qual o horário de atendimento?
+    - Qual é o horário de atendimento?
+    - Qual o horário de funcionamento?
+    - Qual o horário de atendimento da loja
+    - Qual o horário de atendimento do site
+    - Qual o horário de atendimento de vc
+    - Qual o horário de atendimento que voce trabalha
+    - Qual o horário de funcionamento da loja
+    - Qual o horário de atendimento para retiradas
+    - Qual o horário de atendimento para entregas
+    - Qual o horário de atendimento
+    - Horário de atendimento
+    - Horário de funcionamento
+    - HORÁRIO DE FUNCIONAMENTO
+    - Em que horário vocês trabalham?
+    - Qual horário de retirada
+    - Que hóras eu posso retirar?
+    - A que horas eu posso retirar minha compra?
+    - Qual é o horário de retirada
+    - Me fale o horário de retirada
+    - me informe o horário de atendimento
+    - me informe o horário de funcionamento
+    - me informe a que horas eu posso retirar na loja
+    - Quais dias vocês estão abertos?
+    - funciona em que dias?
+    - Funciona em quais dias?
+    - Quais dias da semana vocês estão abertos?
+    - Quais dias da semana vocês estão atendem?
+    - Dias de funcionamento
+    - Dias de funcionamento da loja
+    - Dias de funcionamento para retirada
+    - Dias de funcionamento para retirar a minha compra
+    - Dias da semana de funcionamento
+    - Dia e horário de funcionamento
+    - Quais dias e horários de funcionamento
+    - Quais dias e horários de atendimento
+    - que dias e horários vocês atendem
+    - Quais dias e horários de entrega
+    - Quero saber quais dias e horários de atendimento
+    - Quero saber quais dias e horários a loja está aberta
+    
+- intent: faq/saber_informacao
+  examples: |
+    - Queria saber uma informação
+    - Queria saber uma informação de você
+    - Queria saber uma informação sua
+    - Quero saber uma informação
+    - Queria uma informação
+    - Preciso saber uma informação
+    - Preciso de uma informação
+    - Preciso de uma informação sua sobre algo
+    - Preciso de uma informação agora
+    - Preciso de uma informação sua
+    - Preciso de uma informação de você
+    - Preciso de uma informação sobre um produto
+    - Preciso de uma informação sobre a loja
+    - Preciso de uma informação sobre o site
+    - Preciso de uma informação sobre uma característica
+    - Preciso de uma informação sobre uma compra
+    - Quero uma informação sobre uma compra
+    - Quero uma informação sobre a loja
+    - Quero saber uma informação sobre uma compra
+    - Quero saber uma informação sobre a sua loja
+    - Quero saber uma informação sobre o seu site
+    - Quero saber uma informação sobre a entrega
+    - Quero saber uma informação sobre um produto
+    - Quero saber uma informação sobre pagamento
+    - Quero saber uma informação sobre funcionamento
+    - Informação
+    - Informacao
+    - Informaçao
+    - INFORMAÇÃO
+    - Informações
+    - Informacoes
+    - saber informacoes
+    - Saber informação
+    - SABER INFORMAÇÃO
+    - saber informacao
+    - Saber informações
+    - Saber informaçoes
+    - informação sobre alguma coisa
+    - quero saber algo
+    - quero saber sobre alguma coisa
+    - Gostaria de saber uma informação
+    - Gostaria de uma informação agora
+    - Gostaria de saber uma coisa
+    - Gostaria de saber uma informação
+    - Gostaria de saber uma coisa
+    
+- intent: saber_o_que_vende
+  examples: |
+    - Que tipos produtos você vende?
+    - Que categorias de produtos você vende?
+    - quais categorias de produtos você vende?
+    - quais tipos de produtos você vende?
+    - Que categorias de produtos vocês vendem?
+    - quais categorias de produtos vocês vendem no site?
+    - quais tipos de produtos vocês vendem na loja?
+    
+- intent: saber_cores
+  examples: |
+    - Vocês têm [caneta](produto) [azul](cor)
+    - Vocês têm [caneta](produto) [vermelha](cor)
+    - Vocês têm [caneta](produto) [rosa](cor)
+    - Vocês têm [pasta](produto) [preta](cor)
+    - têm [caneta](produto) [azul](cor)
+    - têm [caneta](produto) [vermelha](cor)
+    - têm [caneta](produto) [verde](cor)
+    - Têm [caneta](produto) [rosa choque](cor)
+    - Têm [caderno](produto) [rosa bebê](cor)
+    - têm [lapis](produto) [preta](cor)
+    - têm [pasta](produto) [preto](cor)
+    - Têm [rosa bebê](cor)
+    - têm [verde](cor)
+    - têm [azul](cor)
+    - Têm [branco](cor)
+    - têm [branca](cor)
+    - têm [cinza](cor)
+    - Têm [marrom](cor)
+    - têm [laranja](cor)
+    - têm [amarelo](cor)
+    - Têm [amarela](cor)
+    - têm [violeta](cor)
+    - têm [lilás](cor)
+    - Quais cores vocês tem?
+    - Quais cores tem?
+    - Quais cores tem disponíveis?
+    - Quais as cores vocês tem?
+    - quais cores vocês tem pra vender
+    - quais cores tem pra vender
+    - quais cores tem disponíveis pra vender
+    - quais as cores vocês tem pra vender
+    - Quero saber quais cores tem disponíveis?
+    - cores
+    - Cores
+    - cor
+    - Cor
+    - CORES
+    - COR
+    - que cor q tem
+    - Que cor q tem
+    - Que cor que tem
+    - Que cor que tem disponivel
+    - Que cor que tem em estoque
+    - que cor q tem
+    - que cor que tem
+    - que cor que tem disponivel
+    - que cor que tem em estoque
+    - qual cor que tem
+    - Qual cor que tem
+    - Que cor q tem pra vender
+    - Que cor que tem pra vender
+    - Que cor que tem disponivel pra vender
+    - Que cor que tem em estoque pra vender
+    - Quero saber quais cores vocês tem?
+    - Quero saber quais cores tem?
+    - Quero saber quais cores tem disponíveis?
+    - Quero saber quais as cores vocês tem?
+    - Quero saber quais cores vocês tem pra vender
+    - Quero saber quais cores tem pra vender
+    - Quero saber quais cores tem disponíveis pra vender
+    - Quero saber quais as cores vocês tem pra vender
+    - Quero saber qores
+    - Quero saber qores
+    - Quero saber qor
+    - Quero saber cor
+    - Quero saber CORES
+    - Quero saber COR
+    - Quero saber que cor q tem
+    - Quero saber que cor q tem
+    - Quero saber que cor que tem
+    - Quero saber que cor que tem disponivel
+    - Quero saber que cor que tem em estoque
+    - Quero saber que cor q tem
+    - Quero saber que cor que tem
+    - Quero saber que cor que tem disponivel
+    - Quero saber que cor que tem em estoque
+    - Quero saber qual cor que tem
+    - Quero saber qual cor que tem
+    - Quero saber que cor q tem pra vender
+    - Quero saber que cor que tem pra vender
+    - Quero saber que cor que tem disponivel pra vender
+    - Quero saber que cor que tem em estoque pra vender
+- intent: saber_itens_de_papelaria
+  examples: |
+    - Quais itens de papelaria de vocês tem?
+    - Quais tipos de produtos de papelaria de vocês tem?
+    - Quais itens de papelaria de vocês tem disponíveis?
+    - Quais os produtos de papelaria de vocês tem?
+    - Quais itens de papelaria de vocês tem no site?
+    - Quais tipos de produtos de papelaria de vocês tem no site?
+    - Quais itens de papelaria de vocês tem disponíveis no site?
+    - Quais os produtos de papelaria de vocês tem no site?
+    - O que de papelaria de vocês tem?
+    - O que de papelaria de vocês tem disponível?
+    - O que de papelaria de vocês tem disponível pra vender?
+    - O que de papelaria de vocês tem no site?
+    - O que de papelaria de vocês tem disponível no site?
+    - O que de papelaria de vocês tem disponível pra vender no site?
+    - papelaria
+    - Papelaria
+    - Material de papelaria
+    - Produtos de papelaria
+    - material de papelaria
+    - produtos de papelaria
+    - Mostra Produtos de papelaria
+    - mostra material de papelaria
+    - mostra produtos de papelaria
+    - Me Mostra Produtos de papelaria
+    - Me mostra material de papelaria
+    - me mostra produtos de papelaria
+    - Me indique Produtos de papelaria
+    - Me indica material de papelaria
+    - me indique produtos de papelaria
+    - Que itens de papelaria de vocês tem?
+    - Que itens de papelaria de vocês vendem?
+    - Que itens de papelaria de vocês tem pra vender?
+    - Que itens de papelaria de vocês vendem aqui?
+    - Que itens de papelaria de vocês tem no site?
+    - Que itens de papelaria de vocês vendem no site?
+    - Que itens de papelaria de vocês tem pra vender no site?
+    - Que itens de papelaria de vocês vendem aqui no site?
+    - Que itens de papelaria de tem pra vender no site?
+    - Que itens de papelaria de pra vender no site
+    - Quais itens de papelaria de vocês possuem para venda?
+    - Quais itens de papelaria de estão a venda?
+    - Que itens de papelaria estão vendendo no site
+    - Você tem quais ítens de papelaria?
+    - Você tem quais produtos de papelaria?
+    - Você tem quais ítens de papelaria neste site
+    - Você tem quais produtos de papelaria no site
+    - Você tem produtos de papelaria?
+    - Me fala os produtos de papelaria que tem pra vender
+    - Me fala os produtos de papelaria que tem  no site
+    - Me fala os produtos de papelaria que tem disponível
+    - Me fala os produtos de papelaria que tem no site
+    - Me fala os produtos de papelaria que tem disponível no site
+    - Quero saber os produtos de papelaria que tem na loja
+    - Queria saber os produtos de papelaria que tem na loja
+    - Quero saber os produtos de papelaria que tem no site
+    - Queria saber os produtos de papelaria que tem no site
+    - Me fala os produtos de papelaria que tem ae no site
+    - Quero saber os produtos de papelaria que tem no site
+    - Queria saber os produtos de papelaria que tem disponíveis no site
+    - Me fala os produtos de papelaria que tem ae
+    - Quero saber os produtos de papelaria que tem
+    - Queria saber os produtos de papelaria que tem disponíveis
+    - O que você vende?
+    - O que você tem pra vender na loja?
+    - O que você vende no site?
+    - O que você tem pra vender?
+    - O que voce vende?
+    - O que você tem de vende?
+    - O que vocês vendem?
+    - O que vocês tem pra vender?
+    - O que voces vendem?
+    - O que que tem pra vender?
+    - O que que tem pra vender no site?
+    - o que voce vende?
+    - O que tem pra vender no site?
+    - O que tem pra vender na loja?
+    - o que voce tem pra vender?
+    - Tem o que pra vender?
+    - Tem o que pra vender no site?
+    - Tem o que pra vender na loja?
+    - Tem o que pra vender ae?
+    - O que tem pra vender?
+    - O que você tem pra vender?
+    - O que vocês tem pra vender?
+    - O que vocês teriam pra vender?
+    - O que vocês tem pra me vender?
+    - O que vocês tem para vender aqui?
+    - Vende oq?
+    - Vende o que?
+    - vende o que no site?
+    - vende o que na loja?
+- intent: faq/saber_tipos_de_entrega
+  examples: |
+    - Quais são os tipos de entrega disponíveis?
+    - quais os tipos de entrega disponíveis no momento?
+    - Quais são os tipos de entrega disponíveis no site?
+    - Quais são os tipos de entrega disponíveis na loja?
+    - Tipos de entrega
+    - entrega
+    - Entrega
+    - Entregam
+    - Entregar
+    - formas de entrega
+    - meios de entrega
+    - Formas de entrega
+    - Meios de entrega
+    - Quais os tipos de entrega disponíveis?
+    - Quais são as formas de entrega disponíveis?
+    - Quais as formas de entrega disponíveis?
+    - Quais são os tipos de entrega vocês tem?
+    - Quais são os tipos de entrega vocês oferecem?
+    - Vocês entregam?
+    - Vocês entregam em casa?
+    - Vocês fazem entrega?
+    - Vocês enviam?
+    - Vocês enviam pra minha casa?
+    - Vocês enviam para minha casa?
+    - Vocês enviam para a minha casa?
+    - Vocês fazem envios?
+    - A loja faz entregas?
+    - O site faz entregas?
+    - A loja faz envio?
+    - O site faz envio?
+    - A loja faz envio pra minha casa?
+    - O site faz envio pra minha casa?
+    - A loja faz o envio dos produtos
+    - O site faz envio dos produtos
+    - A loja faz o envio das mercadorias
+    - O site faz envio das mercadorias
+    - O site faz envio das minhas compras
+    - A loja faz o envio das compras
+    - O site faz envio das compras
+    - O site faz envio das minhas compras para meu local
+    - O site faz envio das minhas compras para meu endereço
+    - O site faz envio das minhas compras para minha residência
+    - A loja faz envio das minhas compras para meu local
+    - A loja faz envio das minhas compras para meu endereço
+    - A loja faz envio das minhas compras para minha residência
+    - Você faz o envio das mercadorias que comprei
+    - Você faz envio das minhas compras para meu local
+    - Você faz envio das minhas compras para meu endereço
+    - Voce faz envio das minhas compras para minha residência
+    - Você faz o envio das mercadorias que comprei
+    - Vocês fazem envio das minhas compras para meu local
+    - Vocês fazem envio das minhas compras para meu endereço
+    - Voces fazem envio das minhas compras para minha residência
+    - Vocês fazem o envio das mercadorias que comprei
+    - O site faz envio das mercadorias que comprei
+    - A loja faz envio pra minha casa dos produtos
+    - O site faz envio pra minha casa dos produtos
+    - Vai entregar minhas compras?
+    - Vai entregar minhas mercadorias?
+    - Vai entregar meus produtos?
+    - Quais são os tipos de entregas vocês fazem
+    - Quais os tipos de entrega disponíveis?
+    - que tipos de entregas tem disponíveis?
+    - que tipos de entregas vocês tem
+    - Quais as formas de envio disponíveis?
+    - Quais são os tipos de envio vocês tem?
+    - Quais são os tipos de envio vocês oferecem?
+    - Vocês entregam?
+    - Vocês entregam em casa?
+    - Entrega em casa?
+    - Entregam em casa?
+    - Entregam na minha residência?
+    - Vocês fazem entrega?
+    - A loja faz entregas?
+    - O site faz entregas?
+    - Vocês entregam na minha residência?
+    - Vocês entregam na minha casa?
+    - Vocês fazem entrega?
+    - A loja faz entregas?
+    - O site faz entregas?
+    - Vai entregar minhas compras?
+    - Vai entregar minhas mercadorias?
+    - Vai entregar meus produtos?
+    - Vocês enviam?
+    - Vocês enviam para minha casa?
+    - Vocês fazem envio?
+    - A loja faz envios?
+    - O site faz envio?
+    - Vai enviar minhas compras?
+    - Vai enviar minhas mercadorias?
+    - Vai enviar meus produtos?
+    - Vocês entregam pelos correios?
+    - Vocês entregam em casa pelos correios?
+    - Vocês fazem entrega pelos correios?
+    - A loja faz entregas pelos correios?
+    - Vocês enviam pelos correios?
+    - Vocês enviam pra minha casa pelos correios?
+    - Vocês enviam para minha residência pelos correios?
+    - Vocês enviam entrega pelos correios?
+    - A loja faz envio pelos correios?
+    - Vocês enviam pelo correio?
+    - Vocês enviam em casa pelo correio
+    - Vocês enviam entrega pelo correio
+    - A loja faz envio pelo correio
+    - Vocês enviam entrega pelos correios?
+    - A loja faz envio pelos correios?
+    - Vocês enviam os produtos pelo correio?
+    - Vocês enviam para minha residência pelo correio
+    - Vocês enviam produtos pelo correio
+    - A loja faz envio de mercadorias pelo correio
+    - Quais são os meios de entregas que vocês tem?
+    - Quais são os tipos de entregas que vocês tem?
+    - Quais são os meios de entregas que vocês teriam?
+    - Quais são os tipos de entregas que vocês teriam?
+    - Quais os meios de entregas que vocês tem?
+    - Quais os tipos de entregas que vocês tem?
+    - Quais os meios de entregas que vocês teriam?
+    - Quais os tipos de entregas que vocês teriam?
+    - Quais meios de entregas que vocês tem no momento?
+    - Quais tipos de entregas que vocês tem no momento?
+    - Quais meios de entregas que vocês teriam no momento?
+    - Quais tipos de entregas que vocês teriam no momento?
+    - Quais meios de entregas que vocês tem no momento?
+    - Quais tipos de entregas que vocês tem no momento?
+    - Quais meios de entregas que vocês teriam no momento?
+    - Quais tipos de entregas que vocês teriam no momento?
+    - Quais são as entregas que vocês tem?
+    - Quais são as entregas que vocês fazem
+    - Quais são os meios de entregas que vocês tem disponíveis?
+    
+- intent: faq/saber_se_pode_retirar_na_loja
+  examples: |
+    - Posso retirar na loja?
+    - Posso retirar minha compra na loja?
+    - Posso retirar o produto na loja?
+    - Posso retira na loja?
+    - Posso retirar na sua loja?
+    - Posso retirar no local?
+    - Posso fazer retirada na loja?
+    - Posso comprar e retirar na loja?
+    - Eu posso retirar na loja?
+    - Eu posso retirar minha compra na loja?
+    - Eu posso retirar o produto na loja?
+    - Eu posso retira na loja?
+    - Eu posso retirar na sua loja?
+    - Eu posso retirar no local?
+    - Eu posso fazer retirada na loja?
+    - Eu posso comprar e retirar na loja?
+    - Quero retirar minhas mercadorias no seu depósito
+    - Queria retirar minhas ercadorias no seu depósito
+    - Quero retirar minhas compras no seu estabelecimento
+    - Queria retirar minhas compras no seu estabelecimento
+    - Quero retirar meus produtos no seu estabelecimento
+    - Queria retirar meus produtos no seu endereço
+    - Posso retirar no seu endereço
+    - Posso retirar minha compra no seu endereço
+    - Posso retirar o produto no seu endereço
+    - Posso retira no seu endereço
+    - Posso retirar no seu endereço
+    - Posso retirar no seu endereço
+    - Posso fazer no seu endereço
+    - Posso comprar no seu endereço
+    - Eu posso retirar no seu endereço
+    - Eu posso retirar minha compra no seu endereço
+    - Eu posso retirar o produto no seu endereço
+    - Eu posso retira no seu endereço
+    - Eu posso retirar no seu estabelecimento
+    - Eu posso retirar no local?
+    - Eu posso fazer retirada no seu estabelecimento
+    - Eu posso comprar e retirar no seu estabelecimento
+    - Quero retirar minhas mercadorias no local?
+    - Queria retirar minhas ercadorias em mãos
+    - Quero retirar minhas compras em mãos
+    - Queria retirar minhas compras em mãos
+    - Quero retirar meus produtos em mãos
+    - Queria retirar meus produtos em mãos
+    - Quero retirar em mãos
+    - Quero retirar minha compra em mãos
+    - Aceita retirada em mãos?
+    - Aceita retirada na loja?
+    - Aceita retirada no local?
+    - posso retirar na loja?
+    - posso retirar minha compra na loja?
+    - posso retirar o produto na loja?
+    - posso retira na loja?
+    - aceita retirada em mãos?
+    - aceita retirada na loja?
+    - aceita retirada no local?
+    - aceita retirada no seu estabelecimento?
+    - aceita retirada no seu endereço?
+    - aceita retirada no seu depósito?
+- intent: faq/saber_se_embrulha_para_presente
+  examples: |
+    - Vocês embrulham para presente?
+    - Vocês fazem embrulho para presente?
+    - Vocês embrulham pra presente?
+    - Vocês fazem embrulho pra presente?
+    - Você embrulha pra presente?
+    - Você embrulha para presente?
+    - voce embrulha pra presente?
+    - Você pode embrulhar pra presente?
+    - Você poderia embrulha para presente?
+    - Você faz embrulho pra presente?
+    - Você consegue embrulhar para presente?
+    - Você embrulha pra presente a minha compra?
+    - embrulha pra presente
+    - Embrulha para presente
+    - embrulhar pra presente
+    - Embrulhar para presente
+    - Para presente
+    - Presente
+    - quero que embrulha pra presente
+    - Quero que embrulhe para presente
+    - Queria que embrulhase para presente
+- intent: faq/saber_se_pode_pagar_na_retirada
+  examples: |
+    - Posso pagar em dinheiro na retirada?
+    - Posso pagar em dinheiro na hora de retirar o produto?
+    - Posso pagar na hora da retirada?
+    - Posso pagar em dinheiro na retirada no local?
+    - Posso pagar em dinheiro no local?
+    - Posso pagar em dinheiro no momento da retirada?
+    - Posso pagar ao retirar?
+    - Posso pagar ao retirar o produto?
+    - Posso pagar ao fazer a retirada?
+    - Posso pagar em dinheiro na hora de retirar em mãos?
+    - Posso pagar em dinheiro na hora de retirar na loja?
+- intent: faq/saber_meios_de_pagamento
+  examples: |
+    - aceita Pix
+    - Quais são os meios de pagamentos disponíveis?
+    - Quais seriam os meios de pagamentos disponíveis?
+    - Que tipo de pagamento vocês aceitam?
+    - Vocês aceitam quais cartões?
+    - Vocês aceitam dinheiro?
+    - Vocês aceita quais formas de pagamento?
+    - Quais formas de pagamento disponíveis?
+    - Quais forma de pagamento vocês aceitam?
+    - Qual forma de pagamento disponível?
+    - Qual forma de pagamento você aceita?
+    - Como faço para pagar?
+    - Quais meios de pagamento?
+    - Quais formas de pagamento?
+    - Como vou pagar?
+    - Que cartões vocês aceitam?
+    - Posso pagar com cartão?
+    - Posso pagar com cartão de crédito?
+    - Posso pagar com pix?
+    - Posso pagar com Pix?
+    - Queria pagar em dinheiro
+    - Quero pagar em dinheiro
+    - Quero pagar com cartão
+    - Quero pagar com cartão de crédito
+    - quais cartões você aceita
+    - quais são os meios de pagamentos disponíveis?
+    - quais seriam os meios de pagamentos disponíveis?
+    - que tipo de pagamento vocês aceitam
+    - vocês aceitam quais cartões?
+    - vocês aceitam dinheiro
+    - vocês aceita quais formas de pagamento
+    - quais formas de pagamento disponíveis
+    - quais forma de pagamento voces aceitam
+    - qual forma de pagamento disponível
+    - qual forma de pagamento você aceita
+    - como faço para pagar?
+    - quais meios de pagamento?
+    - quais formas de pagamento?
+    - como vou pagar?
+    - que cartões vocês aceitam?
+    - posso pagar com cartão?
+    - posso pagar com cartão de crédito?
+    - queria pagar em dinheiro
+    - quero pagar em dinheiro
+    - quero pagar com cartão
+    - quero pagar com cartão de crédito
+    - quais cartões vc aceita
+    - Aceita Paypal?
+    - Aceita só o Paypal
+    - Só aceitao Paypal?
+    - Quais são os meios de pagamentos que você tem?
+    - Quais são os meios de pagamentos que vocês tem disponíveis?
+    - Quais são os meios de pagamentos que vocês tem à disposição?
+    - Quais são os meios de pagamentos que vocês tem pra pagar?
+    - Quais são os meios de pagamentos que vocês aceitam?
+    - Qual o meio de pagamento que vocês aceitam?
+    - Qual o meio de pagamento que você aceita
+    - Qual o meio de pagamento que voce aceita
+    - qual o meio de pagamento que voce aceita
+    - qual o meio de pagamento disponível
+    - quais meios de pagamento disponíveis
+    - que meio de pagamento que voce aceita
+    - Que meio de pagamento que você aceita
+    - Que meio de pagamento que você tem disponível?
+    - Que meio de pagamento que você tem à disposição?
+    - Quais são as formas de pagamentos que você tem?
+    - Quais são as formas de pagamentos que vocês tem disponíveis?
+    - Quais são as formas de pagamentos que vocês tem à disposição?
+    - Quais são as formas de pagamentos que vocês tem pra pagar?
+    - Quais são as formas de pagamentos que vocês aceitam?
+    - Qual a forma de pagamento que vocês aceitam?
+    - Qual a forma de pagamento que você aceita
+    - Qual a forma de pagamento que voce aceita
+    - qual a forma de pagamento que voce aceita
+    - qual a forma de pagamento disponível
+    - quais formas de pagamento disponíveis
+    - que forma de pagamento que voce aceita
+    - Que forma de pagamento que você aceita
+    - Que forma de pagamento que você tem disponível?
+    - Que forma de pagamento que você tem à disposição?
+    - Quais são as formas de pagamentos que tem na loja
+    - Quais são as formas de pagamentos que a loja aceita
+    - Quais são as formas de pagamentos que o site aceita
+    - Quais são as formas de pagamentos que a loja aceita
+    - Quais são as formas de pagamentos a loja aceita
+    - Qual a forma de pagamento que o site aceita
+    - Qual a forma de pagamento que a loja aceita
+    - Qual a forma de pagamento a loja aceita
+    - qual a forma de pagamento que o site aceita
+    - qual a forma de pagamento o site aceita
+    - quais formas de pagamento a loja aceita
+    - que forma de pagamento que o site aceita
+    - Que forma de pagamento o site aceita
+    - Que forma de pagamento que a loja aceita
+    - Que forma de pagamento a loja aceita
+    - Que meio de pagamento que você tem à disposição na loja
+    - Que meio de pagamento que você tem à disposição no site?
+    - Que meio de pagamento que você tem disponível na loja
+    - Que meio de pagamento que você tem disponível no site?
+    - Que meio de pagamento que você tem disponível com você?
+    - Que meio de pagamento que você tem à disposição com você?
+
+- intent: log10
+  examples: |
+    - log10
+    - log10
+    - Log10
+    - LOG10
+- intent: afirmar
+  examples: |
+    - Sim
+    - Claro
+    - Eu quero sim
+    - Claro que quero
+    - Ok
+    - sim
+    - Quero
+    - ok
+    - Claro!
+    - Certamente!
+    - Gostaria sim
+- intent: dizer_qual_produto
+  examples: |
+    - Eu quero comprar [um](qtd) [lápis](produto)
+    - Eu quero [uma](qtd) [caneta](produto)
+    - Queria [três](qtd) [calculadoras](produto)
+    - Quero [uma](qtd) [calculadora](produto)
+    - Quero um [caderno](produto)
+    - Quero comprar [um](qtd) [caderno](produto)
+    - Eu quero [um](qtd) [lápis](produto)
+    - quero [uma](qtd) [caneta](produto)
+    - Quero [uma](qtd) [calculadora](produto)
+    - [Caderno](produto)
+    - [Caneta](produto)
+- intent: dizer_qual_produto
+  examples: |
+    - Só [uma](qtd) mesmo
+    - [20](qtd)
+    - [55](qtd)
+    - [Dois](qtd)
+    - Somente [uma](qtd) mesmo
+- intent: negar
+  examples: |
+    - Não
+    - Não!
+    - Nopes
+    - não
+    - no
+    - nãp
+    - não!
+    - nunca
+    - Não
+    - Jamais
+    - Não quero mais
+    - Nunca
+    - not
+    - no
+    - No
+    - Dont
+    - Nop
+    - Não
+    - Não
+    - Não!
+    - Nopes
+    - não
+    - no
+    - nãp
+    - não!
+    - nunca
+    - Não
+    - Jamais
+    - Não quero mais
+    - Nunca
+    - not
+    - no
+    - No
+    - Dont
+    - Nop
+    - Não
+    - Não quero
+    - Não quero, obrigado
+    - Não
+- intent: despedir
+  examples: |
+    - Tchau, tenha um bom dia
+    - tchau brigado
+    - tchau
+- intent: add_carrinho
+  examples: |
+    - Vou querer sim
+- intent: ret_carrinho
+  examples: |
+    - Retire esse [caderno](produto) do carrinho
+    - Não quero esse [lápis](produto)
+- intent: saber_que_dia_pode_ir_buscar
+  examples: |
+    - Que dia posso ir buscar ?
+    - Que dia posso ir retirar ?
+    - Qual dia posso ir retirar ?
+    - Quando posso ir retirar ?
+    - Quando posso ir buscar ?
+    - Que dia poderia ir buscar ?
+    - Que dia poderei buscar ?
+    - Quando poderei ir buscar ?
+    - Quando é que posso ir buscar ?
+    - Quando é que posso ir retirar ?
+    - Quero retirar agora
+    - Posso retirar agora na loja ?
+    - Quando posso ir retirar na loja ?
+    - Quando posso ir buscar na loja  ?
+    - Que dia poderia ir buscar na loja  ?
+    - Que dia poderei buscar na loja  ?
+    - Quando poderei ir buscar na loja  ?
+    - Quando é que posso ir buscar na loja  ?
+    - Quando é que posso ir retirar  na loja ?
+    - Quero retirar agora na loja 
+    - Posso retirar agora na loja ?
+    - Já está disponível para retida?
+    - Já posso retirar
+    - Já está pronto para retirada
+    - Já posso ir buscar
+    - Já vou buscar então
+    - Já quero retirar
+    - Já está disponivel pra retirada
+    - Está disponível pra retirada
+    - Que dia posso buscar ?
+    - Que dia posso ir ?
+    - Que dia posso ir na loja ?
+    - Que dia posso ir buscar na loja ?
+    - Que dia posso buscar na loja ?
+    - Que dia posso retirar na loja ?
+    - Já está disponível para retida?
+    - Já posso retirar na loja ?
+    - Já está pronto para retirada na loja ?
+    - Já posso ir buscar na loja ?
+    - Já vou buscar então na loja ?
+    - Já quero retirar na loja ?
+    - Já está disponivel pra retirada na loja ?
+    - Está disponível pra retirada na loja ?
+    - Que dia posso buscar  na loja ??
+    - Que dia posso ir  na loja ??
+- intent: rir
+  examples: |
+    - kkk
+    - Kkk
+    - Kkkk
+    - Kkkkk
+    - Kkkkkk
+    - Kkkkkkk
+    - Kkkkkkkk
+    - Kkkkkkkkk
+    - Kkkkkkkkkk
+    - Kkkkkkkkkkk
+    - Kkkkkkkkkkkk
+    - Kkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkk
+    - kkkkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkkkkkk
+    - KKKKKKKKKKKKKKKKKKK
+    - Kkkkkkkkkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkkkkkkkkk
+    - Kkkkkkkkkkkkkkkkkkkkkk
+    - KKK
+    - KKKK
+    - KKKKK
+    - KKKKKK
+    - KKKKKKK
+    - KKKKKKKK
+    - KKKKKKKKK
+    - KKKKKKKKKK
+    - KKKKKKKKKKK
+    - KKKKKKKKKKKK
+    - KKKKKKKKKKKKK
+    - KKKKKKKKKKKKKK
+    - KKKKKKKKKKKKKKK
+    - kkk
+    - kkkk
+    - kkkkk
+    - kkkkkk
+    - kkkkkkk
+    - kkkkkkkk
+    - kkkkkkkkk
+    - kkkkkkkkkk
+    - kkkkkkkkkkk
+    - kkkkkkkkkkkk
+    - kkkkkkkkkkkkk
+    - kkkkkkkkkkkkkk
+    - kkkkkkkkkkkkkkk
+    - kkkkkkkkkkkkkkkk
+    - Rsrs
+    - Rsrsrs
+    - Rsrsrsrs
+    - Rsrsrsrsrs
+    - Rsrsrsrsrsrs
+    - Rsrsrsrsrsrsrs
+    - Rsrsrsrsrsrsrsrs
+    - Rsrsrsrsrsrsrsrsrs
+    - Rsrsrsrsrsrsrsrsrsrs
+    - Rsrsrsrsrsrsrsrsrsrsrs
+    - Heheh
+    - Hehehe
+    - Heheheh
+    - Hehehehe
+    - Heheheheh
+    - Hehehehehe
+    - Heheheheheh
+    - Hehehehehehe
+    - Heheheheheheh
+    - Hehehehehehehe
+    - Heheheheheheheh
+    - Hehehehehehehehe
+    - Heheheheheheheheh
+    - Hehehehehehehehehe
+    - Heheheheheheheheheh
+    - Hehehehehehehehehehe
+    - Hahah
+    - Hahaha
+    - Hahahah
+    - Hahahaha
+    - Hahahahah
+    - Hahahahaha
+    - Hahahahahah
+    - Hahahahahaha
+    - Hahahahahahah
+    - Hahahahahahaha
+    - Hahahahahahahah
+    - Hahahahahahahaha
+    - Hahahahahahahahah
+    - Hahahahahahahahaha
+    

@@ -1,0 +1,52 @@
+version: "2.0"
+
+responses:
+
+  utter_o_que_vende:
+  - text: Bom... Por agora, só tem produtos de papelaria mesmo. Estamos começando agora.
+  - text: Então... Por enquanto, só temos produtos de papelaria mesmo. É porque estamos começando agora.
+  - text: Por enquanto, só tem disponível coisas de papelaria pra vender. Ainda estamos começando a montar a loja.
+
+  utter_nome:
+  - text: É muito bom te conhecer {nome}! Eu sou o Lindovaldo! Mas pode me chamar de Lindo.
+          Em que posso te ajudar?
+  - text: Olá {nome}! Tudo bem? Eu me chamo Lindovaldo! Mas pode me chamar de Lindo.
+          Sou seu vendedor virtual. Está precisando de algo?
+  - text: Oi {nome}! Como vai?? O meu nome é Lindovaldo! Mas todos me chamam de Lindo.
+          Sou um vendedor virtual do site Multitrem.com! Está precisando de algo?
+
+  utter_so_tem:
+  - text: Por enquanto só. Me desculpe.
+  - text: Só por enquanto. Lamento muito.
+  - text: Por enquanto é só. Sinto muito.
+
+  utter_duvida_produto:
+  - text: Ok! Por favor, me informe sua dúvida.
+  - text: Me informe sua dúvida, por favor.
+
+  utter_ask_reclamacao_form_nome:
+  - text: Por favor, me informe o seu nome.
+  - text: Ok! Por favor, me informe o seu nome para o registro.
+
+  utter_ask_reclamacao_form_texto_recl:
+  - text: Por favor, escreva sua reclamação toda aqui e em um único parágrafo.
+  - text: Ok! Por favor, escreva sua reclamação toda aqui e no mesmo parágrafo.
+  utter_submit:
+  - text: Prontinho! Reclamação registrada.
+  - text: Pronto! Reclamação registrada com sucesso.
+  utter_sem_opcoes_de_cor:
+  - text: Desculpe-me! Mas não encontrei opções de cores para este produto no sistema.
+  - text: Perdão! Mas este produto não possui opções de cores cadastradas no nosso sistema.
+  - text: Lamento informar! Mas não achei mais opções de cores disponíveis para este produto no nosso sistema.
+  utter_temos_sim:
+  - text: Temos deste produto sim!
+  - text: Sim! Temos deste produto disponível.
+  - text: Temos sim! Acabei de encontrar deste produto no sistema.
+  utter_saber_que_dia_pode_ir_buscar:
+  - text: O produto já está disponível para retirada de imediato.
+  - text: O produto já está disponível para retirar em nossa loja no horário comercial.
+  - text: Você já pode retirar em nossa loja durante o horário comercial.  utter_oferecer:
+  - text: Talvez este outro produto possa te interessar também.
+  - text: Encontrei um produto que talvez você possa querer.
+  - text: Talvez possa te interessar este outro produto.
+  

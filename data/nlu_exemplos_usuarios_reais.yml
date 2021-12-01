@@ -1,0 +1,662 @@
+version: "2.0"
+nlu:
+
+- intent: saber_itens_de_papelaria
+  examples: |
+    - Qual produto você tem?
+    - Qual produto vcs tem?
+    - Quais produtos você tem ?
+    - Produtos de papelaria
+    - Você tem oque pra vender
+    - Qual item
+    - Seus produtos
+    - Eu queria saber o que vc vende
+    - Qual produtos vocês tem.
+    - O que vc tem de produto?
+    - Que produtos vocês tem de papelaria?
+    - Me mostre o que vende
+    - Tem mais opções?
+    - Outros modelos?
+    - São cor mix ?
+    - Na papelaria de vocês tem que tipo de produtos?
+    - Quais itens de papelaria de vocês tem?
+    - O que você tem no sistema?
+    - Qual tem disponível?
+    - O que tem disponível?
+    - Qual está disponível?
+    - Qual teria disponível?
+    - Qual tá disponível?
+    - Qual estaria disponível?
+    - Quais produtos você vende?
+    - Que produtos você vende?
+    - Que produtos você tem pra vender?
+    - Me fala seus produtos
+    - Seus produtos
+    - Fala tudo que tem pra vender
+    - Qual o seu estoque?
+    - Outros produtos
+    - Outro produto 
+    - Quais outros produtos
+    - Quais outros produtos que você tem aí
+    - Quais produtos que você tem aí pra vender
+    - Outro produto
+    - Quais itens de papelaria que vocês tem?
+    - Que produtos vocês tem de papelaria?
+    - Na papelaria de vocês tem que tipo de produtos?
+    - Qual produto vcs tem?
+    - O que vc tem de produto?
+    - O que você tem pra vender ?
+    - Materiais de papelaria. O que vocês tem para me oferecer ...?
+    - quais produtos vc tem
+    - O que você tem pra vender ?
+    - O que você vende?
+    - Boa tarde As cores e variadas??
+    - Boa noite! Os modelos vem repetidos?
+    - lista de produtos que vcs tem no site do multitrem
+    - passa para min a lista de mercadoria que vocês no site de vocês
+    
+- intent: saber_o_que_vende
+  examples: |
+    - O que você vende além de produtos de papelaria?
+    - O que você tem além de produtos de papelaria?
+    - Um que não seja de papelaria
+    - outro tipo
+    - outra categoria
+    - Qual o seu portifólio ?
+    - tem de outros tipos
+    - Qual o seu leque de opções ?
+    - Qual é o seu portifólio ?
+    - tem outros tipos
+- intent: dizer_qual_produto
+  examples: |
+    - [Picanha maturata](produto)
+    - [Picanha](produto)
+    - [Goró](produto)
+    - Cerveja](produto)
+    - Tenho, em [uma](qtd) [cerveja gelada(produto)
+    - Sim [10](qtd) [canetas](produto)
+    - Sim [2](qtd) [lapis](produto)
+    - Sim [10](qtd) [papéis](produto) por favor
+    - Sim [uma dúzia](qtd) de [papéis](produto) por favor
+    - Sim, me dá [10](qtd) [papéis](produto) por favor
+    - Sim quero [quatro](qtd) [papéis](produto) por favor
+    - Sim quero [quinze](qtd) [papéis](produto) agora
+    - sim [10](qtd) [canetas](produto) agora
+    - sim [2](qtd) [lapis](produto) agora
+    - Agora quero [2](qtd) [lapis](produto)
+    - Agora gostaria de [2](qtd) [lápis](produto)
+    - Agora queria [33](qtd) [lápis](produto)
+    - Agora desejo de [12](qtd) [torresmos](produto)
+    - Quero [3](qtd) [calculadora de mesa](produto).
+    - [Papel](produto)
+    - Quero [uma](qtd) [calculadora de mesa](produto).
+    - Quero [3](qtd) [calculadora de mesa](produto).
+    - Quero [3](qtd) [calculadora de mesa](produto).
+    - Quero [três](qtd) [calculadora de mesa](produto).
+    - Queria [cinco](qtd) [pasta com aba](produto).
+    - [1](qtd) [caneta esférica](produto)
+    - [Papel sulfite](produto)
+    - [Pasta com aba](produto)
+    - Vou querer [2](qtd) [canetas](produto)
+    - Vou querer [1](qtd) [caneta trilux](produto) então
+    - [Prateleira](produto)
+    - [Um](qtd) [sapato](produto)
+    - [Uma](qtd) [prateleira](produto)
+- intent: negar
+  examples: |
+    - Nenhuma
+    - nenhuma
+    - não. obrigado
+    - Nenhum destes
+    - Não, obrigada
+    - não quero mais
+    - não quero
+- intent: chitchat/pergunta_querer
+  examples: |
+    - Você quer aprender algo novo?
+    - Você quer aprender algo?
+    - Você quer aprender?
+    - Quer aprender algo novo?
+    - Quer aprender algo?
+    - Quer aprender?
+- intent: comprar
+  examples: |
+    - Quero compra de vocês
+    - Gostaria de comprar.
+    - Preciso adquirir um produto
+    - Preciso de compra
+    - Gostaria de fazer um pedido...?
+    - Quero comprar de vocês
+    - Preciso de compra
+    - Gostaria de fazer um pedido
+    - Quero compra de vocês
+    - Preciso adquirir um produto
+    - Preciso de compra
+    - Olá gostei muito das canetas pra revenda gostaria de fazer uma compra
+- intent: faq/saber_meios_de_pagamento
+  examples: |
+    - Quais são os meios de pagamentos disponíveis?
+    - Quais são as formas de pagamentos vocês tem?
+    - Que tipo de pagamentos vocês aceita?
+    - Aceita quais tipos de pagamentos?
+    - Quais são os meios de pagamentos disponíveis?
+    - Quais são as formas de pagamentos vocês tem?
+    - Que tipo de pagamentos vocês aceita?
+    - Aceita quais tipos de pagamentos?
+    
+- intent: faq/saber_se_pode_retirar_na_loja
+  examples: |
+    - Posso retirar na loja?
+    - Posso ir na loja retirar o produto?
+    - Eu posso retirar o produto na loja?
+    - Posso retirar na localização?
+    - Posso retirar na loja?
+    - Posso ir na loja retirar o produto?
+    - Eu posso retirar o produto na loja?
+- intent: faq/saber_tipos_de_entrega
+  examples: |
+    - Voces fazem entrega?
+    - Vc entrega?
+    - Chega em quanto tempo?
+    - Tem frete grátis
+    - Chega em quanto tempo?
+    - Quais são os tipos de entrega disponíveis?
+    - Envio de encomendas quais são ?
+    - Formas de envio das encomendas?
+    - Quais são os meios de entregas que vocês tem?
+    - Quais os meios de entregas que vocês tem?
+    - Envio de encomendas quais são ?
+    - Formas de envio das encomendas?
+    - Oi, consegue mandar ainda hoje?
+    - Entrega ou não ?
+    - Tem entrega ou não ?
+    - Faz entrega ou não ?
+    - Quanto é a entrega ?
+    - Quanto custa a entrega ?
+    - Qual o valor da entrega ?
+    - Quanto é o frete
+    - Qual o valor do frete
+    - Chega em quanto tempo?
+    - Qual o valor da taxa de entrega ?
+    - Entrega
+    - Chega em quanto tempo?
+    - Chega em quanto tempo?
+    - Chega quando?
+    - Vcs entregam ?
+    - Entrega ou não ?
+    - Quais são os tipos de entrega disponíveis?
+    - Quais são os meios de entregas que vocês tem?
+    - Envio de encomendas quais são ?
+    - Formas de envio das encomendas?
+    - Chega em quanto tempo?
+    - Entrega ou não ?
+    - Quanto é a entrega ?
+    - Chega em quanto tempo?
+    - Vcs entregam ?
+    - Vem via transportadora? realmente chega sabado?
+    - Oi, consegue mandar ainda hoje?
+- intent: dizer_qual_produto
+  examples: |
+    - Vc tem [caderno](produto)?
+    - vc tem [pasta](produto)?
+    - Vc tem [lapiseiras](produto)?
+    - Tem [papel](produto)?
+    - Tem [caneta](produto)?
+    - Vocês têm [caneta](produto) disponível para entrega?
+    - Têm [caneta](produto) disponível?
+    - [Caneta](produto) vocês tem para entrega?
+    - Daquela [caneta](produto)
+    - Vocês têm [pasta com aba](produto) disponível para entrega?
+    - Vocês tem [canetas](produto) de qual marca
+    - tem da marca [bic](produto) ?
+    - [1](qtd) caixa [azul](cor) obrigada
+    - vou querer a [caneta faber castell bt](produto)
+    
+- intent: nlu_fallback
+  examples: |
+    - ?
+    - ?
+    - A caneta 1.2 e a caneta 0.7
+    - ?
+    - ?
+    - Bom dia! Quero comprar 1 caixa azul e 1 preta. como faço para ter 1 envio só?
+    - VAMOS FECHAR AS TRES CAIXAS PRETA, AZUL E VERMELHA EM 90,00. PAGO AINDA HOJE
+    - Bom dia, fiz a compra de 3 caixas de canetas, vou querer 2 pretas e 1 azul. Obrigada
+    - Boa noite eu vou comprar uma caixa de prancheta com 85 U e quero também uma caixa com caneta de 50 U voce tem como mandar a caixa de caneta junto com a caixa e projeta já obrigado. Aguardo seu retorno.
+    - Vcs também tem a bic ponta fina preta! Se tiverem, podem fazer um Kit de 10 pretas com dois conjuntos dessas dourada e prateada
+- intent: faq/endereco
+  examples: |
+    - Onde fica a loja?
+    - Onde é a loja?
+    - Qual o endereço para retirada?
+    - Onde fica ?
+    - Onde fica a loja para retirada
+    - Me manda a localização
+    - Onde fica ?
+    - Onde fica a loja para retirada
+    - Me manda a localização
+    - Onde fica ?
+    - Me manda a localização
+    - Onde fica a loja para retirada
+    - Onde fica a loja para retirada
+- intent: saber_que_dia_pode_ir_buscar
+  examples: |
+    - Que dia posso ir buscar ?
+    - Posso retirar os produtos de imediato?
+    - Que dia posso ir buscar aí?
+- intent: faq/saber_meios_de_pagamento
+  examples: |
+    - Vocês passa cartão?
+    - Vocês passam quais cartões?
+    - Nao aceitam pix?
+    - aceitam pix?
+    - Pix
+    - Posso pagar com pix
+    - Vocês aceitam pix?
+- intent: cumprimentar
+  examples: |
+    - oi
+    - oI
+    - Olá
+    - oi
+    - oi
+    - oi
+    - Oi
+    - Ola
+    - Oi
+    - Oi
+    - oi
+    - Oi
+    - Oiii
+    - Oi
+    - Oi
+    - oi
+    - oi
+    - oi
+    - oi
+    - oi
+    - oi
+    - Oi
+    - Oi
+    - oi
+    - oi
+    - Oi
+    - Oi
+    - oi
+    - oi
+    - Oiii
+    - Oláa
+    - Olááá
+    - Oláaa
+    - Olaaaa
+    - Oie
+    - Oie oie
+    
+- intent: afirmar
+  examples: |
+    - sim
+    - Sim
+    - sim
+    - Blz
+    - ok
+    - ok
+    - Sim
+    - sim
+    - sim
+    - sim
+    - sim
+    - sim
+    - ok
+    - ok
+    - ok
+    - Sim
+    - Sim
+    - Sim
+    - Sim
+    - ok
+    - sim
+    - sim
+    - ok
+    - Sim
+    - ok
+    - ok
+    - Sim
+    - Agradeço
+    - Sim
+    - Sim, claro.
+    - Quero
+    - Blz
+    - ok
+    - Sim
+    - ok
+    - Ok ok
+    - Simm
+    - Simmm
+    - Siimmm
+- intent: faq/saber_horario_de_atendimento
+  examples: |
+    - Qual o horário de atendimento?
+    - Qual horário posso retirar o produtos?
+    - Qual o horário de atendimento da loja?
+- intent: faq/saber_informacao
+  examples: |
+    - Queria saber uma informação
+    - Gostaria de uma informação
+    
+- intent: negar
+  examples: |
+    - não
+    - não
+    - não
+    - Não
+    - Não.  Obrigado
+    - Não.
+    - N obrigada
+    - Não
+    - não quero mais
+    - não quero mais nada
+    - não quero mais
+    - não quero
+    - Nããão
+    - Nãoo
+    - Nãooo
+    - Nãoooo
+    - Naooo
+    - Naaaoooo
+- intent: chitchat/agradecimento
+  examples: |
+    - Obrigado
+    - Vlw
+    - Vlw
+    - Brigado
+    - Brigada
+    - Ha sim ok então obrigado valeu
+    - ha ok obrigado vendedor virtual
+    - beleza então obrigado
+    - Vlw
+    
+- intent: faq/saber_se_embrulha_para_presente
+  examples: |
+    - Embrulha pra presente?
+- intent: dizer_qual_produto
+  examples: |
+    - quero [um](qtd) [lapis](produto)
+    - Quero [uma](qtd) [calculadora de mesa](produto).
+    - Quero [3](qtd) [calculadora de mesa](produto).
+    - [Papel A4](produto).
+    - Sim [10](qtd) [canetas](produto)
+    - quero [um](qtd) [caderno](produto)
+    - quero [um](qtd) [papel](produto)
+    - Quero [um](qtd) [lápis](produto)
+    - [Calculadora de mesa](produto)
+    - Quero [um](qtd) [lápis](produto)
+    - [Um]](qtd) [nicho](produto)
+    - [Nincho](produto)
+    - [Prateleira](produto)
+    - [Sapato](produto)
+    - [Um](qtd) [sapato](produto)
+    - [Uma](qtd) [prateleira](produto)
+    - [Um](qtd) [grampeador](produto)
+    - [Um](qtd) [lápis](produto)
+    - [Um](qtd) [caderno](produto)
+    - [Papel A 4](produto).
+    - [Pasta com aba](produto)
+    - Quero [papel A4](produto)
+    - [TV smart](produto)
+    - [Pizza de 4](produto)
+    - [Um](qtd) [nicho](produto)
+    - [Um](qtd) [sapato](produto)
+    - [Uma](qtd) [prateleira](produto)
+    - Então será apenas aquela [caneta](produto)
+    - A [caneta](produto)
+    - [Caneta trolux](produto)
+    - [Caneta trilux](produto)
+    - Então será apenas aquela [caneta](produto)
+    - vou querer [3](qtd) unidades da [trilux](produto)
+    - [Clip](produto)
+    - [Borracha](produto)
+- intent: dizer_qual_produto
+  examples: |
+    - [duzentas](qtd) unidades
+    - [trezentas](qtd) unidades
+    - [quatrocentas](qtd) unidades
+    - [quinhentas](qtd) unidades
+    - [seicentas](qtd) unidades
+    - [setecentas](qtd) unidades
+    - [oitocentas](qtd) unidades
+    - [novecentas](qtd) unidades
+    - [mil](qtd) unidades
+    - [duas mil](qtd)
+    - Sim pode colocar [3](qtd).
+    - Sim pode colocar [seis](qtd).
+    - Sim pode colocar [treis](qtd) dessa.
+    - Sim coloca [meia dúzia](qtd) desse.
+    - Sim coloca [duas dúzias](qtd) desse daí.
+    - [4](qtd) deste
+    - [Três](qtd)
+    - [5](qtd) desse dae
+    - [5](qtd) desse mesmo
+    - [7](qtd) destes
+    - [02](qtd) unidades
+    - [01](qtd)
+    - [2](qtd) do mesmo
+    - [tres](qtd) do mesmo produto
+    - [5](qtd)
+    - [02](qtd) unidades
+    - [03](qtd) unidades
+    - [01](qtd) unidades
+    - [0](qtd)
+    - [5](qtd)
+    - [Dez](qtd)
+    - [0](qtd)
+    - [22](qtd) unidades
+    - [1](qtd) unidade
+    - Quero [10](qtd) unidade
+    - Sim [cinco](qtd).
+    - Sim [uma](qtd).
+    - [Uma resma](qtd).
+    - [Dez](qtd)
+    - [Vinte e uma](qtd)
+    - Sim, [10](qtd) unidades
+    - Vou querer [1](qtd)
+    - [treis](qtd)
+- intent: fechar_pedido
+  examples: |
+    - Então pode fechar meu carinho
+    - Então pode fechar meu carrinho
+    - Pode fechar minha compra
+    - Só isso
+    - Pode encerrar
+    - Pode concluir
+    - Finalizar minha compra
+    - Concluir
+    - Quero concluir a compra
+    - so
+    - so
+    - Só isso.
+    - Apenas
+    - so
+    - Só isso.
+    - Só isso mesmo
+    - Apenas
+
+- intent: add_carrinho
+  examples: |
+    - add carrinho
+    - Pode adicionar
+    - adiciona ai pra min
+    - coloca para min por favor
+- intent: dizer_qual_produto
+  examples: |
+    - Valores
+    - Preciso de [grampeador e marca texto](produto) quanto  está?
+    - Qual preço da [pasta](produto).
+    - Gostaria de saber o valor da [calculadora](produto).
+    - Qual valor da [calculadora](produto).
+    - Qual valor da [calculadora de mesa](produto) .
+    - Valor da [calculadora de mesa](produto).
+    - Preço da [calculadora de mesa](produto).
+    - Qual. Amor do [papel](produto) A4
+    - Preciso saber o valor para ver quantas unidade vou querer ..
+    - Qual valor do [papel A4](produto)
+    - Qual preço da [pasta com aba](produto) ?
+    - Qual valor da [pasta com aba](produto).
+    - Quanto tá a [pasta com aba](produto)
+    - [Faber](produto)
+    - [trilux](produto)
+    - [esferografica](produto)
+    - [Faber Castel](produto)
+    - [0.7](produto)
+    - [1.2](produto)
+    - [1.0](produto)
+    - [Cristal](produto)
+    - [Universitário](produto)
+    - Ola, tem [caneta bic](produto) preta ponta Grossa toda transparente??
+    - [Picanha maturata](produto)
+    - e [caneta](produto) [roza](produto)
+    - [caderno](produto) vocês não tem
+    
+    
+- intent: saber_itens_de_papelaria
+  examples: |
+    - Outros modelos?
+    - tem oq pra vender?
+    - Artigos de papelaria
+    - Quais itens de papelaria que vocês tem?
+    - Que produtos vocês tem de papelaria?
+    - Na papelaria de vocês tem que tipo de produtos?
+    - Materiais de papelaria. O que vocês tem para me oferecer ...?
+- intent: out_of_scope
+  examples: |
+    - Precisa estudar mais
+    - tem menor qtde?
+    - Saco Kraft
+    - A ponta é média
+    - Saco Kraft
+    - Ela apaga?
+    - Tem quantos itens de cada da lista ??
+    - se eu comprar duas unidades nesse anuncio, pode ser uma caixa azul e outra de vermelho?
+    - Teria lapis faber castell 6B e 2B? Teria também grafite 0.5 para lapiseira, apontador de lapis normal? Caneta de 4 cores bic?
+    - ola, preciso de 65 canetas, você consegue montar um kit???
+    - As canetas vem com alguma caixa ou embalagem para ficar de mostruário para vender?
+    - Kara kara
+    - Posso após o pedido escolher as canetas a parti de um catalogo?
+    - as canetas funcionam?
+    - Tem como enviar 5 canetas de rosquinha nesse pacote de 50 ?
+    - Todas sao testadas
+    - É possível pedir somente canetas de tinta preta?
+    - Você sabe cantar?
+    - Sabia que vc é um viado
+    - Vc canta
+    - A cor da tinta corresponde a cor da caneta ?
+    - A cor da tinta é marrom mesmo?
+    - vc quer apanhar
+    - Boa noite . Essas canetas mancham o outro lado da folha ?
+    - Oi Lindo boa tarde, tudo bem? Tem disponível ainda o kit churrasco do dia?
+    - Bom dia Olha só preciso desta caneta para domingo vai te como me entregar amanhã sem falta
+    - Se eu fosse um bloco de notas, a sua seria 10
+    - Vou comprar para meu filho as tintas delas são tóxicas ?
+    - o corpo dessa caneta é de metal ou de plastico? preciso de um de metal vcs tem?
+    - Se eu comprar 3 envelopes, vc me dá quantos selinhos?
+    - 4 pedaços
+    - Tem com 25
+    - Uma quantidade
+    - Meu pedido já foi separado?
+    - Teria como montar um kit? 10 na cor azul, 10 pretas e 10 vermelhas?
+    - A tinta é marrom mesmo? Porque nas fotos parece a caneta preta 0.5 que é a que procuro.
+    - Que pedi
+    - Uai mais falou que tinha que ir buscar, agora já envia ?
+    - tóxicas
+    - Bom dia Olha só preciso desta caneta para domingo vai te como me entregar amanhã sem falta ou não
+    - Boa noite . Essas canetas mancham o outro lado da folha ou são das boas?
+    - mancham
+    - o corpo dessa caneta é de metal ou de plastico? preciso de um de metal vcs tem?
+    - Pq vc riu?
+    - Teria lapis faber castell 6B e 2B? Teria também grafite 0.5 para lapiseira, apontador de lapis normal? Caneta de 4 cores bic?
+    - teria como fazer um kit com pretas vermelhas e azuis ?
+    - Por que você riu?
+    - Qual é a graça?
+    - Acha engraçado?
+    - Achou engraçado?
+    - Ela tem como trocar refil?
+    - boa noite tenho um lote grande de itens da bic vc compra ?????????
+    
+- intent: chitchat/boa_noite
+  examples: |
+    - Boa noite.
+- intent: chitchat/boa_tarde
+  examples: |
+    - Boa tarde.
+- intent: chitchat/bom_dia
+  examples: |
+    - Bom dia
+- intent: faq/saber_quando_vendera_outros_produtos
+  examples: |
+    - Quando terá azul?
+    - Quando você venderá outros produtos?
+    - Quando você terá outros produtos?
+- intent: faq/saber_tamanho
+  examples: |
+    - Sim qual tamanho desta [calculadora](produto)
+    - Qual tamanho
+- intent: saber_promocao
+  examples: |
+    - Tem promoção hoje?
+- intent: chitchat/contar_piada
+  examples: |
+    - Conta uma piada
+    - Lindo, me conte uma piada
+- intent: saber_cores
+  examples: |
+    - Vocês têm [caneta](produto)
+    - QUAIS AS CORES DESSAS [CANETAS](produto)?
+    - qual a cor disponível
+    - cores
+    - QUAIS AS CORES DESTAS [CANETAS](produto) ae?
+    - Tem mais cores?
+    - Tem quais cores?
+    - Tem de qual cor
+    - Qual q é azul
+    - Oi vc manda em quais cores?
+    - não vende outras cores ?
+    - boa tarde !! qual a cor das tintas das [canetas](produto) ??
+- intent: dizer_qual_produto
+  examples: |
+    - Tem na cor [da pele](cor)
+    - Vou querer na cor [azul](cor) ok
+    - [Rosa](cor)
+    - Quero [Verde](cor)
+    - tem [azul](cor)
+    - Tem ela [preta](cor)?
+    - pode ser da [azul](cor)
+    - [Verde](cor)
+    - quero [roza](cor)
+    - quero [asul](cor)
+    - [verde](cor)
+    - [branca](cor)
+    - quero [azul](cor)
+    - quero [amalera](cor)
+    - cor [azul](cor)
+    - tem [caneta](produto) [preta](cor)
+    - e [caneta](produto) [roza](cor)
+    - quero compra da [caneta bic](produto) na cor [vermelha](cor)
+- intent: chitchat/tudo_bem
+  examples: |
+    - Oi Boa tarde tudo bem
+    - Oi Boa tarde tudo bom
+    - Tudo bem
+    - Como vai tudo bem?
+    - Olá tudo bem
+    - Bao?
+    - Bão?
+    - Baum?
+    - bao?
+    - Bao ou nao?
+- intent: chitchat/definicao
+  examples: |
+    - beleza o que você pode me ajudar
+    - como assim não sabe?
+    - Como assim não sabe?
+- intent: faq/o_que_fazer_se_recebi_produto_com_defeito
+  examples: |
+    - Boa noite! As que não vierem funcionando como faz? Consigo fazer a troca?

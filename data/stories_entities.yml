@@ -1,0 +1,308 @@
+version: "2.0"
+
+
+stories:
+
+- story: Dialogo_ent_a
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - checkpoint: buscar_produto
+
+- story: Dialogo_ent_a0
+  steps:
+  - intent: start
+  - action: utter_start
+  - checkpoint: buscar_produto
+
+- story: Dialogo_ent_a01
+  steps:
+  - intent: fechar_pedido
+  - action: action_fechar
+  - checkpoint: buscar_produto
+
+- story: Dialogo_ent_a02
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - checkpoint: buscar_produto
+
+- story: Dialogo_ent_0a
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_nome
+    entities:
+    - nome: Cassilda
+  - slot_was_set:
+    - nome: Cassilda
+  - action: utter_nome
+
+- story: Dialogo_ent_0ba
+  steps:
+  - intent: dizer_nome
+  - action: utter_nome
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+  
+- story: Dialogo_ent_0bb
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_ent_0bc
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+
+- story: Dialogo_ent_0bb
+  steps:
+  - intent: dizer_nome
+  - action: utter_nome
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_ent_0c
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_nome
+  - action: utter_nome
+
+- story: Dialogo_ent_0ca
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_ent_0cb
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+
+- story: Dialogo_ent_0d
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: dizer_nome
+  - action: utter_nome
+
+- story: Dialogo_ent_0da
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_ent_0db
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+
+- story: Dialogo_ent_0e
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - intent: dizer_nome
+  - action: utter_nome
+
+- story: Dialogo_ent_0ea
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+
+- story: Dialogo_ent_0eb
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: negar
+  - action: utter_estamos_aqui
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_ent_1
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+
+- story: Dialogo_ent_2
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: um
+    - produto: lapis
+    - cor: azul
+  - slot_was_set:    
+    - produto: lapis
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 1
+  - slot_was_set:    
+    - pid: 56
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+
+- story: Dialogo_ent_3
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: um
+    - produto: lapis
+    - cor: azul
+  - slot_was_set:    
+    - produto: lapis
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 1
+  - slot_was_set:    
+    - pid: 56
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - corId: azul
+
+
+- story: Dialogo_ent_6
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: lapis
+    - cor: azul
+  - slot_was_set:    
+    - produto: lapis
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - pid: 56
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - corId: azul
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: um
+  - action: action_consultar_produto
+  - slot_was_set:    
+    - qtd: 1
+
+- story: Dialogo_ent_7
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: lapis
+    - cor: azul
+  - slot_was_set:    
+    - produto: lapis
+  - action: action_consultar_produto
+
+
+- story: Dialogo_ent_7a
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: lapis
+    - cor: azul
+  - action: action_consultar_produto
+
+
+- story: Dialogo_ent_7b
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - cor: azul
+  - action: action_consultar_produto
+
+
+- story: Dialogo_ent_7c
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: lapis
+  - action: action_consultar_produto
+
+
+- story: Dialogo_ent_7d
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: um
+  - action: action_consultar_produto
+
+
+- story: Dialogo_ent_7e
+  steps:
+  - checkpoint: buscar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: lapis
+    - cor: azul
+  - action: action_consultar_produto
+

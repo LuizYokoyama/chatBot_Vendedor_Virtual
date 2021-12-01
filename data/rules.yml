@@ -1,0 +1,292 @@
+version: "2.0"
+
+rules:
+
+- rule: teste
+  steps:
+  - intent: teste
+  - action: action_teste
+
+- rule: log10
+  steps:
+  - intent: log10
+  - action: action_log
+
+- rule: buscar produto
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- rule: oi
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+
+- rule: mostrar slots do bot
+  steps:
+  - intent: mostrar_slots
+  - action: action_mostrar_slots
+
+- rule: apagar slots do bot
+  steps:
+  - intent: limpar_slots
+  - action: action_limpar_slots
+
+- rule: dizer o que vende
+  steps:
+  - intent: saber_o_que_vende
+  - action: utter_o_que_vende
+
+- rule: start
+  steps:
+  - intent: start
+  - action: utter_start
+
+- rule: responder perguntas frequentes
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- rule: responder bate-papo
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- rule: out of scope
+  steps:    
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: fallback
+  steps: 
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: promocao
+  steps:
+  - intent: saber_promocao
+  - action: action_promocao
+
+- rule: previsao
+  steps:
+  - intent: saber_previsao
+  - action: utter_sem_previsao
+
+- rule: despedir
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- rule: desconto
+  steps:
+  - intent: pedir_desconto
+  - action: utter_sem_desconto
+
+
+- rule: retirar e afirmar
+  steps:
+  - action: utter_produto_ja_excluido
+  - intent: afirmar
+  - action: utter_oque_mais
+
+- rule: dizer comprar
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+
+- rule: so tem desse
+  steps:
+  - intent: so_tem
+  - action: utter_so_tem
+
+- rule: saber cores
+  steps:
+  - intent: saber_cores
+  - action: action_saber_cores
+
+- rule: saber produtos
+  steps:
+  - intent: saber_itens_de_papelaria
+  - action: action_listar_produtos
+
+- rule: duvida
+  steps:
+  - intent: duvida_produto
+  - action: utter_duvida_produto
+
+- rule: caracteristica
+  steps:
+  - intent: saber_caracteristicas
+  - action: action_caracteristicas
+
+- rule: retirar do carrinho
+  steps:
+  - intent: ret_carrinho
+  - action: action_ret_car
+
+- rule: risos
+  steps:
+  - intent: rir
+  - action: action_rir
+
+- rule: afirmar 1
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: afirmar
+  - action: utter_comprar
+
+- rule: afirmar 3
+  steps:
+  - action: utter_pergunta_comprar
+  - intent: afirmar
+  - action: utter_comprar
+
+- rule: afirmar 5
+  steps:
+  - action: utter_out_of_scope
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- rule: afirmar 6
+  steps:
+  - action: utter_default
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+- rule: afirmar 8
+  steps:
+  - action: utter_temos
+  - intent: afirmar
+  - action: action_add_car
+
+- rule: afirmar 9
+  steps:
+  - action: utter_sem_promocao
+  - intent: afirmar
+  - action: utter_pergunta_comprar
+
+
+- rule: negar 1
+  steps:
+  - action: utter_start
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 2
+  steps:
+  - action: utter_cumprimentar
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 3
+  steps:
+  - action: utter_pergunta_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 4
+  steps:
+  - action: utter_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 5
+  steps:
+  - action: utter_out_of_scope
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 6
+  steps:
+  - action: utter_default
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- rule: negar 7
+  steps:
+  - action: utter_despedir
+  - intent: negar
+  - action: utter_estamos_aqui
+  
+
+- rule: adicionar ao carrinho e afirmar
+  steps:
+  - action: utter_temos
+  - intent: afirmar
+  - action: action_add_car
+  
+- rule: adicionar ao carrinho e negar
+  steps:
+  - action: utter_temos
+  - intent: negar
+  - action: utter_comprar
+
+- rule: depois de adicionar ao carrinho, negar 
+  steps:
+  - action: utter_oque_mais
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - intent: afirmar
+  - action: action_fechar
+
+- rule: depois de adicionar ao carrinho, afirmar 
+  steps:
+  - action: utter_oque_mais
+  - intent: afirmar
+  - action: utter_comprar
+
+- rule: adicionar ao carrinho
+  steps:
+  - intent: add_carrinho
+  - action: action_add_car
+
+- rule: oferecer e afirmar
+  steps:
+  - action: utter_oferecer
+  - intent: afirmar
+  - action: action_consultar_produto
+
+
+- rule: oferecer e negar
+  steps:
+  - action: utter_oferecer
+  - intent: negar
+  - action: utter_comprar
+
+- rule: esgotado e afirmar
+  steps:
+  - action: utter_esgotado
+  - intent: afirmar
+  - action: utter_comprar
+
+- rule: esgotado e negar
+  steps:
+  - action: utter_esgotado
+  - intent: negar
+  - action: utter_pergunta_qual_produto
+
+- rule: Activate form de reclamacao
+  steps:
+  - intent: reclamacao
+  - action: reclamacao_form
+  - active_loop: reclamacao_form
+  - slot_was_set:
+    - nome: null
+    - texto_recl: null
+
+- rule: Submit form de reclamacao
+  condition:
+  # Condition that form is active.
+  - active_loop: reclamacao_form
+  steps:
+  # Form is deactivated
+  - action: reclamacao_form
+  - active_loop: null
+  - slot_was_set:
+    - nome: Jose
+    - texto_recl: "sajflas"
+  # The actions we want to run when the form is submitted.
+  - action: action_enviar_reclamacao
+  - action: utter_submit
+

@@ -1,0 +1,1131 @@
+version: "2.0"
+
+stories:
+
+- story: Dialogo_RasaBot_0a
+  steps:
+  - action: utter_estamos_aqui
+  - intent: dizer_qual_produto
+  
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0b
+  steps:
+  - action: action_fechar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0c
+  steps:
+  - action: utter_out_of_scope
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+- story: Dialogo_RasaBot_0d
+  steps:
+  - action: utter_despedir
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0e
+  steps:
+  - action: utter_faq
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0f
+  steps:
+  - action: utter_ok
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+
+- story: Dialogo_RasaBot_0g
+  steps:
+  - action: utter_sem_opcoes_de_cor
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+
+- story: Dialogo_RasaBot_0h
+  steps:
+  - action: utter_pergunta_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0i
+  steps:
+  - action: utter_pergunta_fechar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0j
+  steps:
+  - action: action_promocao
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0j
+  steps:
+  - action: action_promocao
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0l
+  steps:
+  - action: action_ret_car
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0m
+  steps:
+  - action: action_teste
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0n
+  steps:
+  - action: action_saber_cores
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0o
+  steps:
+  - action: utter_o_que_vende
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0p
+  steps:
+  - action: action_caracteristicas
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0q
+  steps:
+  - action: action_enviar_reclamacao
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0r
+  steps:
+  - action: action_fallback
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0s
+  steps:
+  - action: action_log
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0t
+  steps:
+  - action: action_add_car
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0t
+  steps:
+  - action: action_listar_produtos
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0u
+  steps:
+  - action: utter_pergunta_fechar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0v
+  steps:
+  - action: action_limpar_slots
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0x
+  steps:
+  - action: utter_nao_reconheceu_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0y
+  steps:
+  - action: utter_temos
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+- story: Dialogo_RasaBot_0w
+  steps:
+  - action: utter_nao_temos
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0z
+  steps:
+  - action: utter_sem_previsao
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0aa
+  steps:
+  - action: utter_sem_desconto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0ab
+  steps:
+  - action: utter_produto_ja_excluido
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_0ac
+  steps:
+  - action: utter_saber_qtd
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+
+
+
+- story: Dialogo_RasaBot_1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - or:
+    - intent: afirmar
+    - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  
+- story: Dialogo_RasaBot_12
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_13
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_013
+  steps:
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_RasaBot_14e
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14f
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14d
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14c
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - cor: azul
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14g
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - cor: azul
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14a
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+    - cor: azul
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_14b
+  steps:
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma 
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+    - cor: azul
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_16b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16c
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_16d
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16e
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - cor: verde
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16f
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: cor
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16g
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - cor: amarelo
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16a grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+    - cor: azul
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+  
+- story: Dialogo_RasaBot_16b grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_16c grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+  
+- story: Dialogo_RasaBot_16d grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_16e grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - cor: verde
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_16f grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: cor
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+
+- story: Dialogo_RasaBot_16g grafo
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - cor: amarelo
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: afirmar
+  - action: action_consultar_produto
+
+
+- story: Dialogo_RasaBot_16a grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+    - cor: azul
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_16b grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16c grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_16d grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16e grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - cor: verde
+    - produto: pasta com aba
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16f grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: cor
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_16g grafo negar
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+    entities:  
+    - qtd: uma
+    - cor: amarelo
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:    
+    - carrinho: 6d4afcc296f1451baa09b24c60f1bf19
+  - slot_was_set:    
+    - produto: Lápis preto Faber C 022
+  - slot_was_set:    
+    - qtd: None
+  - slot_was_set:    
+    - produto_oferecido: True
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_21a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+  
+- story: Dialogo_RasaBot_21a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+
+- story: Dialogo_RasaBot_21b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+ 
+- story: Dialogo_RasaBot_25a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: fechar_pedido
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_RasaBot_25b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: fechar_pedido
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_RasaBot_26a
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_26b
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_27a
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_27b
+  steps:
+  - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: negar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_27_0a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: fechar_pedido
+  - action: action_fechar
+
+- story: Dialogo_RasaBot_27_0b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: fechar_pedido
+  - action: action_fechar
+
+- story: Dialogo_RasaBot_28a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+
+- story: Dialogo_RasaBot_28b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+
+- story: Dialogo_RasaBot_30a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_30b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_30bb
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_30bbb
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_32a
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - slot_was_set:
+    - inf_ret: false
+  - intent: negar
+  - action: utter_produto_recusado
+  
+- story: Dialogo_RasaBot_32b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - slot_was_set:
+    - inf_ret: false
+  - intent: negar
+  - action: utter_produto_recusado
+
+- story: Dialogo_RasaBot_32b
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - slot_was_set:
+    - inf_ret: false
+  - intent: negar
+  - action: utter_produto_recusado
+
+- story: Dialogo_RasaBot_33
+  steps:
+  - action: action_add_car
+  - intent: ret_carrinho
+  - action: action_ret_car
+  - slot_was_set:
+    - inf_ret: false
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_34
+  steps:
+  - action: utter_pergunta_comprar
+  - intent: negar
+  - action: utter_estamos_aqui
+
+- story: Dialogo_RasaBot_35
+  steps:
+  - action: utter_pergunta_comprar
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_36
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: comprar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Dialogo_RasaBot_37
+  steps:
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: false
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - or:
+    - intent: fechar_pedido
+    - intent: afirmar
+  - action: action_fechar
+
+- story: Dialogo_RasaBot_38
+  steps:
+  - action: action_add_car
+  - intent: fechar_pedido
+  - action: action_fechar
+  - intent: afirmar
+  - action: utter_estamos_aqui
+ 
+- story: Dialogo_RasaBot_39
+  steps:
+  - action: action_add_car
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - or:
+    - intent: fechar_pedido
+    - intent: afirmar
+  - action: action_fechar
+
+- story: Dialogo_RasaBot_40
+  steps:
+  - action: action_add_car
+  - intent: negar
+  - action: utter_pergunta_fechar
+  - intent: negar
+  - action: utter_pergunta_comprar
+
+- story: Dialogo_RasaBot_46
+  steps:
+  - action: action_consultar_produto
+  - or:
+    - intent: add_carrinho
+    - intent: afirmar
+  - action: action_add_car
+  - intent: afirmar
+  - action: utter_comprar
+
+- story: Story from Conversation ID 25fb00fb01fa4128a3352cb29558f4c2
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: afirmar
+  - action: utter_comprar
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - slot_was_set:
+    - produto_oferecido: true
+  - intent: afirmar
+  - action: action_consultar_produto
+  - intent: afirmar
+  - action: action_add_car
+  - intent: dizer_qual_produto
+  - action: action_consultar_produto
+  - intent: fechar_pedido
+  - action: action_fechar
+
