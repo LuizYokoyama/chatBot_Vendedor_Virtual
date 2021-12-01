@@ -1,5 +1,7 @@
 # chatBot_Vendedor_Virtual
-ChatBot de um vendedor virtual com Processamento de Linguagem Natural, Machine Learning e Grafos de Connhecimento desenvolvido no meu Trabalho de Conclusão de Curso.
+ChatBot de um vendedor virtual com Processamento de Linguagem Natural, Machine Learning e Grafos de Connhecimento desenvolvido no meu Trabalho de Conclusão de Curso, disponibilizado neste link: https://drive.google.com/file/d/1oxfse_Iw41N6fTdJWWjJOZCWw44x5T66/view?usp=sharing
+
+
 O chatbot acessa a API Shopizer padrão REST/HTTPS para consultar produtos em um site e realizar vendas. 
 
 Este chatbot foi desenvolvido com o framework Rasa Open Source versão 2.5 e pode não ser compatível com versões mais recentes.
