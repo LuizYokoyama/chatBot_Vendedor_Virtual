@@ -1,0 +1,70 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+version: "2.0"
+
+language: pt
+
+pipeline:
+   - name: "DucklingEntityExtractor"
+    # url of the running duckling server
+     url: "http://62.171.190.108:8000"
+    # dimensions to extract
+     dimensions: ["email"]
+    # allows you to configure the locale, by default the language is
+    # used
+     locale: "pt_BR"
+    # Timeout for receiving response from http url of the running duckling server
+    # if not set the default timeout of duckling http url is set to 3 seconds.
+     timeout : 3
+   - name: WhitespaceTokenizer
+     intent_tokenization_flag: True
+   - name: LexicalSyntacticFeaturizer
+   - name: RegexFeaturizer
+   #- name: RegexEntityExtractor
+   - name: CountVectorsFeaturizer
+   - name: CountVectorsFeaturizer
+     analyzer: word
+     lowercase: true
+   - name: DIETClassifier
+     epochs: 100
+     model_confidence: linear_norm
+     constrain_similarities: True
+   - name: ResponseSelector
+     epochs: 100
+     retrieval_intent: chitchat
+     model_confidence: linear_norm
+     constrain_similarities: True
+   - name: ResponseSelector
+     epochs: 100
+     retrieval_intent: faq
+     model_confidence: linear_norm
+     constrain_similarities: True
+   - name: FallbackClassifier
+     threshold: 0.28
+     ambiguity_threshold: 0.1
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+
+   - name: MemoizationPolicy
+     model_confidence: linear_norm
+     constrain_similarities: True
+   - name: TEDPolicy
+     model_confidence: linear_norm
+     constrain_similarities: True
+     max_history: 4
+     epochs: 70
+   - name: RulePolicy
+     #model_confidence: linear_norm
+     #constrain_similarities: True
+     # Confidence threshold for the `core_fallback_action_name` to apply.
+     # The action will apply if no other action was predicted with
+     # a confidence >= core_fallback_threshold
+     core_fallback_threshold: 0.18
+     core_fallback_action_name: "action_default_fallback"
+     enable_fallback_prediction: True
+     restrict_rules: false
+     check_for_contradictions: true
+
+

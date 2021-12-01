@@ -1,0 +1,155 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: false
+intents:
+- saber_cores
+- negar:
+    use_entities: []
+- dizer_qual_produto
+- cumprimentar:
+    use_entities: []
+- afirmar:
+    use_entities: []
+- chitchat:
+    is_retrieval_intent: true
+    use_entities: []
+- faq:
+    is_retrieval_intent: true
+    use_entities: []
+- saber_caracteristicas
+- rir:
+    use_entities: []
+- saber_o_que_vende:
+    use_entities: []
+- saber_itens_de_papelaria:
+    use_entities: []
+- saber_meios_de_pagamento:
+    use_entities: []
+- start:
+    use_entities: []
+- ret_carrinho
+- despedir:
+    use_entities: []
+- add_carrinho
+- so_tem:
+    use_entities: []
+- fechar_pedido:
+    use_entities: []
+- tudo_bem:
+    use_entities: []
+- out_of_scope:
+    use_entities: []
+- saber_que_dia_pode_ir_buscar:
+    use_entities: []
+- comprar:
+    use_entities: []
+- saber_promocao
+- dizer_nome
+- pedir_desconto:
+    use_entities: []
+- saber_previsao:
+    use_entities: []
+- mostrar_slots:
+    use_entities: []
+- teste:
+    use_entities: []
+- duvida_produto
+- prazo_entrega
+- cancelar_compra
+- reclamacao:
+    use_entities: []
+- limpar_slots:
+    use_entities: []
+- log10:
+    use_entities: []
+- nlu_fallback
+entities:
+- cor
+- nome
+- produto
+- qtd
+slots:
+  pid:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  produto:
+    type: text
+    auto_fill: true
+    influence_conversation: false
+  lista_de_produtos:
+    type: text
+    influence_conversation: false
+  produto_encontrado:
+    type: text
+    influence_conversation: false
+  pqtd:
+    type: text
+    influence_conversation: false
+  preco:
+    type: float
+    influence_conversation: false
+    max_value: 1.0
+    min_value: 0.0
+  precoR:
+    type: text
+    influence_conversation: false
+  produto_oferecido:
+    type: bool
+    influence_conversation: true
+  nome:
+    type: text
+    influence_conversation: false
+  texto_recl:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  qtd:
+    type: text
+    auto_fill: true
+    influence_conversation: false
+  cor:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  corId:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  carrinho:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  inf_prod:
+    type: bool
+    auto_fill: false
+    influence_conversation: false
+  inf_ret:
+    type: bool
+    auto_fill: false
+    influence_conversation: false
+
+actions:
+- action_add_car
+- action_caracteristicas
+- action_consultar_produto
+- action_enviar_reclamacao
+- action_fechar
+- action_limpar_slots
+- action_listar_produtos
+- action_log
+- action_mostrar_slots
+- action_promocao
+- action_ret_car
+- action_rir
+- action_saber_cores
+- action_teste
+forms:
+  reclamacao_form:
+    required_slots:
+      nome:
+      - entity: nome
+        type: from_entity
+      texto_recl:
+      - type: from_text
