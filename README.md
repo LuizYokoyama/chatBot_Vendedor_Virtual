@@ -1,6 +1,8 @@
 # chatBot_Vendedor_Virtual
 ChatBot de um vendedor virtual com Processamento de Linguagem Natural, Machine Learning e Grafos de Connhecimento desenvolvido no meu Trabalho de Conclusão de Curso.
 
+Este chatbot foi desenvolvido com o framework Rasa Open Source versão 2.5: https://rasa.com/docs/rasa/2.x/installation
+
 
 Exemplo de atuação deste chatbot através do aplicativo Telegram:
 
