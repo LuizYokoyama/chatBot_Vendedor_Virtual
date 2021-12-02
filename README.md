@@ -1,6 +1,8 @@
 # chatBot_Vendedor_Virtual
 ChatBot de um vendedor virtual com Processamento de Linguagem Natural, Machine Learning e Grafos de Connhecimento desenvolvido no meu Trabalho de Conclusão de Curso, disponibilizado neste link: https://drive.google.com/file/d/1oxfse_Iw41N6fTdJWWjJOZCWw44x5T66/view?usp=sharing
 
+Além de vender, este chatbot também é capaz de aprender a recomendar outros produtos que costumam ser comprados juntos e a identificar tipos de produtos graças aos seus modelos de Grafos de Conhecimento.
+
 
 O chatbot acessa a API Shopizer padrão REST/HTTPS para consultar produtos em um site e realizar vendas. 
 
@@ -15,6 +17,8 @@ Recomendo o uso de um ambiente virtual no Anaconda Prompt (Anaconda 3).
 Antes de executar será necessário realizar o treinamento do modelo de IA do Rasa através do comando no Anaconda Prompt: rasa train
 
 Também é necessário configurar o arquivo credentials.yml para que o chatbot possa se comunicar com aplicativos de mensagens como, por exemplo, o Telegram. Um código exemplo com este chatbot sendo acessado através do Widget Webchat está disponível no arquivo index.html. Lembrando que o Telegram requer conexão segura https e a realização do cadastro do bot através do BotFather do Telegram. Já para o Whatsapp é necessário se conseguir um cadastro no Twilio, por exemplo.
+
+É necessário configurar o arquivo endpoints.yml com as credenciais do banco de dados PostgreSQL para que os diálogos sejam registrados no banco de dados. Já no arquivo /actions/actions.py também é necessário as credenciais do PostgreSQL para que o chatbot possa extrair os diálogos para arquivos de log que podem ser usados para gerar novos dados de treinamento para o Machine Learning.
 
 Pode ser necessário atualizar todos os endpoints de requisições REST, no arquivo /actions/actions.py, para endereços de algum site que faça uso do Shopizer, pois o site até então utilizado e que foi gentilmente cedido para testes pode não estar mais disponível.
 
