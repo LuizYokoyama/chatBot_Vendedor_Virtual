@@ -6,7 +6,7 @@ Além de vender, este chatbot também é capaz de aprender a oferecer outros pro
 
 O chatbot acessa a API Shopizer padrão REST/HTTPS para consultar produtos em um site e realizar vendas. 
 
-Este chatbot foi desenvolvido com o framework Rasa Open Source versão 2.5 e pode não ser compatível com versões mais recentes.
+Este chatbot foi desenvolvido com o framework Rasa Open Source versão 2.5 e pode não ser compatível com versões mais recentes ou mais antigas.
 Para mais informações sobre como usar e instalar o Rasa 2.5 acesse o site oficial:
 https://rasa.com/docs/rasa/2.x/installation
 
