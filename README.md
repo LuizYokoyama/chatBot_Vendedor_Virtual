@@ -1,4 +1,4 @@
-# chatBot_Vendedor_Virtual
+# ChatBot Vendedor Virtual
 ChatBot de um vendedor virtual com Processamento de Linguagem Natural, Machine Learning e Grafos de Connhecimento desenvolvido no meu Trabalho de Conclusão de Curso, disponibilizado neste link: https://drive.google.com/file/d/1oxfse_Iw41N6fTdJWWjJOZCWw44x5T66/view?usp=sharing
 
 Além de vender, este chatbot também é capaz de aprender a oferecer outros produtos que costumam ser comprados juntos e a identificar tipos de produtos graças aos seus modelos de Grafos de Conhecimento.
