@@ -25,7 +25,7 @@ Pode ser necessário atualizar todos os endpoints de requisições REST, no arqu
 Com tudo pronto, basta colocar o chatbot em execução através do comando no Anaconda Prompt:
 rasa run --cors "*" --enable-api
 
-Caso não possua um servidor com IP próprio é possivel, por exemplo usar o Ngrok para testar o chatbot: https://ngrok.com/  Ngrok é um programa de linha de comando que permite criar um túnel de conexão segura a partir do seu localhost e publicá-lo na internet.
+Caso não possua um servidor com IP próprio é possivel, por exemplo, usar o Ngrok para testar o chatbot: https://ngrok.com/  Ngrok é um programa de linha de comando que permite criar um túnel de conexão segura a partir do seu localhost e publicá-lo na internet.
 
 Exemplo de atuação deste chatbot através do aplicativo Telegram:
 
